@@ -1,19 +1,86 @@
 <script lang="ts">
-  import { _, locale } from "svelte-i18n"
-
-  export let uiLanguage = 'it'
-  locale.set(uiLanguage)
-
+  import { _ } from "svelte-i18n"
+	import Button from "../components/Button.svelte";
 </script>
+
 <svelte:head>
   <title>{$_("meta.title")}</title>
   <meta name="description" content={$_("index.meta.description")} />
 </svelte:head>
 
-<h1>Welcome to SvelteKit</h1>
-<div>
-    <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-</div>
+<main class="main-content">
+          <Button style="primary" href="course/german-from-english">
+          Start learning German
+        </Button>
+ <!--  <Page>
+    <Hero>
+      <Stack direction="column" spacing="m" fullHeight justify="center">
+        <Stack spacing="m" direction="column" directionDesktop="row">
+          <Stack shrink={4}>
+            <Mascot shadow={false} glow={true} />
+          </Stack>
+          <Stack direction="column" justify="center" shrink={2}>
+            <Heading level={1}>
+              <Translate key="index.subtitle">
+                A community-driven language-learning platform
+              </Translate>
+            </Heading>
+          </Stack>
+        </Stack>
+        <Stack justify="center">
+          <Button
+            style="primary"
+            size="large"
+            href="course/spanish-from-english"
+          >
+            <Translate key="index.start_spanish_course">
+              Start learning Spanish
+            </Translate>
+          </Button>
+        </Stack>
+      </Stack>
+
+      <Hidden>
+        <Button style="primary" href="course/german-from-english">
+          Start learning German
+        </Button>
+
+        <Button style="primary" href="course/french-from-english">
+          Start learning French
+        </Button>
+
+        <Button style="primary" href="course/bangla-from-english">
+          Start learning Bangla
+        </Button>
+
+        <Button style="primary" href="course/parsig-from-english">
+          Start learning Middle Persian
+        </Button>
+
+        <Button style="primary" href="course/basque-from-english">
+          Start learning Basque
+        </Button>
+
+        <Button style="primary" href="course/ladino-from-english">
+          Start learning Ladino (for English speakers)
+        </Button>
+
+        <Button style="primary" href="course/ladino-from-hebrew">
+          Start learning Ladino (for Hebrew speakers)
+        </Button>
+
+        <Button style="primary" href="course/ladino-from-spanish">
+          Start learning Ladino (for Spanish speakers)
+        </Button>
+
+        <Button style="primary" href="course/houma-from-english">
+          Start learning Houma (for English speakers)
+        </Button>
+      </Hidden>
+    </Hero>
+    <Footer />
+  </Page> -->
+</main>
 
 <style lang="text/scss">
 
