@@ -377,6 +377,6 @@ LibreLingo is licensed under the AGPL-3.0 license. In addition, course content a
 ## Donate
 Help us to keep going
 
-#### Others 
-- Audio generation (wip)
+
+## Audio generation
 `python3 /LibreLingo/app/librelingo_audios/cli.py /LibreLingo/courses/test-1/ /LibreLingo/librelingo-web/static/voice spanish-from-english`
