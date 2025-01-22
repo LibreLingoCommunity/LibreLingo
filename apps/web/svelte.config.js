@@ -8,7 +8,8 @@ const config = {
 	preprocess: vitePreprocess({
 		scss: {
 			prependData: "@use './src/assets/mystyles.scss';"
-		}
+		},
+		includePaths: ['./']
 	}),
 
 	// Remove vite-plugin-svelte warnings about unused CSS selectors
@@ -24,10 +25,7 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			components: 'src/components',
-			types: 'src/types',
-			utils: 'src/utils',
-			sounds: './static/sounds',
-			'course-client': 'src/course-client'
+			types: 'src/types'
 		}
 	}
 };
