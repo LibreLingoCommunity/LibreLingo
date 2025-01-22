@@ -107,3 +107,8 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+
+# Custom
+
+cert_custom.pem

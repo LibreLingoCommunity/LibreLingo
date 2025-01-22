@@ -25,10 +25,13 @@ dev = [
     "pydoc-markdown>=4.7.0",
     "snapshottest>=0.6.0",
     "mkdocs-mermaid2-plugin>=1.1.1",
+    "tqdm>=4.66.4",
 ]
 
 [tool.pdm.scripts]
 export-course = {call = "librelingo_json_export.cli:main"}
+install-courses = {call = "librelingo_scripts.install_courses:main"}
+
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
@@ -41,7 +44,7 @@ authors = [
     {name = "Dániel Kántor", email = "git@daniel-kantor.com"},
 ]
 requires-python = "<3.11,>=3.8"
-readme = "README.md"
+#readme = "README.md"
 license = {text = "AGPL-3.0"}
 dependencies = [
     "python-slugify>=8.0.4",
