@@ -1650,6 +1650,11 @@
   version "1.0.0"
   resolved "file:apps/web"
   dependencies:
+    bulma "^0.9.4"
+    bulma-pageloader "^0.3.0"
+    bulma-tooltip "^3.0.2"
+    bulmaswatch "^0.8.1"
+    isomorphic-fetch "^3.0.0"
     showdown "^2.1.0"
     svelte-i18n "^4.0.1"
 
@@ -2718,6 +2723,11 @@
   resolved "https://registry.npmjs.org/@types/estree/-/estree-1.0.6.tgz"
   integrity sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==
 
+"@types/isomorphic-fetch@^0.0.39":
+  version "0.0.39"
+  resolved "https://registry.npmjs.org/@types/isomorphic-fetch/-/isomorphic-fetch-0.0.39.tgz"
+  integrity sha512-I0gou/ZdA1vMG7t7gMzL7VYu2xAKU78rW9U1l10MI0nn77pEHq3tQqHQ8hMmXdMpBlkxZOorjI4sO594Z3kKJw==
+
 "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0":
 >>>>>>> 863afdefecd (feat: adding translations)
   version "2.0.6"
@@ -2752,8 +2762,17 @@
     expect "^29.0.0"
     pretty-format "^29.0.0"
 
+<<<<<<< HEAD
 "@types/js-levenshtein@1.1.3", "@types/js-levenshtein@^1.1.1":
 "@types/js-levenshtein@1.1.3", "@types/js-levenshtein@^1.1.1":
+=======
+"@types/js-cookie@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.npmjs.org/@types/js-cookie/-/js-cookie-3.0.6.tgz"
+  integrity sha512-wkw9yd1kEXOPnvEeEV1Go1MmxtBJL0RR79aOTAApecWFVu7w0NNXNqhcWgvw2YgZDYadliXkl14pa3WXw5jlCQ==
+
+"@types/js-levenshtein@1.1.3":
+>>>>>>> 8e94bb5ce8d (fix: fixed courses page)
   version "1.1.3"
   resolved "https://registry.npmjs.org/@types/js-levenshtein/-/js-levenshtein-1.1.3.tgz"
   integrity sha512-jd+Q+sD20Qfu9e2aEXogiO3vpOC1PYJOUdyN9gvs4Qrvkg4wF43L5OhqrPeokdv8TL0/mXoYfpkcoGZMNN2pkQ==
@@ -2807,6 +2826,7 @@
   dependencies:
     undici-types "~5.26.4"
 
+<<<<<<< HEAD
 "@types/node@20.5.1":
   version "20.5.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.5.1.tgz#178d58ee7e4834152b0e8b4d30cbfab578b9bb30"
@@ -2819,6 +2839,14 @@
   version "16.18.97"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.18.97.tgz#d7926a8030f0d714d555b4550c0cc7731495cfe5"
   integrity sha512-4muilE1Lbfn57unR+/nT9AFjWk0MtWi5muwCEJqnOvfRQDbSfLCUdN7vCIg8TYuaANfhLOV85ve+FNpiUsbSRg==
+=======
+"@types/node@^22.10.7":
+  version "22.10.7"
+  resolved "https://registry.npmjs.org/@types/node/-/node-22.10.7.tgz"
+  integrity sha512-V09KvXxFiutGp6B7XkpaDXlNadZxrzajcY50EuoLIpQ6WWYCSvf19lVIazzfIzQvhUN2HjX12spLojTnhuKlGg==
+  dependencies:
+    undici-types "~6.20.0"
+>>>>>>> 8e94bb5ce8d (fix: fixed courses page)
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.4"
@@ -10068,6 +10096,7 @@ jest-worker@^27.4.5:
     merge-stream "^2.0.0"
     supports-color "^8.0.0"
 
+<<<<<<< HEAD
 jest@29.7.0:
   version "29.7.0"
   resolved "https://registry.yarnpkg.com/jest/-/jest-29.7.0.tgz#994676fc24177f088f1c5e3737f5697204ff2613"
@@ -10099,6 +10128,14 @@ js-cookie@3.0.5:
   integrity sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==
 
 js-levenshtein@1.1.6, js-levenshtein@^1.1.6:
+=======
+js-cookie@^3.0.5:
+  version "3.0.5"
+  resolved "https://registry.npmjs.org/js-cookie/-/js-cookie-3.0.5.tgz"
+  integrity sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==
+
+js-levenshtein@1.1.6:
+>>>>>>> 8e94bb5ce8d (fix: fixed courses page)
   version "1.1.6"
   resolved "https://registry.npmjs.org/js-levenshtein/-/js-levenshtein-1.1.6.tgz"
   integrity sha512-X2BB11YZtrRqY4EnQcLX5Rh373zbK4alC1FW7D7MBhL2gtcC17cTnr6DmfHZeS0s2rTHjUTMMHfG7gO8SSdw+g==
@@ -16115,6 +16152,7 @@ undici-types@~5.26.4:
   resolved "https://registry.npmjs.org/undici-types/-/undici-types-5.26.5.tgz"
   integrity sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==
 
+<<<<<<< HEAD
 unicode-canonical-property-names-ecmascript@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/unicode-canonical-property-names-ecmascript/-/unicode-canonical-property-names-ecmascript-2.0.0.tgz#301acdc525631670d39f6146e0e77ff6bbdebddc"
@@ -16140,6 +16178,12 @@ unicode-property-aliases-ecmascript@^2.0.0:
   version "2.1.0"
   resolved "https://registry.yarnpkg.com/unicode-property-aliases-ecmascript/-/unicode-property-aliases-ecmascript-2.1.0.tgz#43d41e3be698bd493ef911077c9b131f827e8ccd"
   integrity sha512-6t3foTQI9qne+OZoVQB/8x8rk2k1eVy1gRXhV3oFQ5T6R1dqQ1xtin3XqSlx3+ATBkliTaR/hHyJBm+LVPNM8w==
+=======
+undici-types@~6.20.0:
+  version "6.20.0"
+  resolved "https://registry.npmjs.org/undici-types/-/undici-types-6.20.0.tgz"
+  integrity sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==
+>>>>>>> 8e94bb5ce8d (fix: fixed courses page)
 
 unified@^11.0.0:
   version "11.0.4"

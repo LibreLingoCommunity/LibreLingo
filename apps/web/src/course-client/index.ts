@@ -76,8 +76,7 @@ export const get_course = async ({
 	}
 
 	// eslint-disable-next-line @typescript-eslint/no-var-requires
-	const rawCourseData = import(/* @vite-ignore */ `../courses/${courseName}/courseData.json`); // eslint-disable-line @typescript-eslint/no-var-requires
-
+	const rawCourseData = await import(/* @vite-ignore */ `../courses/${courseName}/courseData.json`); // eslint-disable-line @typescript-eslint/no-var-requires
 	return formatCourseData(rawCourseData, { courseName });
 };
 

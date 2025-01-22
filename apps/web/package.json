@@ -37,6 +37,7 @@
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"@types/js-cookie": "^3.0.6",
 		"@types/node": "^22.10.7",
+		"@types/isomorphic-fetch": "^0.0.39",
 		"eslint": "^9.7.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.36.0",
