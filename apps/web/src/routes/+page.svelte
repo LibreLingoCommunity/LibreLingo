@@ -8,6 +8,7 @@
 	import Page from '../components/Page.svelte';
 	import Footer from '../components/Footer.svelte';
 	import Mascot from '../components/NewMascot.svelte';
+	import Heading from '../components/Heading.svelte';
 </script>
 
 <svelte:head>
@@ -24,11 +25,11 @@
 						<Mascot shadow={false} glow={true} />
 					</Stack>
 					<Stack direction="column" justify="center" shrink={2}>
-						<!--<Heading level={1}>
-              <Translate key="index.subtitle">
-                A community-driven language-learning platform
-              </Translate>
-            </Heading>-->
+						<Heading level={1}>
+							<Translate key="index.subtitle">
+								A community-driven language-learning platform
+							</Translate>
+						</Heading>
 					</Stack>
 				</Stack>
 				<Stack justify="center">
