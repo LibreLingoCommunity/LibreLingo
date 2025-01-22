@@ -1649,6 +1649,8 @@
 "@librelingo/web@file:/home/giorginogreg/formazione/various/giorginogreg_Librelingo/apps/web":
   version "1.0.0"
   resolved "file:apps/web"
+  dependencies:
+    svelte-i18n "^4.0.1"
 
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
