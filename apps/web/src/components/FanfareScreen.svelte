@@ -63,6 +63,7 @@
 </section>
 
 <style type="text/scss">
+	@import '../assets/variables.scss';
 
 	@include from($tablet) {
 		.bottom {

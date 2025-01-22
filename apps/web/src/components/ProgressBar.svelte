@@ -13,6 +13,7 @@
 </div>
 
 <style type="text/scss">
+	@import '../assets/variables.scss';
 	div {
 		padding-bottom: $size-6;
 	}

@@ -37,6 +37,8 @@
 </ul>
 
 <style type="text/scss">
+	@import '../../assets/variables.scss';
+
 	.options {
 		list-style: none;
 		padding-top: 1.5em;

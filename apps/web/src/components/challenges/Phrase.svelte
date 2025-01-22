@@ -11,6 +11,7 @@
 </b>
 
 <style type="text/scss">
+	@import '../../assets/variables.scss';
 
 	.phrase span {
 		margin: 0 0.15em;

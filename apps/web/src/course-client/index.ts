@@ -122,7 +122,7 @@ export const get_skill_data = async ({
 	}
 
 	// eslint-disable-next-line @typescript-eslint/no-var-requires
-	const skillData = import(
+	const skillData = await import(
 		/* @vite-ignore */ `../courses/${courseName}/challenges/${skillName}.json`
 	);
 
@@ -159,7 +159,7 @@ export const get_skill_introduction = async ({
 					return formatSkillIntroduction(skill, {
 						skillName,
 						courseName,
-						markdown: files[`introduction/${skill.introduction}`]
+						rawMarkdown: files[`introduction/${skill.introduction}`]
 					});
 				}
 

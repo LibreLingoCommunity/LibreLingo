@@ -16,7 +16,7 @@
 		data-test-correct={correct}
 	>
 		<div slot="media">
-			<img src={`/images/${picture}`} alt="" data-test={`card-img-${number}`} />
+			<img src={`images/${picture}`} alt="" data-test={`card-img-${number}`} />
 		</div>
 		<div slot="footer">
 			<Stack justify="center">
@@ -29,10 +29,9 @@
 </li>
 
 <style type="text/scss">
-
+	@import '../../../assets/variables.scss';
 	li {
 		border: 3px solid transparent;
-		display: flex;
 		flex-direction: column;
 		width: 100%;
 		max-width: 20em;

@@ -83,7 +83,7 @@
 
 	const preloadImage = (imageName: string) => {
 		if (typeof Image === 'undefined') return;
-		new Image().src = `/images/${imageName}`;
+		new Image().src = `images/${imageName}`;
 	};
 
 	challenges &&

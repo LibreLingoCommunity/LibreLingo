@@ -25,7 +25,10 @@ const config = {
 		adapter: adapter(),
 		alias: {
 			components: 'src/components',
-			types: 'src/types'
+			types: 'src/types',
+			utils: 'src/utils',
+			sounds: './static/sounds',
+			'course-client': 'src/course-client'
 		}
 	}
 };

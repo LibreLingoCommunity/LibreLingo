@@ -28,7 +28,7 @@
 	};
 
 	$: submitChallenge = () => {
-		registerResult(options[selectedOption]?.correct);
+		registerResult(options[selectedOption].correct);
 		submitted = true;
 	};
 

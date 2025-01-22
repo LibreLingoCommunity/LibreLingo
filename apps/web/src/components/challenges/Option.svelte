@@ -18,6 +18,7 @@
 </li>
 
 <style type="text/scss">
+	@import '../../assets/variables.scss';
 
 	.option {
 		padding: 0.75em 0;

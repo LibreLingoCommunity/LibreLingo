@@ -9,15 +9,15 @@ const disableHowlerForCypress = () => {
 
 const sound = {
 	correct: new Howl({
-		src: ['/sound/correct.mp3'],
+		src: ['sound/correct.mp3'],
 		onload: disableHowlerForCypress
 	}),
 	wrong: new Howl({
-		src: ['/sound/wrong.mp3'],
+		src: ['sound/wrong.mp3'],
 		onload: disableHowlerForCypress
 	}),
 	fanfare: new Howl({
-		src: ['/sound/fanfare.mp3'],
+		src: ['sound/fanfare.mp3'],
 		onload: disableHowlerForCypress
 	})
 };
@@ -26,7 +26,7 @@ export const playAudio = (type, filename) => {
 	disableHowlerForCypress();
 
 	new Howl({
-		src: [`/${type}/${filename}.mp3`]
+		src: [`${type}/${filename}.mp3`]
 	}).play();
 };
 
