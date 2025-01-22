@@ -7,3 +7,5 @@ Upgrade import to @use
 Enable auth user (NavBar.svelte)
 
 Remove warnings mute in vite.config.ts
+
+import live e getSkillStats commented, restore.
