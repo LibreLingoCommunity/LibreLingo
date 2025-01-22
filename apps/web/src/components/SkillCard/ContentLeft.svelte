@@ -15,6 +15,7 @@
 {/if}
 
 <style type="text/scss">
+	@import './../../assets/variables.scss';
 
 	.stale,
 	.completed {

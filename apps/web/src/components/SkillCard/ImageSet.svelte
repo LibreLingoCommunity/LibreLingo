@@ -5,12 +5,13 @@
 </script>
 
 <figure class="image image-set is-96x96" class:completed class:stale>
-	<img src={`/images/${imageSet[0]}_tinier.jpg`} alt="" />
-	<img src={`/images/${imageSet[1]}_tinier.jpg`} alt="" />
-	<img src={`/images/${imageSet[2]}_tiny.jpg`} alt="" />
+	<img src={`images/${imageSet[0]}_tinier.jpg`} alt="" />
+	<img src={`images/${imageSet[1]}_tinier.jpg`} alt="" />
+	<img src={`images/${imageSet[2]}_tiny.jpg`} alt="" />
 </figure>
 
 <style type="text/scss">
+	@import './../../assets/variables.scss';
 
 	.image-set {
 		position: relative;

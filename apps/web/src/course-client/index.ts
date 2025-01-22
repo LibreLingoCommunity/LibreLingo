@@ -129,13 +129,13 @@ export const get_skill_data = async ({
 	return await formatSkilldata(skillData, { courseName, skillName, gistId });
 };
 
-const formatSkillIntroduction = async (skill, { skillName, courseName, rawMarkdown }) => {
+const formatSkillIntroduction = async (skill, { skillName, courseName, markdown }) => {
 	return {
 		skillName,
 		courseName,
 		title: skill.title,
 		practiceHref: skill.practiceHref,
-		readmeHTML: parseMarkdown(rawMarkdown)
+		readmeHTML: parseMarkdown(markdown)
 	};
 };
 
@@ -159,18 +159,18 @@ export const get_skill_introduction = async ({
 					return formatSkillIntroduction(skill, {
 						skillName,
 						courseName,
-						rawMarkdown: files[`introduction/${skill.introduction}`]
+						markdown: files[`introduction/${skill.introduction}`]
 					});
 				}
 
-				const { default: rawMarkdown } = await import(
+				const { markdown } = await import(
 					/* @vite-ignore */ `../courses/${courseName}/introduction/${skill.introduction}`
 				);
 
 				return formatSkillIntroduction(skill, {
 					skillName,
 					courseName,
-					rawMarkdown
+					markdown
 				});
 			}
 		}

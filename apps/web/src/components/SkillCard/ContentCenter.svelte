@@ -23,6 +23,7 @@
 </div>
 
 <style type="text/scss">
+	@import './../../assets/variables.scss';
 
 	.completed,
 	.stale {

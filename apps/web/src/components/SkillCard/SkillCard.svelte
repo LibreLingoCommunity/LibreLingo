@@ -4,8 +4,8 @@
 	/* import live from '../../db/live'; */
 	/* 	import getSkillStats from '../../db/skill/getSkillStats';
 	 */
-	import Icon from '../Icon.svelte';
-	import Card from '../Card.svelte';
+	import Icon from 'components/Icon.svelte';
+	import Card from 'components/Card.svelte';
 	import Buttons from './Buttons.svelte';
 	import ContentLeft from './ContentLeft.svelte';
 	import ContentCenter from './ContentCenter.svelte';
