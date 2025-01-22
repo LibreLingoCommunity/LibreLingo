@@ -7,6 +7,7 @@
 	import Hero from '../components/Hero/Hero.svelte';
 	import Page from '../components/Page.svelte';
 	import Footer from '../components/Footer.svelte';
+	import Mascot from '../components/NewMascot.svelte';
 </script>
 
 <svelte:head>
@@ -20,7 +21,7 @@
 			<Stack direction="column" spacing="m" fullHeight justify="center">
 				<Stack spacing="m" direction="column" directionDesktop="row">
 					<Stack shrink={4}>
-						<!-- <Mascot shadow={false} glow={true} /> -->
+						<Mascot shadow={false} glow={true} />
 					</Stack>
 					<Stack direction="column" justify="center" shrink={2}>
 						<!--<Heading level={1}>
