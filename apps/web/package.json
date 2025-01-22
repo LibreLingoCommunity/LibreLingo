@@ -60,6 +60,10 @@
 		"vite-plugin-markdown": "^2.2.0"
 	},
 	"dependencies": {
+		"bulma": "^0.9.4",
+		"bulma-pageloader": "^0.3.0",
+		"bulma-tooltip": "^3.0.2",
+		"bulmaswatch": "^0.8.1",
 		"svelte-i18n": "^4.0.1",
 		"showdown": "^2.1.0"
 	}

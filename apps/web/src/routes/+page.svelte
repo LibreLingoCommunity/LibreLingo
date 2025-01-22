@@ -6,6 +6,7 @@
 	import Stack from '../components/Stack.svelte';
 	import Hero from '../components/Hero/Hero.svelte';
 	import Page from '../components/Page.svelte';
+	import Footer from '../components/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -66,7 +67,7 @@
 				</Button>
 			</Hidden>
 		</Hero>
-		<!-- <Footer /> -->
+		<Footer />
 	</Page>
 </main>
 

@@ -8,8 +8,7 @@ const config = {
 	preprocess: vitePreprocess({
 		scss: {
 			prependData: "@use './src/assets/mystyles.scss';"
-		},
-		includePaths: ['./']
+		}
 	}),
 
 	// Remove vite-plugin-svelte warnings about unused CSS selectors
