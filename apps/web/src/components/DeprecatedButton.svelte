@@ -17,7 +17,7 @@
 </script>
 
 <div
-	class="lluis-button"
+	class="lluis-button medium"
 	class:small={size === 'small'}
 	class:large={size === 'large'}
 	data-style={style}
@@ -37,7 +37,7 @@
 </div>
 
 {#if asHref != null}
-	<a class="hidden-link" href={asHref}>&nbsp;</a>
+	<a class="hidden-link" aria-label="hidden-link" href={asHref}>&nbsp;</a>
 {/if}
 
 <style type="text/scss">

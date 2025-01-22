@@ -163,10 +163,7 @@ export const get_skill_introduction = async ({
 					});
 				}
 
-				const {
-					default: rawMarkdown
-					// eslint-disable-next-line @typescript-eslint/no-var-requires
-				} = await import(
+				const { default: rawMarkdown } = await import(
 					/* @vite-ignore */ `../courses/${courseName}/introduction/${skill.introduction}`
 				);
 
