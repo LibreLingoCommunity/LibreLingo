@@ -1,8 +1,8 @@
 <script lang="ts">
 	import { locale } from 'svelte-i18n';
 	// import SkillCard from "../../../components/SkillCard/index.svelte"
-	/* 	import NavBar from 'components/NavBar.svelte';
-	 */
+	import NavBar from 'components/NavBar.svelte';
+
 	import Column from 'components/Column.svelte';
 	import Columns from 'components/Columns.svelte';
 	import Content from 'components/Content.svelte';
@@ -22,8 +22,8 @@
 	<title>LibreLingo - learn {languageName} for free</title>
 </svelte:head>
 
-<!-- <NavBar hasAuth {repositoryURL} />
- -->
+<NavBar hasAuth {repositoryURL} />
+
 {#each modules as { title, skills }}
 	<section class="section">
 		<div class="container">
