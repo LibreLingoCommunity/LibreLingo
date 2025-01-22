@@ -6,7 +6,8 @@
 	/* 	import Icon from 'lluis/Icon.svelte';
 	 */
 	/* import NavBarButton from 'lluis/DeprecatedNavBar/NavBarButton.svelte';
-	import Logo from 'lluis/Logo.svelte'; */
+	 */
+	import Logo from 'components/Logo.svelte';
 	/* 	import NavBarItem from 'lluis/DeprecatedNavBar/NavBarItem.svelte';
 	 */ /* import NavBarButtonSet from 'lluis/DeprecatedNavBar/NavBarButtonSet.svelte'; */
 	export let hasAuth = false;
@@ -21,29 +22,31 @@
 </script>
 
 <NavBar>
-	<!-- <div slot="left">
+	<div slot="left">
 		<Logo src="/images/logo.svg" alt="LibreLingo" link={homepageLink} />
 	</div>
+	<!--
 
 	<div slot="right">
 		<NavBarButtonSet>
 			{#if repositoryURL}
 				<NavBarButton href={repositoryURL} target="_blank">Feedback</NavBarButton>
 			{/if}
-			 {#if hasAuth && settings.features.authEnabled}
-			 {#if $authStore.user}
-          <NavBarItem>
-            <Icon size="small" icon="user" />
-            <span>{$authStore.user.name}</span>
-          </NavBarItem>
-          <NavBarButton on:click={() => _Logout()}>Log out</NavBarButton>
-        {:else}
-          <NavBarButton href="/sign-up">Sign up</NavBarButton>
-          <NavBarButton href="/login">Log in</NavBarButton>
-        {/if} 
+			{#if hasAuth && settings.features.authEnabled}
+				{#if $authStore.user}
+					<NavBarItem>
+						<Icon size="small" icon="user" />
+						<span>{$authStore.user.name}</span>
+					</NavBarItem>
+					<NavBarButton on:click={() => _Logout()}>Log out</NavBarButton>
+				{:else}
+					<NavBarButton href="/sign-up">Sign up</NavBarButton>
+					<NavBarButton href="/login">Log in</NavBarButton>
+				{/if}
 			{/if}
 		</NavBarButtonSet>
-	</div> -->
+	</div>
+	-->
 </NavBar>
 
 <style>
