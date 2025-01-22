@@ -2,6 +2,9 @@
 	import { _ } from 'svelte-i18n';
 	import Button from '../components/Button.svelte';
 	import Hidden from '../components/Hidden.svelte';
+	import Translate from '../components/Translate.svelte';
+  import Stack from '../components/Stack.svelte';
+
 </script>
 
 <svelte:head>
@@ -10,9 +13,7 @@
 </svelte:head>
 
 <main class="main-content">
-	<Hidden>
-		<Button style="primary" href="course/german-from-english">Start learning German</Button>
-	</Hidden>
+
 	<!--  <Page>
     <Hero>
       <Stack direction="column" spacing="m" fullHeight justify="center">
@@ -27,7 +28,7 @@
               </Translate>
             </Heading>
           </Stack>
-        </Stack>
+        </Stack> -->
         <Stack justify="center">
           <Button
             style="primary"
@@ -39,8 +40,8 @@
             </Translate>
           </Button>
         </Stack>
-      </Stack>
-
+     <!-- </Stack>
+ -->
       <Hidden>
         <Button style="primary" href="course/german-from-english">
           Start learning German
@@ -78,7 +79,7 @@
           Start learning Houma (for English speakers)
         </Button>
       </Hidden>
-    </Hero>
+   <!-- </Hero>
     <Footer />
   </Page> -->
 </main>
