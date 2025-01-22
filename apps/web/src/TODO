@@ -1,2 +1,5 @@
 transform static/images into git-lfs
 Understand how to transform Hero.svelte into index.svelte
+
+Upgrade bulma theme with the bulmaswatch one
+Upgrade import to @use
