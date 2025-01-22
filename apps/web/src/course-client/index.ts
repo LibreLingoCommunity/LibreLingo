@@ -76,7 +76,8 @@ export const get_course = async ({
 	}
 
 	// eslint-disable-next-line @typescript-eslint/no-var-requires
-	const rawCourseData = await import(/* @vite-ignore */ `../courses/${courseName}/courseData.json`); // eslint-disable-line @typescript-eslint/no-var-requires
+	const rawCourseData = import(/* @vite-ignore */ `../courses/${courseName}/courseData.json`); // eslint-disable-line @typescript-eslint/no-var-requires
+
 	return formatCourseData(rawCourseData, { courseName });
 };
 
@@ -122,20 +123,20 @@ export const get_skill_data = async ({
 	}
 
 	// eslint-disable-next-line @typescript-eslint/no-var-requires
-	const skillData = await import(
+	const skillData = import(
 		/* @vite-ignore */ `../courses/${courseName}/challenges/${skillName}.json`
 	);
 
 	return await formatSkilldata(skillData, { courseName, skillName, gistId });
 };
 
-const formatSkillIntroduction = async (skill, { skillName, courseName, markdown }) => {
+const formatSkillIntroduction = async (skill, { skillName, courseName, rawMarkdown }) => {
 	return {
 		skillName,
 		courseName,
 		title: skill.title,
 		practiceHref: skill.practiceHref,
-		readmeHTML: parseMarkdown(markdown)
+		readmeHTML: parseMarkdown(rawMarkdown)
 	};
 };
 
@@ -163,14 +164,17 @@ export const get_skill_introduction = async ({
 					});
 				}
 
-				const { markdown } = await import(
+				const {
+					default: rawMarkdown
+					// eslint-disable-next-line @typescript-eslint/no-var-requires
+				} = await import(
 					/* @vite-ignore */ `../courses/${courseName}/introduction/${skill.introduction}`
 				);
 
 				return formatSkillIntroduction(skill, {
 					skillName,
 					courseName,
-					markdown
+					rawMarkdown
 				});
 			}
 		}

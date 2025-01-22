@@ -1,19 +1,18 @@
 <script lang="ts">
 	import { locale } from 'svelte-i18n';
-	import SkillCard from 'components/SkillCard/SkillCard.svelte';
-	import NavBar from 'components/NavBar.svelte';
-
+	// import SkillCard from "../../../components/SkillCard/index.svelte"
+	/* 	import NavBar from 'components/NavBar.svelte';
+	 */
 	import Column from 'components/Column.svelte';
 	import Columns from 'components/Columns.svelte';
 	import Content from 'components/Content.svelte';
 	import Footer from 'components/DeprecatedFooter.svelte';
 	import type { ModulesType } from 'types/ModulesType';
-	import { page } from '$app/state';
 
-	export const courseName = page.data.course.courseName;
-	export let modules: ModulesType = page.data.course.modules;
-	export let languageName = page.data.course.languageName;
-	export const repositoryURL = page.data.course.repositoryURL;
+	export const courseName = null;
+	export let modules: ModulesType = [];
+	export let languageName = null;
+	export const repositoryURL = null;
 	export let uiLanguage = 'es';
 
 	locale.set(uiLanguage);
@@ -23,8 +22,8 @@
 	<title>LibreLingo - learn {languageName} for free</title>
 </svelte:head>
 
-<NavBar hasAuth {repositoryURL} />
-
+<!-- <NavBar hasAuth {repositoryURL} />
+ -->
 {#each modules as { title, skills }}
 	<section class="section">
 		<div class="container">
@@ -32,15 +31,17 @@
 			<Columns multiline>
 				{#each skills as skill}
 					<Column sizeDesktop="1/3" sizeTablet="1/2">
-						<SkillCard
+						<!-- <SkillCard
 							{...{ ...skill }}
 							practiceHref={`/course/${courseName}/skill/${skill.practiceHref}`}
-						/>
+						/> -->
 					</Column>
 				{/each}
 			</Columns>
 		</div>
 	</section>
+{:else}
+	there are no modules
 {/each}
 
 <Footer>
@@ -67,6 +68,7 @@
 </Footer>
 
 <style type="text/scss">
+	@import './../../../assets/variables.scss';
 	.container {
 		padding-right: 20px;
 		padding-left: 20px;
