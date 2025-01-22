@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { locale } from 'svelte-i18n';
-	// import SkillCard from "../../../components/SkillCard/index.svelte"
+	import SkillCard from 'components/SkillCard/SkillCard.svelte';
 	import NavBar from 'components/NavBar.svelte';
 
 	import Column from 'components/Column.svelte';
@@ -32,10 +32,10 @@
 			<Columns multiline>
 				{#each skills as skill}
 					<Column sizeDesktop="1/3" sizeTablet="1/2">
-						<!-- <SkillCard
+						<SkillCard
 							{...{ ...skill }}
 							practiceHref={`/course/${courseName}/skill/${skill.practiceHref}`}
-						/> -->
+						/>
 					</Column>
 				{/each}
 			</Columns>
