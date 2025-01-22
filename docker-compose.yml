@@ -1,0 +1,19 @@
+services:
+  app:
+    build: .
+    networks:
+      - my_back
+    #command:
+    volumes:
+      - ./apps/web:/LibreLingo/librelingo-web
+      - ./src:/LibreLingo/app
+      - ./courses:/LibreLingo/courses
+    command: ['tail', '-f', '/dev/null']
+    #ports:
+    #  - "8000:8000"
+    #environment:
+networks:
+  my_front:
+    driver: bridge
+  my_back:
+    driver: bridge
