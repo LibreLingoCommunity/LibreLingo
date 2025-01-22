@@ -8,11 +8,12 @@
 	import Content from 'components/Content.svelte';
 	import Footer from 'components/DeprecatedFooter.svelte';
 	import type { ModulesType } from 'types/ModulesType';
+	import { page } from '$app/state';
 
-	export const courseName = null;
-	export let modules: ModulesType = [];
-	export let languageName = null;
-	export const repositoryURL = null;
+	export const courseName = page.data.course.courseName;
+	export let modules: ModulesType = page.data.course.modules;
+	export let languageName = page.data.course.languageName;
+	export const repositoryURL = page.data.course.repositoryURL;
 	export let uiLanguage = 'es';
 
 	locale.set(uiLanguage);
@@ -40,8 +41,6 @@
 			</Columns>
 		</div>
 	</section>
-{:else}
-	there are no modules
 {/each}
 
 <Footer>
