@@ -1,15 +1,16 @@
 <script lang="ts">
 	import { page } from '$app/state';
-	/* 	import settings from '../settings';
-	import authStore from '../auth'; */
+	import settings from '../settings';
+	import authStore from '../auth';
 	import NavBar from 'components/DeprecatedNavBar/NavBar.svelte';
-	/* 	import Icon from 'lluis/Icon.svelte';
-	 */
-	/* import NavBarButton from 'lluis/DeprecatedNavBar/NavBarButton.svelte';
-	 */
+	import Icon from 'components/Icon.svelte';
+
+	import NavBarButton from 'components/DeprecatedNavBar/NavBarButton.svelte';
+
 	import Logo from 'components/Logo.svelte';
-	/* 	import NavBarItem from 'lluis/DeprecatedNavBar/NavBarItem.svelte';
-	 */ /* import NavBarButtonSet from 'lluis/DeprecatedNavBar/NavBarButtonSet.svelte'; */
+	import NavBarItem from 'components/DeprecatedNavBar/NavBarItem.svelte';
+
+	import NavBarButtonSet from 'components/DeprecatedNavBar/NavBarButtonSet.svelte';
 	export let hasAuth = false;
 	export let repositoryURL = null;
 
@@ -25,7 +26,6 @@
 	<div slot="left">
 		<Logo src="/images/logo.svg" alt="LibreLingo" link={homepageLink} />
 	</div>
-	<!--
 
 	<div slot="right">
 		<NavBarButtonSet>
@@ -36,7 +36,7 @@
 				{#if $authStore.user}
 					<NavBarItem>
 						<Icon size="small" icon="user" />
-						<span>{$authStore.user.name}</span>
+						<!-- <span>{$authStore.user.name}</span> -->
 					</NavBarItem>
 					<NavBarButton on:click={() => _Logout()}>Log out</NavBarButton>
 				{:else}
@@ -46,7 +46,6 @@
 			{/if}
 		</NavBarButtonSet>
 	</div>
-	-->
 </NavBar>
 
 <style>
