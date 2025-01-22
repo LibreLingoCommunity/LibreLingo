@@ -1,2 +1,2 @@
-import /images/*
+transform static/images into git-lfs
 Understand how to transform Hero.svelte into index.svelte
