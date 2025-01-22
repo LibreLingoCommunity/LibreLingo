@@ -23,7 +23,8 @@ $body-background-color: $white-lighter;
 $control-border-width: 2px;
 $input-border-color: transparent;
 $input-shadow: none;
-$done-color: lighten(desaturate($green, 15%), 20%);
-$stale-color: lighten(desaturate($green, 45%), 20%);
+
+$done-color: rgb(198.4078947368, 223.9973684211, 164.4526315789);
+$stale-color: rgb(235.1427125506, 244.121659919, 223.228340081);
 
 $bulmaswatch-import-font: false;
