@@ -54,7 +54,8 @@
 		"bulma-pageloader": "^0.3.0",
 		"bulma-tooltip": "^3.0.2",
 		"bulmaswatch": "^0.8.1",
-		"svelte-i18n": "^4.0.1",
-		"showdown": "^2.1.0"
+		"isomorphic-fetch": "^3.0.0",
+		"showdown": "^2.1.0",
+		"svelte-i18n": "^4.0.1"
 	}
 }
