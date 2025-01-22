@@ -23,7 +23,7 @@
 		color: var(--deprecated-navbar-text-color);
 		border: 0;
 
-		> * :global {
+		> * {
 			img {
 				height: var(--deprecated-navbar-logo-height);
 			}
