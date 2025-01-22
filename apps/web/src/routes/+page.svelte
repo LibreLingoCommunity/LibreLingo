@@ -1,18 +1,19 @@
 <script lang="ts">
-  import { _ } from "svelte-i18n"
-	import Button from "../components/Button.svelte";
+	import { _ } from 'svelte-i18n';
+	import Button from '../components/Button.svelte';
+	import Hidden from '../components/Hidden.svelte';
 </script>
 
 <svelte:head>
-  <title>{$_("meta.title")}</title>
-  <meta name="description" content={$_("index.meta.description")} />
+	<title>{$_('meta.title')}</title>
+	<meta name="description" content={$_('index.meta.description')} />
 </svelte:head>
 
 <main class="main-content">
-          <Button style="primary" href="course/german-from-english">
-          Start learning German
-        </Button>
- <!--  <Page>
+	<Hidden>
+		<Button style="primary" href="course/german-from-english">Start learning German</Button>
+	</Hidden>
+	<!--  <Page>
     <Hero>
       <Stack direction="column" spacing="m" fullHeight justify="center">
         <Stack spacing="m" direction="column" directionDesktop="row">
@@ -83,5 +84,4 @@
 </main>
 
 <style lang="text/scss">
-
 </style>
