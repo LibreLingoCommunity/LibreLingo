@@ -7,15 +7,16 @@
 
 	export let preview = page.data.preview;
 	export let loading = page.data.loading;
-	export let rawChallenges;
-	export let languageName: string;
-	export let languageCode: string;
-	export let specialCharacters: Array<string>;
-	export let repositoryURL: string;
-	export let skillName: string;
-	export let courseURL: string;
-	export let skillId: string;
-	export let challengesPerLevel: number;
+
+	export let rawChallenges = page.data.rawChallenges;
+	export let languageName: string = page.data.languageName;
+	export let languageCode: string = page.data.languageCode;
+	export let specialCharacters: Array<string> = page.data.specialCharacters;
+	export let repositoryURL: string = page.data.repositoryURL;
+	export let skillName: string = page.data.skillName;
+	export let courseURL: string = page.data.courseURL;
+	export let skillId: string = page.data.skillId;
+	export let challengesPerLevel: number = page.data.challengesPerLevel;
 
 	let expectedNumberOfChallenges = Math.max(4, Math.round(challengesPerLevel * 1.2));
 

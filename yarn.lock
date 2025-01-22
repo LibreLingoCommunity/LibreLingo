@@ -1640,6 +1640,13 @@
     "@jridgewell/resolve-uri" "^3.1.0"
     "@jridgewell/sourcemap-codec" "^1.4.14"
 
+"@librelingo/answer-corrector@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/@librelingo/answer-corrector/-/answer-corrector-1.2.0.tgz"
+  integrity sha512-ZkUMUXw/pKVIs0G1MFyrkTxs4JXayem9DlDzv8mxtgW3+HqETkeA2pZMHFd3C4j+R+iyFVrPEKlR0mINq5kZ1A==
+  dependencies:
+    js-levenshtein "1.1.6"
+
 "@librelingo/answer-corrector@file:/home/giorginogreg/formazione/various/giorginogreg_Librelingo/apps/answer-corrector":
   version "1.0.0"
   resolved "file:apps/answer-corrector"
@@ -1650,15 +1657,21 @@
   version "1.0.0"
   resolved "file:apps/web"
   dependencies:
+    "@librelingo/answer-corrector" "^1.2.0"
     bulma "^0.9.4"
     bulma-pageloader "^0.3.0"
     bulma-tooltip "^3.0.2"
     bulmaswatch "^0.8.1"
+    hotkeys-js "^3.13.9"
+    howler "^2.2.4"
     isomorphic-fetch "^3.0.0"
     js-cookie "^3.0.5"
+    js-levenshtein "^1.1.6"
     lodash.shuffle "^4.2.0"
     lodash.uniq "^4.5.0"
+    lodash.uniqby "^4.7.0"
     showdown "^2.1.0"
+    sortablejs "^1.15.6"
     svelte-i18n "^4.0.1"
 
 "@nodelib/fs.scandir@2.1.5":
@@ -2726,6 +2739,11 @@
   resolved "https://registry.npmjs.org/@types/estree/-/estree-1.0.6.tgz"
   integrity sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==
 
+"@types/howler@^2.2.12":
+  version "2.2.12"
+  resolved "https://registry.npmjs.org/@types/howler/-/howler-2.2.12.tgz"
+  integrity sha512-hy769UICzOSdK0Kn1FBk4gN+lswcj1EKRkmiDtMkUGvFfYJzgaDXmVXkSShS2m89ERAatGIPnTUlp2HhfkVo5g==
+
 "@types/isomorphic-fetch@^0.0.39":
   version "0.0.39"
   resolved "https://registry.npmjs.org/@types/isomorphic-fetch/-/isomorphic-fetch-0.0.39.tgz"
@@ -2800,6 +2818,13 @@
   version "4.5.9"
   resolved "https://registry.npmjs.org/@types/lodash.uniq/-/lodash.uniq-4.5.9.tgz"
   integrity sha512-2Vd5avnDMNLbDSnUwwgwExKXvX9W3CN72rodT+ikGqGHXn7gVK6BM6Z+kHonbpGgCI2BzM+QDMHrkgKoofOi6A==
+  dependencies:
+    "@types/lodash" "*"
+
+"@types/lodash.uniqby@^4.7.9":
+  version "4.7.9"
+  resolved "https://registry.npmjs.org/@types/lodash.uniqby/-/lodash.uniqby-4.7.9.tgz"
+  integrity sha512-rjrXji/seS6BZJRgXrU2h6FqxRVufsbq/HE0Tx0SdgbtlWr2YmD/M64BlYEYYlaMcpZwy32IYVkMfUMYlPuv0w==
   dependencies:
     "@types/lodash" "*"
 
@@ -2961,6 +2986,11 @@
   resolved "https://registry.npmjs.org/@types/showdown/-/showdown-2.0.6.tgz"
   integrity sha512-pTvD/0CIeqe4x23+YJWlX2gArHa8G0J0Oh6GKaVXV7TAeickpkkZiNOgFcFcmLQ5lB/K0qBJL1FtRYltBfbGCQ==
 >>>>>>> f77894ae392 (chore: style and minors)
+
+"@types/sortablejs@^1.15.8":
+  version "1.15.8"
+  resolved "https://registry.npmjs.org/@types/sortablejs/-/sortablejs-1.15.8.tgz"
+  integrity sha512-b79830lW+RZfwaztgs1aVPgbasJ8e7AXtZYHTELNXZPsERt4ymJdjV4OccDbHQAvHrCcFpbF78jkm0R6h/pZVg==
 
 "@types/stack-utils@^2.0.0":
   version "2.0.3"
@@ -8817,6 +8847,16 @@ hosted-git-info@^5.0.0, hosted-git-info@^5.2.1:
   dependencies:
     lru-cache "^7.5.1"
 
+hotkeys-js@^3.13.9:
+  version "3.13.9"
+  resolved "https://registry.npmjs.org/hotkeys-js/-/hotkeys-js-3.13.9.tgz"
+  integrity sha512-3TRCj9u9KUH6cKo25w4KIdBfdBfNRjfUwrljCLDC2XhmPDG0SjAZFcFZekpUZFmXzfYoGhFDcdx2gX/vUVtztQ==
+
+howler@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.npmjs.org/howler/-/howler-2.2.4.tgz"
+  integrity sha512-iARIBPgcQrwtEr+tALF+rapJ8qSc+Set2GJQl7xT1MQzWaVkFebdJhR3alVlSiUf5U7nAANKuj3aWpwerocD5w==
+
 html-minifier@^4.0.0:
   version "4.0.0"
   resolved "https://registry.npmjs.org/html-minifier/-/html-minifier-4.0.0.tgz"
@@ -10233,8 +10273,12 @@ js-cookie@^3.0.5:
   resolved "https://registry.npmjs.org/js-cookie/-/js-cookie-3.0.5.tgz"
   integrity sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==
 
+<<<<<<< HEAD
 js-levenshtein@1.1.6:
 >>>>>>> 8e94bb5ce8d (fix: fixed courses page)
+=======
+js-levenshtein@^1.1.6, js-levenshtein@1.1.6:
+>>>>>>> 7ee84e4416c (fix: restored challenges)
   version "1.1.6"
   resolved "https://registry.npmjs.org/js-levenshtein/-/js-levenshtein-1.1.6.tgz"
   integrity sha512-X2BB11YZtrRqY4EnQcLX5Rh373zbK4alC1FW7D7MBhL2gtcC17cTnr6DmfHZeS0s2rTHjUTMMHfG7gO8SSdw+g==
@@ -14925,6 +14969,7 @@ sorcery@^0.11.0:
     minimist "^1.2.0"
     sander "^0.5.0"
 
+<<<<<<< HEAD
 sortablejs@1.15.2:
   version "1.15.2"
   resolved "https://registry.yarnpkg.com/sortablejs/-/sortablejs-1.15.2.tgz#4e9f7bda4718bd1838add9f1866ec77169149809"
@@ -14943,6 +14988,17 @@ source-list-map@^2.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.2.0.tgz#16b809c162517b5b8c3e7dcd315a2a5c2612b2af"
   integrity sha512-itJW8lvSA0TXEphiRoawsCksnlf8SyvmFzIhltqAHluXd88pkCd+cXJVHTDwdCr0IzwptSm035IHQktUu1QUMg==
+=======
+sortablejs@^1.15.6:
+  version "1.15.6"
+  resolved "https://registry.npmjs.org/sortablejs/-/sortablejs-1.15.6.tgz"
+  integrity sha512-aNfiuwMEpfBM/CN6LY0ibyhxPfPbyFeBTYJKCvzkJ2GkUpazIt3H+QIPAMHwqQ7tMKaHz1Qj+rJJCqljnf4p3A==
+
+source-map-js@^1.0.2, source-map-js@^1.2.1, "source-map-js@>=0.6.2 <2.0.0":
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz"
+  integrity sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==
+>>>>>>> 7ee84e4416c (fix: restored challenges)
 
 source-map-loader@4.0.2:
   version "4.0.2"

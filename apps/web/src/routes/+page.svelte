@@ -1,14 +1,14 @@
 <script lang="ts">
 	import { _ } from 'svelte-i18n';
-	import Button from '../components/Button.svelte';
-	import Hidden from '../components/Hidden.svelte';
-	import Translate from '../components/Translate.svelte';
-	import Stack from '../components/Stack.svelte';
-	import Hero from '../components/Hero/Hero.svelte';
-	import Page from '../components/Page.svelte';
-	import Footer from '../components/Footer.svelte';
-	import Mascot from '../components/NewMascot.svelte';
-	import Heading from '../components/Heading.svelte';
+	import Button from 'components/Button.svelte';
+	import Hidden from 'components/Hidden.svelte';
+	import Translate from 'components/Translate.svelte';
+	import Stack from 'components/Stack.svelte';
+	import Hero from 'components/Hero/Hero.svelte';
+	import Page from 'components/Page.svelte';
+	import Footer from 'components/Footer.svelte';
+	import Mascot from 'components/NewMascot.svelte';
+	import Heading from 'components/Heading.svelte';
 </script>
 
 <svelte:head>
