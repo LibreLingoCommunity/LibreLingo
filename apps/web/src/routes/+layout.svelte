@@ -1,13 +1,7 @@
 <script lang="ts" context="module">
-  import { waitLocale } from "svelte-i18n"
   import isBrowser from "../utils/isBrowser"
 
-  export async function preload() {
-    // See documentation: https://github.com/kaisermann/svelte-i18n/blob/main/docs/Methods.md#waitlocale
-    return waitLocale()
-  }
-
-  /* Adding var css styels to JSON format */
+  /* Adding var css styles to JSON format */
 
   const defaultTheme = {
     // Colors
