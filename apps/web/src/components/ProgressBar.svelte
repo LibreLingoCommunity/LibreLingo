@@ -1,20 +1,20 @@
 <script lang="ts">
-  import Progress from "lluis/Progress.svelte"
-  import { tweened } from "svelte/motion"
+	import Progress from './Progress.svelte';
+	import { tweened } from 'svelte/motion';
 
-  export let value
+	export let value;
 
-  const progress = tweened(0)
-  $: progress.set(value)
+	const progress = tweened(0);
+	$: progress.set(value);
 </script>
 
 <div>
-  <Progress value={$progress} />
+	<Progress value={$progress} />
 </div>
 
 <style type="text/scss">
-  @import "../variables";
-  div {
-    padding-bottom: $size-6;
-  }
+	@import '../assets/variables.scss';
+	div {
+		padding-bottom: $size-6;
+	}
 </style>

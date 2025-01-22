@@ -4,7 +4,7 @@ node_modules
 /static/images
 /static/sound
 /static/voice
-static/course/images
+static/course/**
 
 /src/courses/*
 
