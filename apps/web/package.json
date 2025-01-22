@@ -35,15 +35,8 @@
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
-		"@types/howler": "^2.2.12",
-		"@types/isomorphic-fetch": "^0.0.39",
 		"@types/js-cookie": "^3.0.6",
-		"@types/lodash.shuffle": "^4.2.9",
-		"@types/lodash.uniq": "^4.5.9",
-		"@types/lodash.uniqby": "^4.7.9",
 		"@types/node": "^22.10.7",
-		"@types/showdown": "^2.0.6",
-		"@types/sortablejs": "^1.15.8",
 		"eslint": "^9.7.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.36.0",
@@ -65,6 +58,7 @@
 		"bulma-tooltip": "^3.0.2",
 		"bulmaswatch": "^0.8.1",
 		"isomorphic-fetch": "^3.0.0",
+		"js-cookie": "^3.0.5",
 		"showdown": "^2.1.0",
 		"svelte-i18n": "^4.0.1"
 	}
