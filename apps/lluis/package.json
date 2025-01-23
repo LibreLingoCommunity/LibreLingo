@@ -1,7 +1,7 @@
 {
 	"name": "lluis",
-	"private": true,
-	"version": "1.8.1",
+	"private": false,
+	"version": "1.8.3",
 	"scripts": {
 		"build": "exit 0",
 		"types": "exit 0"
