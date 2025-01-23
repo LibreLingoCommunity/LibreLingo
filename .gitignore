@@ -112,3 +112,7 @@ vite.config.ts.timestamp-*
 # Custom
 
 cert_custom.pem
+
+
+.nx/cache
+.nx/workspace-data
