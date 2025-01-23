@@ -653,7 +653,7 @@
 - Ekaterina Mozheiko
 - Gabe D
 - Gabor Szabo
-- Gregorio Giorgino (AlmaViva DigitalTech)
+- Gregorio Giorgino
 - HelioStrike
 - Himank Pathak
 - iasonasma @iasonasma
