@@ -1,7 +1,7 @@
 {
 	"name": "@librelingo/answer-corrector",
 	"private": false,
-	"version": "1.2.2",
+	"version": "1.0.1",
 	"main": "index.js",
 	"license": "AGPL-3.0-or-later",
 	"scripts": {
