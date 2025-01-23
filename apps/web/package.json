@@ -1,7 +1,7 @@
 {
 	"name": "@librelingo/web",
 	"description": "A web app for learning with LibreLingo courses",
-	"version": "1.1.1",
+	"version": "1.31.2",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
@@ -61,7 +61,7 @@
 	},
 	"dependencies": {
 		"bulma": "^0.9.4",
-		"@librelingo/answer-corrector": "^1.2.0",
+		"@librelingo/answer-corrector": "^1.2.1",
 		"bulma-pageloader": "^0.3.0",
 		"bulma-tooltip": "^3.0.2",
 		"bulmaswatch": "^0.8.1",
