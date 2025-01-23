@@ -10,7 +10,6 @@
   <a href="https://librelingo.app/docs/"><img src="https://img.shields.io/badge/Documentation-librelingo.app/docs-darkcyan" /></a>
   <a href="https://github.com/orgs/LibreLingo/projects/1/views/1"><img src="https://img.shields.io/badge/Roadmap-github.com-darkcyan" /></a>
   
-  
 </p>
 <hr/>
 
