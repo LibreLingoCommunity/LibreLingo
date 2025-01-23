@@ -9,6 +9,7 @@
   <a href="https://librelingo.app/dev/"><img src="https://img.shields.io/badge/List_of_courses-librelingo.app/dev-darkcyan" /></a>
   <a href="https://librelingocommunity.github.io/LibreLingo/"><img src="https://img.shields.io/badge/Documentation-librelingocommunity.github.io/LibreLingo-darkcyan" /></a>
   <a href="https://github.com/orgs/LibreLingo/projects/1/views/1"><img src="https://img.shields.io/badge/Roadmap-github.com-darkcyan" /></a>
+  
 </p>
 <hr/>
 
