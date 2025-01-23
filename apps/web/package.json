@@ -1,7 +1,7 @@
 {
 	"name": "@librelingo/web",
 	"description": "A web app for learning with LibreLingo courses",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
@@ -22,7 +22,7 @@
 		"fetchPhotos": "./scripts/fetchPhotos.sh",
 		"fetchAudios": "./scripts/fetchAudios.sh",
 		"percypress": "bash ./percypress.sh",
-		"test": "yarn dev & yarn percypress",
+		"test": "npm run dev & yarn percypress",
 		"test:ci": "npx serve __sapper__/export -l 3000 & yarn percypress"
 	},
 	"publishConfig": {
