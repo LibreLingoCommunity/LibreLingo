@@ -14,7 +14,11 @@
 		"exportAllCourses": "./scripts/exportAllYamlCourses.sh",
 		"exportCourse": "./scripts/exportYamlCourse.sh",
 		"docs": "pdm run mkdocs serve",
-		"docs:build": "pdm run mkdocs build --site-dir ./apps/web/__sapper__/export/docs/"
+		"docs:build": "pdm run mkdocs build --site-dir ./apps/web/__sapper__/export/docs/",
+		"release-all": "npx nx release",
+		"release-web": "npx nx release --projects=@librelingo/web",
+		"release-lluis": "npx nx release --projects=lluis",
+		"release-answer-corrector": "npx nx release --projects=@librelingo/answer-corrector"
 	},
 	"workspaces": {
 		"packages": [
