@@ -974,6 +974,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 "@colors/colors@1.6.0", "@colors/colors@^1.6.0":
 "@colors/colors@1.6.0", "@colors/colors@^1.6.0":
   version "1.6.0"
@@ -981,6 +982,16 @@
   integrity sha512-Ir+AOibqzrIsL6ajt3Rz3LskB7OiMVHqltZmspbW/TJuTVuyOMirVqAkjfY6JISiLHgyNqicAC8AyHHGzNd/dA==
 =======
 =======
+=======
+"@commitlint/config-conventional@^19.6.0":
+  version "19.6.0"
+  resolved "https://registry.npmjs.org/@commitlint/config-conventional/-/config-conventional-19.6.0.tgz"
+  integrity sha512-DJT40iMnTYtBtUfw9ApbsLZFke1zKh6llITVJ+x9mtpHD08gsNXaIRqHTmwTZL3dNX5+WoyK7pCN/5zswvkBCQ==
+  dependencies:
+    "@commitlint/types" "^19.5.0"
+    conventional-changelog-conventionalcommits "^7.0.2"
+
+>>>>>>> ab0cf4d31e6 (docs: testing on docs)
 "@commitlint/config-validator@^19.5.0":
   version "19.5.0"
   resolved "https://registry.npmjs.org/@commitlint/config-validator/-/config-validator-19.5.0.tgz"
@@ -5646,6 +5657,13 @@ conventional-changelog-angular@^5.0.0:
   dependencies:
     compare-func "^2.0.0"
     q "^1.5.1"
+
+conventional-changelog-conventionalcommits@^7.0.2:
+  version "7.0.2"
+  resolved "https://registry.npmjs.org/conventional-changelog-conventionalcommits/-/conventional-changelog-conventionalcommits-7.0.2.tgz"
+  integrity sha512-NKXYmMR/Hr1DevQegFB4MwfM5Vv0m4UIxKZTTYuD98lpTknaZlSRrDOG4X7wIXpGkfsYxZTghUN+Qq+T0YQI7w==
+  dependencies:
+    compare-func "^2.0.0"
 
 conventional-changelog-writer@^5.0.0:
   version "5.0.1"
