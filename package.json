@@ -2,14 +2,13 @@
 	"name": "@librelingo/monorepo",
 	"private": true,
 	"scripts": {
-		"cypress": "yarn web cypress",
-		"export:production": "yarn web installAllExternalCourses && yarn exportAllCourses && yarn web export && yarn docs:build && mv ./apps/web/__sapper__/ . && pdm run python apps/tools/librelingo_tools/generate.py --courses ./config/courses.json --outdir ./__sapper__/export/course-tools-legacy",
-		"export": "yarn web export && mv ./apps/web/__sapper__/ .",
+		"cypress": "yarn web cypress || npm -w @librelingo/web run cy:run",
+		"export:production": "(yarn run installAllExternalCourses || npm run installAllExternalCourses) && (yarn run exportAllCourses || npm run exportAllCourses) && (yarn web || npm -w apps/web run export) && (yarn run docs:build || npm run docs:build) && pdm run python apps/tools/librelingo_tools/generate.py --courses ./config/courses.json --outdir ./export/course-tools-legacy",
+		"export": "(yarn web export || npm -w apps/web export)",
 		"commit": "git-cz",
 		"test": "jest",
-		"test:ci": "yarn web test:ci",
-		"web": "yarn workspace @librelingo/web",
-		"types": "yarn workspaces run types",
+		"test:ci": "(yarn web test:ci || npm -w apps/web test:ci)",
+		"types": "(npm workspaces run types || yarn  workspaces run types)",
 		"format": "eslint . --fix --max-warnings=0 && prettier --write apps/**/*.svelte docs --ignore-path ./.prettierignore_for_svelte",
 		"lint": "eslint . --max-warnings=0 && prettier --check apps/**/*.svelte docs --ignore-path ./.prettierignore_for_svelte",
 		"exportAllCourses": "./scripts/exportAllYamlCourses.sh",
@@ -59,7 +58,10 @@
 		"svelte": "3.59.2",
 		"svelte-check": "3.7.1",
 		"svelte-preprocess": "4.10.7",
-		"typescript": "4.9.5"
+		"typescript": "4.9.5",
+		"nx": "20.3.2",
+		"@nx/eslint": "20.3.2",
+		"@nx/vite": "20.3.2"
 	},
 	"nyc": {
 		"report-dir": "cypress-coverage",
