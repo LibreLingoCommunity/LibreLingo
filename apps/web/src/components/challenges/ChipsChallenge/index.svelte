@@ -188,7 +188,6 @@
 </form>
 
 <style type="text/scss">
-	@import '../../../assets/variables.scss';
 
 	.chip {
 		user-select: none;

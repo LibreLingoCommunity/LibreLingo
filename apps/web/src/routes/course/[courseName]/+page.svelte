@@ -67,7 +67,6 @@
 </Footer>
 
 <style type="text/scss">
-	@import './../../../assets/variables.scss';
 	.container {
 		padding-right: 20px;
 		padding-left: 20px;
