@@ -13,13 +13,14 @@ To get a better understanding, we recommend you read the [course basics](README.
 
 **Table of Contents:**
 
-- [Setup](#setup)
-  - [Pulling code and branching](#pulling-and-branching)
-  - [Pushing code and creating Pull Request](#pushing-and-pr)
-  - [Following up with responses](#following-up-pr)
-  - [Updating audio](#updating-audio)
-- [Translating based on an existing course](#translating)
-- [Editing existing courses](#editing-existing)
+- [Editing LibreLingo courses](#editing-librelingo-courses)
+  - [Setup](#setup)
+    - [Pulling code and branching](#pulling-code-and-branching)
+    - [Pushing code and creating Pull Request](#pushing-code-and-creating-pull-request)
+    - [Following up with PR responses](#following-up-with-pr-responses)
+    - [Updating audio](#updating-audio)
+  - [Translating based on an existing course](#translating-based-on-an-existing-course)
+  - [Editing existing courses](#editing-existing-courses)
 
 ## Setup
 
@@ -150,6 +151,13 @@ Right now, the only TTS provider supported by LibreLingo is Amazon Polly. You'll
 ```sh
 ./scripts/updateAudioForYamlCourse.sh <name of edited course, e.g. spanish-from-english>
 ```
+
+The aws command that will be generated will be like:
+```sh
+aws polly synthesize-speech --output-format mp3 --voice-id Lucia --engine standard --text Nosotras vamos al parque ../librelingo-web/static/voice/0b9ae829fcebaa67fb0b9a4f048296f2cf7156f468764f8f5cafde9e706125d0.mp3
+```
+
+Be careful! If you do not have any output from the command, just look in the folder where the audio should be generated, if there is a json file with the name course, just delete it.
 
 If you'd like to simply _see_ the audio changes that need to be made without actually performing them, add the `--dry-run` flag. In rare circumstances, you may want to completely regenerate the audio for a course, overwriting everything that's already there. This can be done with the `--destructive` flag -- but use it with care!
 
