@@ -11,7 +11,6 @@
 </figure>
 
 <style type="text/scss">
-	@import './../../assets/variables.scss';
 
 	.image-set {
 		position: relative;

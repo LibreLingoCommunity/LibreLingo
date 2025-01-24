@@ -29,7 +29,6 @@
 </li>
 
 <style type="text/scss">
-	@import '../../../assets/variables.scss';
 	li {
 		border: 3px solid transparent;
 		flex-direction: column;
