@@ -26,7 +26,7 @@ export const playAudio = (type, filename) => {
 	disableHowlerForCypress();
 
 	new Howl({
-		src: [`${type}/${filename}.mp3`]
+		src: [`/${type}/${filename}.mp3`]
 	}).play();
 };
 
