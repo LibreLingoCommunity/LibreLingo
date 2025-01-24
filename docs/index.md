@@ -39,6 +39,8 @@ graph LR
 In order to install the dependencies of this project, you will need to have some basic
 development tools installed.
 
+#### Docker
+
 #### Ubuntu
 
 If you are on Ubuntu, run this command in order to make sure you have all the basic dependencies:
