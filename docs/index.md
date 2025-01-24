@@ -62,8 +62,6 @@ docker compose exec -it app pdm install
 
 This is due for the paths mounted in the docker-compose.yaml file
 
-#### Docker
-
 #### Ubuntu
 
 If you are on Ubuntu, and you wish to install python environment and all the necessary deps on your machine, run this command in order to make sure you have all the basic dependencies:
