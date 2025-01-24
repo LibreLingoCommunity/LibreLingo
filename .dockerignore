@@ -1,6 +1,1 @@
 ./src/.pdm-build
-node_modules
-.github
-.nx
-.semaphore
-.svelte-kit
