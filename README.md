@@ -20,6 +20,15 @@
 [![call](https://img.shields.io/badge/%E2%98%8E%EF%B8%8F-Schedule_a_call-darkcyan)](https://app.harmonizely.com/harmonizely-uoicqk)
 [![Mastodon](https://img.shields.io/mastodon/follow/000318010?domain=https%3A%2F%2Ffosstodon.org%2F&style=social)](https://fosstodon.org/@librelingo)
 
+# Disclaimer
+All the credit for this project goes to Dániel Kántor for its creation and design.  
+The owner of this repository doesn't want any kind of merits, as them goes only to the creator and project's contributors.
+
+This project is simply a fork born from [his original idea](https://github.com/kantord/LibreLingo), created to continue to allow members to contribute, since communication with the original owner was difficult and often without replies and therefore hindered. 
+
+We deeply appreciate his work and vision, and this fork aims to ensure the project continues to grow and evolve with the community's involvement.
+
+If there are any broken links in the docs or in the repo, please open an issue so we could work to fix it!
 
 ## Developing
 
@@ -47,7 +56,7 @@ You can preview the production build with `npm run preview`.
 
 LibreLingo's mission is to create a modern language-learning platform that is owned by the community of its users. All software is licensed under AGPLv3, which guarantees the freedom to run, study, share, and modify the software. Course authors are encouraged to release their courses with free licenses.
 
-If you want to know why I built LibreLingo, [I recommend reading my article on dev.to](https://dev.to/kantord/why-i-built-librelingo-280o).
+Here there is an article of [why the original author has built LibreLingo](https://dev.to/kantord/why-i-built-librelingo-280o).
 
 <details open="open">
   <summary>Table of Contents</summary>
@@ -156,7 +165,7 @@ Want to contribute to LibreLingo? Or create your own fork? Perhaps you want to u
 
 To get started with running the development environment on your computer and understanding the software architecture, [head to our development documentation](https://librelingo.app/docs/).
 
-## Milestones
+## Milestones reached
 
 - [x] 🏁 Demo course content in Spanish for English speakers
 - [x] 🏁 Some basic building blocks of course content implemented
@@ -169,23 +178,13 @@ To get started with running the development environment on your computer and und
 - [x] 🏁 All of the basic building blocks of courses are implemented
 - [x] 🏁 Spaced repetition implemented
 
-
 ## Roadmap
-- [ ] Officially releasing Basque course
-- [ ] Make it possible to contribute to courses through GitHub
-- [ ] Improving course creation UX over Github
-
-
-### Projects
-* [Better audio support](https://github.com/kantord/LibreLingo/projects/14)
-* [Support non-latin scripts](https://github.com/kantord/LibreLingo/projects/15)
-
-
+All the in-progress / future work is updated in the "[Projects](https://github.com/users/giorginogreg/projects/1)" Github section.
 
 ## Contribution
 ### Become a contributor
 #### are you a developer?
-You can help LibreLingo by testing it and submitting feature requests or bug reports: [here](https://github.com/kantord/LibreLingo/issues/new). If you want to get in touch, you can use my contact details on [my GitHub profile](https://github.com/kantord).
+You can help LibreLingo by testing it and submitting feature requests or bug reports: [here](https://github.com/giorginogreg/LibreLingo/issues/new).
 Go through the dev docs [here](https://librelingo.app/docs/).
 
 Still got questions? Our Matrix/FreeNode IRC channel is `#LibreLingo`, join the dev community there and feel free to ask anything.
@@ -363,10 +362,9 @@ LibreLingo is licensed under the AGPL-3.0 license. In addition, course content a
 ## See also
 * [omnilingo](https://github.com/omnilingo/omnilingo), listening-based language learning
 
-
 ## Donate
 Help us to keep going
 
-
-## Audio generation
+#### Others 
+- Audio generation (wip)
 `python3 /LibreLingo/app/librelingo_audios/cli.py /LibreLingo/courses/test-1/ /LibreLingo/librelingo-web/static/voice spanish-from-english`
