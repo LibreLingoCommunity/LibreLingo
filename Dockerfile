@@ -12,6 +12,9 @@ WORKDIR /LibreLingo/app
 ENV PIP_TRUSTED_HOST="pypi.org files.pythonhosted.org" \
     PATH=$PATH:/root/.local/bin
 
+# disable update check
+ENV PDM_CHECK_UPDATE=false
+
 # Update CA certificates
 RUN update-ca-certificates && pip install --upgrade pip certifi && \
     cat /usr/local/share/ca-certificates/cert_custom.pem >> $(python3 -m certifi) && \
@@ -21,7 +24,7 @@ RUN update-ca-certificates && pip install --upgrade pip certifi && \
     pip install pipx pip-system-certs && \
     pipx install poetry && \
     poetry install --no-root --no-interaction --no-ansi && \
-
+    pip install -U pdm && pdm install && \
     # Install Python modules for LibreLingo
     # cd /LibreLingo/app/librelingo_yaml_loader && poetry install && \
     # cd /LibreLingo/app/librelingo_json_export && poetry install && \
