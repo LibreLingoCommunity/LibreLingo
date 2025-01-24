@@ -191,6 +191,12 @@ You can export a single course using the following command (change the name of t
 yarn run exportCourse spanish-from-english
 ```
 
+###### Docker
+
+```bash
+docker compose exec -it app python3 /LibreLingo/app/librelingo_json_export/cli.py /LibreLingo/courses/<course_name> /LibreLingo/librelingo-web/src/courses/<course_name>
+```
+
 ## Setting up Semaphore CI in a clone
 
 In order for Semaphore CI to correctly operate, you will need to set up certain secrets.
