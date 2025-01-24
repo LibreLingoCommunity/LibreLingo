@@ -5,6 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
+<<<<<<< HEAD
 content_hash = "sha256:60a4dc8750e4585eab569f3f28ad87709d179bf30180bd8db2aeecdf17b92754"
 
 [[metadata.targets]]
@@ -21,6 +22,12 @@ files = [
     {file = "appnope-0.1.4-py2.py3-none-any.whl", hash = "sha256:502575ee11cd7a28c0205f379b525beefebab9d161b7c964670864014ed7213c"},
     {file = "appnope-0.1.4.tar.gz", hash = "sha256:1de3860566df9caf38f01f86f65e0e13e379af54f9e4bee1e66b48f2efffd1ee"},
 ]
+=======
+content_hash = "sha256:1738d355ace1c71a650a627a72b7335fdc47d3d55611c085d53b96703686dc5f"
+
+[[metadata.targets]]
+requires_python = ">=3.8,<3.11"
+>>>>>>> 855dc0ccd87 (refactor(python): moved python files from root into src folder)
 
 [[package]]
 name = "astroid"
@@ -1856,6 +1863,7 @@ files = [
 ]
 
 [[package]]
+<<<<<<< HEAD
 name = "traitlets"
 version = "5.14.3"
 requires_python = ">=3.8"
@@ -1867,6 +1875,8 @@ files = [
 ]
 
 [[package]]
+=======
+>>>>>>> 855dc0ccd87 (refactor(python): moved python files from root into src folder)
 name = "types-bleach"
 version = "6.1.0.20240331"
 requires_python = ">=3.8"
