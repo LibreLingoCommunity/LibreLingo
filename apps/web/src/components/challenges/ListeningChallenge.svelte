@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import hotkeys from 'hotkeys-js';
-	import { levenshteinDistance as levenshtein } from 'js-levenshtein';
+	import leven from 'leven';
 	import ChallengePanel from './ChallengePanel.svelte';
 	import Icon from 'components/Icon.svelte';
 	import InputFieldWithVirtualKeyboard from './InputFieldWithVirtualKeyboard/index.svelte';
@@ -31,7 +31,7 @@
 		correct = false;
 
 		if (
-			levenshtein(
+			leven(
 				answer
 					.toLowerCase()
 					.replace(/^\s+|\s+$/g, '')
