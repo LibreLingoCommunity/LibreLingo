@@ -181,6 +181,12 @@ To get started with running the development environment on your computer and und
 ## Roadmap
 All the in-progress / future work is updated in the "[Projects](https://github.com/users/giorginogreg/projects/1)" Github section.
 
+## Generating docs
+### Docker
+For building all the docs that you see in https://librelingo.app/docs you can run the command `docker compose exec -it app pdm run mkdocs build`.
+This command will read the src/mkdocs.yml file, will read the docs_dir path (in which all the .MD resides), and will generate the build outcome into the site_dir parameter. In this folder all the .html will be released.
+For the sake of comfort, this path is mapped into the docker-compose.yml file, so files will be released into the mapped folders in your local system. 
+
 ## Contribution
 ### Become a contributor
 #### are you a developer?
