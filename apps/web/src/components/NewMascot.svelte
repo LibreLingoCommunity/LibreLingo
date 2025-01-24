@@ -3,7 +3,7 @@
 	export let glow = false;
 
 	let imageURL =
-		shadow === true ? 'images/mascot-jetpack.svg' : 'images/mascot-jetpack-noshadow.svg';
+		shadow === true ? '/images/mascot-jetpack.svg' : '/images/mascot-jetpack-noshadow.svg';
 </script>
 
 <img
