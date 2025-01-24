@@ -16,7 +16,7 @@
 		data-test-correct={correct}
 	>
 		<div slot="media">
-			<img src={`images/${picture}`} alt="" data-test={`card-img-${number}`} />
+			<img src={`/images/${picture}`} alt="" data-test={`card-img-${number}`} />
 		</div>
 		<div slot="footer">
 			<Stack justify="center">
