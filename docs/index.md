@@ -37,13 +37,27 @@ graph LR
 ### Prerequisites
 
 In order to install the dependencies of this project, you will need to have some basic
-development tools installed.
+development tools installed.  
+
+Otherwise, if you have Docker installed in your machine, you could simplify the process by just downloading the latest docker image or building your own thanks to the Dockerfile provided
 
 #### Docker
 
+From the root folder, just run
+```bash
+docker compose up -d
+```
+
+After the image has been downloaded / built, you should run the following command for letting the deps installs correctly:
+```bash
+docker compose exec -it app pdm install
+```
+
+This is due for the paths mounted in the docker-compose.yaml file
+
 #### Ubuntu
 
-If you are on Ubuntu, run this command in order to make sure you have all the basic dependencies:
+If you are on Ubuntu, and you wish to install python environment and all the necessary deps on your machine, run this command in order to make sure you have all the basic dependencies:
 
 ```bash
 apt-get install curl git python3-venv libpython3-dev wget unzip gcc libyaml-dev npm
