@@ -1,6 +1,9 @@
 site_name: LibreLingo Documentation
-repo_url: https://github.com/kantord/LibreLingo
+repo_url: https://github.com/giorginogreg/LibreLingo
 use_directory_urls: false
+docs_dir: /LibreLingo/docs
+site_dir: /LibreLingo/build/docs
+
 theme:
   name: material
   palette:
@@ -8,4 +11,4 @@ theme:
 
 plugins:
     - search
-    - mermaid2
+#   - mermaid2
