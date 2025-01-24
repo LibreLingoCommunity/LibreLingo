@@ -3,7 +3,7 @@ node_modules
 # Static assets
 /static/images
 /static/sound
-/static/voice
+/static/voice/**
 static/course/**
 
 /src/courses/*
