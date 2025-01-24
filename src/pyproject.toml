@@ -26,6 +26,7 @@ dev = [
     "snapshottest>=0.6.0",
     "mkdocs-mermaid2-plugin>=1.1.1",
     "tqdm>=4.66.4",
+    "aws"
 ]
 
 [tool.pdm.scripts]
@@ -57,6 +58,7 @@ dependencies = [
     "bleach>=6.1.0",
     "bleach-allowlist>=1.0.3",
     "jsonschema>=4.22.0",
+    "aws"
 ]
 
 
