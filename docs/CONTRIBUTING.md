@@ -1,17 +1,12 @@
 # Contributing
 
-This project has 2 main components
-
-- Frontend, implemented using Svelte and TypeScript
-- A set of Python packages that provide tooling for course creation
-- ~Course editor, implemented using Django~ We don't have a Django based course editor anymore
-
-The site is statically built and hosted on GitHub pages, therefore there's no real "backend" or API.
-
 ## Getting started
 
+It is strongly recommended that you use conventional commits standard.  
+If you don't have it, it is suggested that you install [commitizen](https://commitizen-tools.github.io/commitizen/).
+
 Please check out our development documentation for instructions on
-[setting up the development environment.](https://librelingo.app/docs/#setting-up-the-development-environment)
+[setting up the development environment.](index.html#setting-up-the-development-environment)
 
 ### Pick an issue
 

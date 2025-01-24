@@ -1,12 +1,13 @@
 # Development
 
-## Why does this project exist?
-
-This project exists to create a beginner-friendly, community-oriented,
-free software licensed language learning application. If you want to learn more
-about LibreLingo's background, [I recommend reading my article](https://dev.to/kantord/why-i-built-librelingo-280o).
-
 ## Project structure
+
+This project has 2 main components
+
+- Frontend, implemented using Svelte and TypeScript.
+- A set of Python packages that provide tooling for course creation and management.
+
+The site is statically built and hosted on GitHub pages, therefore there's no real "backend" or API.
 
 ### Clickable flow chart
 
@@ -31,6 +32,12 @@ graph LR
  click LOAD "https://pypi.org/project/librelingo-yaml-loader/"
  click YAML "https://github.com/LibreLingo/LibreLingo/tree/main/courses"
 ```
+
+## Why does this project exist?
+
+This project exists to create a beginner-friendly, community-oriented,
+free software licensed language learning application. If you want to learn more
+about LibreLingo's background, [I recommend reading this article](https://dev.to/kantord/why-i-built-librelingo-280o).
 
 ## Setting up the development environment
 
@@ -69,28 +76,13 @@ On Ubuntu, it is also recommended to use Python 3.x as your default Python versi
 apt-get install python-is-python3
 ```
 
-### Obtaining the source code
-
-Clone the repository:
-
-```sh
-git clone git@github.com:LibreLingo/LibreLingo.git --single-branch
-```
-
-Using `--single-branch` is recommened in order to avoid having to clone the `gh-pages` branch,
-which you will probably never use locally.
-
-Move into the repo directory:
-
-```sh
-cd LibreLingo
-```
-
 ### Web app
+
+Source code can be found under /apps/web
 
 #### Having the correct version of Node
 
-You will need [Node](https://nodejs.org/en/). Note that this project is not yet compatible with Node v16.
+You will need [Node](https://nodejs.org/en/).
 
 In order to make sure you have the correct `node` version, it's recommended to use
 `nvm`. To install `nvm`, please [consult nvm's official documentation](https://github.com/nvm-sh/nvm#installing-and-updating), but if you already have the correct version, you might not strictly need it.
@@ -98,7 +90,7 @@ In order to make sure you have the correct `node` version, it's recommended to u
 First, install the correct `node` version with this command:
 
 ```bash
-nvm install 16
+nvm install 20
 ```
 
 Then, to choose this version of `node` in your terminal, use
@@ -109,8 +101,17 @@ nvm use 16
 
 #### Install dependencies:
 
+For this project it's recommended to use npm.  
+Although, you could try to use yarn and open issue if there are some problems, so it could be tried to letting the two package managers cohesists. 
+
 Yarn is a package manager for JavaScript that helps manage project dependencies, ensuring consistent and efficient installations. For more information about Yarn, [please refer to the official documentation](https://yarnpkg.com/). [The steps required to install yarn itself are documented here](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable).
 
+Once you're in the root folder of the web app, just run
+
+```sh
+npm install
+```
+or 
 ```sh
 yarn install
 ```
@@ -120,15 +121,22 @@ yarn install
 Start the development server:
 
 ```sh
-yarn web dev
+npm run dev
 ```
 
-Now you should be able to see your app on <http://localhost:3000/>
+or
 
-### Setting up the development environment for Python
+```sh
+yarn run web dev
+```
 
-If you want to test new features in the YAML format, or some changes in how they are being used
+Now you should be able to see your app on <http://localhost:5173/>
+
+### Python packages
+
+If you want to test export new / updated courses, new features in the YAML format, or some changes in how they are being used
 in the frontend, you need to be able to export YAML courses locally.
+If you will use docker, everything will be included in the image, otherwise you could choose to install locally the tools needed.
 
 #### Install `pdm`
 
@@ -147,6 +155,7 @@ Run
 ```sh
 pdm install
 ```
+This command ensures your local dependencies match the project's **pyproject.toml** and **pdm.lock** files.
 
 ##### Handling Outdated Local Dependencies
 
@@ -157,24 +166,14 @@ When you update your local repository by pulling remote changes, your local depe
 Update your local dependencies:
 
 ```bash
-yarn install
+npm install
 ```
 
 This command ensures your local dependencies match the project's **package.json** file. For more information, [refer to the Yarn documentation](https://yarnpkg.com/getting-started/usage).
 
-###### Updating Python Dependencies with PDM
-
-Update your local dependencies:
-
-```bash
-pdm install
-```
-
-This command ensures your local dependencies match the project's **pyproject.toml** and **pdm.lock** files.
-
 ### Locally test LibreLingo with real courses
 
-In order to test LiberLingo with real courses just like in the deployed production version, you
+In order to test LibreLingo with real courses just like in the deployed production version, you
 need to install courses locally and export them from YAML to JSON.
 
 #### Install courses
