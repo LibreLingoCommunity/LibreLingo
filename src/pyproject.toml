@@ -58,7 +58,7 @@ dependencies = [
     "bleach>=6.1.0",
     "bleach-allowlist>=1.0.3",
     "jsonschema>=4.22.0",
-    "aws"
+    "awscli>=1.37.5",
 ]
 
 
