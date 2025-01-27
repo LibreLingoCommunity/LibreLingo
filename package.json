@@ -2,6 +2,7 @@
 	"name": "@librelingo/monorepo",
 	"private": true,
 	"scripts": {
+		"web-serve": "npm run -w @librelingo/web dev",
 		"cypress": "yarn web cypress || npm -w @librelingo/web run cy:run",
 		"export:production": "(yarn run installAllExternalCourses || npm run installAllExternalCourses) && (yarn run exportAllCourses || npm run exportAllCourses) && (yarn web || npm -w apps/web run export) && (yarn run docs:build || npm run docs:build) && pdm run python apps/tools/librelingo_tools/generate.py --courses ./config/courses.json --outdir ./export/course-tools-legacy",
 		"export": "(yarn web export || npm -w apps/web export)",
@@ -13,8 +14,8 @@
 		"lint": "eslint . --max-warnings=0 && prettier --check apps/**/*.svelte docs --ignore-path ./.prettierignore_for_svelte",
 		"exportAllCourses": "./scripts/exportAllYamlCourses.sh",
 		"exportCourse": "./scripts/exportYamlCourse.sh",
-		"docs": "pdm run mkdocs serve",
-		"docs:build": "pdm run mkdocs build --site-dir ./apps/web/__sapper__/export/docs/",
+		"docs": "pdm run mkdocs serve -a 0.0.0.0:8000",
+		"docs:build": "pdm run mkdocs build",
 		"release-all": "npx nx release",
 		"release-web": "npx nx release --projects=@librelingo/web",
 		"release-lluis": "npx nx release --projects=lluis",
