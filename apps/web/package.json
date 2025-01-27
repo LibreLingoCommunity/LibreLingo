@@ -1,7 +1,7 @@
 {
 	"name": "@librelingo/web",
 	"description": "A web app for learning with LibreLingo courses",
-	"version": "1.32.0",
+	"version": "1.33.0",
 	"type": "module",
 	"scripts": {
 		"dev": "vite dev",
