@@ -4,6 +4,7 @@ services:
     volumes:
       - ./apps/web:/LibreLingo/librelingo-web
       - ./apps/docs/build:/LibreLingo/build/docs
+      - ./scripts:/LibreLingo/scripts
       - ./src:/LibreLingo/app # Python tools
       - ./docs:/LibreLingo/docs
       - ./courses:/LibreLingo/courses
