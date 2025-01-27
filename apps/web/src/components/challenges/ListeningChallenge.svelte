@@ -4,7 +4,7 @@
 	import leven from 'leven';
 	import ChallengePanel from './ChallengePanel.svelte';
 	import Icon from 'components/Icon.svelte';
-	import InputFieldWithVirtualKeyboard from './InputFieldWithVirtualKeyboard/index.svelte';
+	import InputFieldWithVirtualKeyboard from './InputFieldWithVirtualKeyboard/InputFieldWithVirtualKeyboard.svelte';
 	import { playAudio } from '$lib/sounds';
 	import Button from 'components/DeprecatedButton.svelte';
 	import Column from 'components/Column.svelte';
