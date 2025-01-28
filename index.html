@@ -1,0 +1,857 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="CODE_OF_CONDUCT.html" rel="next"/>
+<link href="assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.0, mkdocs-material-9.5.21" name="generator"/>
+<title>LibreLingo Documentation</title>
+<link href="assets/stylesheets/main.66ac8b77.min.css" rel="stylesheet"/>
+<link href="assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#development">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--shadow" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="LibreLingo Documentation" class="md-header__button md-logo" data-md-component="logo" href="index.html" title="LibreLingo Documentation">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            LibreLingo Documentation
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Development
+            
+          </span>
+</div>
+</div>
+</div>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/giorginogreg/LibreLingo" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="LibreLingo Documentation" class="md-nav__button md-logo" data-md-component="logo" href="index.html" title="LibreLingo Documentation">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+    LibreLingo Documentation
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/giorginogreg/LibreLingo" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Development
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="index.html">
+<span class="md-ellipsis">
+    Development
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project-structure">
+<span class="md-ellipsis">
+      Project structure
+    </span>
+</a>
+<nav aria-label="Project structure" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#clickable-flow-chart">
+<span class="md-ellipsis">
+      Clickable flow chart
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-does-this-project-exist">
+<span class="md-ellipsis">
+      Why does this project exist?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#setting-up-the-development-environment">
+<span class="md-ellipsis">
+      Setting up the development environment
+    </span>
+</a>
+<nav aria-label="Setting up the development environment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prerequisites">
+<span class="md-ellipsis">
+      Prerequisites
+    </span>
+</a>
+<nav aria-label="Prerequisites" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#docker">
+<span class="md-ellipsis">
+      Docker
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ubuntu">
+<span class="md-ellipsis">
+      Ubuntu
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#web-app">
+<span class="md-ellipsis">
+      Web app
+    </span>
+</a>
+<nav aria-label="Web app" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#having-the-correct-version-of-node">
+<span class="md-ellipsis">
+      Having the correct version of Node
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-dependencies">
+<span class="md-ellipsis">
+      Install dependencies:
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#starting-the-development-server">
+<span class="md-ellipsis">
+      Starting the development server
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#python-packages">
+<span class="md-ellipsis">
+      Python packages
+    </span>
+</a>
+<nav aria-label="Python packages" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-pdm">
+<span class="md-ellipsis">
+      Install pdm
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-dependencies-using-pdm">
+<span class="md-ellipsis">
+      Install dependencies using PDM
+    </span>
+</a>
+<nav aria-label="Install dependencies using PDM" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#handling-outdated-local-dependencies">
+<span class="md-ellipsis">
+      Handling Outdated Local Dependencies
+    </span>
+</a>
+<nav aria-label="Handling Outdated Local Dependencies" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#updating-javascript-dependencies-with-yarn">
+<span class="md-ellipsis">
+      Updating JavaScript Dependencies with Yarn
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#locally-test-librelingo-with-real-courses">
+<span class="md-ellipsis">
+      Locally test LibreLingo with real courses
+    </span>
+</a>
+<nav aria-label="Locally test LibreLingo with real courses" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-courses">
+<span class="md-ellipsis">
+      Install courses
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#export-courses">
+<span class="md-ellipsis">
+      Export courses
+    </span>
+</a>
+<nav aria-label="Export courses" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#docker_1">
+<span class="md-ellipsis">
+      Docker
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#setting-up-semaphore-ci-in-a-clone">
+<span class="md-ellipsis">
+      Setting up Semaphore CI in a clone
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing-courses-using-github-gists">
+<span class="md-ellipsis">
+      Testing courses using GitHub gists
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mocks">
+<span class="md-ellipsis">
+      Mocks
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="CODE_OF_CONDUCT.html">
+<span class="md-ellipsis">
+    Contributor Covenant Code of Conduct
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="CONTRIBUTING.html">
+<span class="md-ellipsis">
+    Contributing
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="LICENSE.html">
+<span class="md-ellipsis">
+    GNU Affero General Public License
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="attributions.html">
+<span class="md-ellipsis">
+    Media attributions
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="creating_a_python_language_learning_app_using_librelingo_courses.html">
+<span class="md-ellipsis">
+    Create your own language learning app using Python and LibreLingo (TDD)
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="teaching_philosophy.html">
+<span class="md-ellipsis">
+    LibreLingo Teaching Approach and Philosophy
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="ui_translation.html">
+<span class="md-ellipsis">
+    User interface translation
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="website_tos.html">
+<span class="md-ellipsis">
+    Website tos
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_10" type="checkbox"/>
+<label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+<span class="md-ellipsis">
+    Courses
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_10_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_10">
+<span class="md-nav__icon md-icon"></span>
+            Courses
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="courses/index.html">
+<span class="md-ellipsis">
+    LibreLingo Course Documentation
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="courses/challenge.html">
+<span class="md-ellipsis">
+    LibreLingo Documentation on Challenge
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="courses/course.html">
+<span class="md-ellipsis">
+    LibreLingo Documentation on Course
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="courses/creating-courses.html">
+<span class="md-ellipsis">
+    Creating courses
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="courses/editing-courses.html">
+<span class="md-ellipsis">
+    Editing LibreLingo courses
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="courses/module.html">
+<span class="md-ellipsis">
+    LibreLingo Documentation on Module
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="courses/skill.html">
+<span class="md-ellipsis">
+    LibreLingo Documentation on Skill
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#project-structure">
+<span class="md-ellipsis">
+      Project structure
+    </span>
+</a>
+<nav aria-label="Project structure" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#clickable-flow-chart">
+<span class="md-ellipsis">
+      Clickable flow chart
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-does-this-project-exist">
+<span class="md-ellipsis">
+      Why does this project exist?
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#setting-up-the-development-environment">
+<span class="md-ellipsis">
+      Setting up the development environment
+    </span>
+</a>
+<nav aria-label="Setting up the development environment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#prerequisites">
+<span class="md-ellipsis">
+      Prerequisites
+    </span>
+</a>
+<nav aria-label="Prerequisites" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#docker">
+<span class="md-ellipsis">
+      Docker
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ubuntu">
+<span class="md-ellipsis">
+      Ubuntu
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#web-app">
+<span class="md-ellipsis">
+      Web app
+    </span>
+</a>
+<nav aria-label="Web app" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#having-the-correct-version-of-node">
+<span class="md-ellipsis">
+      Having the correct version of Node
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-dependencies">
+<span class="md-ellipsis">
+      Install dependencies:
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#starting-the-development-server">
+<span class="md-ellipsis">
+      Starting the development server
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#python-packages">
+<span class="md-ellipsis">
+      Python packages
+    </span>
+</a>
+<nav aria-label="Python packages" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-pdm">
+<span class="md-ellipsis">
+      Install pdm
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-dependencies-using-pdm">
+<span class="md-ellipsis">
+      Install dependencies using PDM
+    </span>
+</a>
+<nav aria-label="Install dependencies using PDM" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#handling-outdated-local-dependencies">
+<span class="md-ellipsis">
+      Handling Outdated Local Dependencies
+    </span>
+</a>
+<nav aria-label="Handling Outdated Local Dependencies" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#updating-javascript-dependencies-with-yarn">
+<span class="md-ellipsis">
+      Updating JavaScript Dependencies with Yarn
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#locally-test-librelingo-with-real-courses">
+<span class="md-ellipsis">
+      Locally test LibreLingo with real courses
+    </span>
+</a>
+<nav aria-label="Locally test LibreLingo with real courses" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#install-courses">
+<span class="md-ellipsis">
+      Install courses
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#export-courses">
+<span class="md-ellipsis">
+      Export courses
+    </span>
+</a>
+<nav aria-label="Export courses" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#docker_1">
+<span class="md-ellipsis">
+      Docker
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#setting-up-semaphore-ci-in-a-clone">
+<span class="md-ellipsis">
+      Setting up Semaphore CI in a clone
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#testing-courses-using-github-gists">
+<span class="md-ellipsis">
+      Testing courses using GitHub gists
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mocks">
+<span class="md-ellipsis">
+      Mocks
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="development">Development</h1>
+<h2 id="project-structure">Project structure</h2>
+<p>This project has 2 main components</p>
+<ul>
+<li>Frontend, implemented using Svelte and TypeScript.</li>
+<li>A set of Python packages that provide tooling for course creation and management.</li>
+</ul>
+<p>The site is statically built and hosted on GitHub pages, therefore there's no real "backend" or API.</p>
+<h3 id="clickable-flow-chart">Clickable flow chart</h3>
+<div class="mermaid">graph LR
+ YAML[YAML course] --&gt; LOAD
+ LOAD[librelingo-yaml-loader] --&gt; EXPORT[librelingo-json-export]
+ EXPORT --&gt;|JSON files| APP
+ LOAD --&gt;|TODO| AUDIO
+ LOAD --&gt;|TODO| IMAGE
+ AUDIO[Audio files] --&gt; APP
+ IMAGE[Image files] --&gt; APP
+ TYPES[librelingo-types] --&gt; LOAD
+ UTILS[librelingo-utils] --&gt; LOAD
+
+ click APP "https://github.com/LibreLingo/LibreLingo/tree/main/apps/web"
+ click EXPORT "https://pypi.org/project/librelingo-json-export/"
+ click UTILS "https://pypi.org/project/librelingo-utils/"
+ click TYPES "https://pypi.org/project/librelingo-types/"
+ click IMAGE "https://github.com/LibreLingo/LibreLingo/tree/main/apps/web/static/images"
+ click AUDIO "https://github.com/LibreLingo/LibreLingo/tree/main/apps/web/static/voice"
+ click LOAD "https://pypi.org/project/librelingo-yaml-loader/"
+ click YAML "https://github.com/LibreLingo/LibreLingo/tree/main/courses"
+</div>
+<h2 id="why-does-this-project-exist">Why does this project exist?</h2>
+<p>This project exists to create a beginner-friendly, community-oriented,
+free software licensed language learning application. If you want to learn more
+about LibreLingo's background, <a href="https://dev.to/kantord/why-i-built-librelingo-280o">I recommend reading this article</a>.</p>
+<h2 id="setting-up-the-development-environment">Setting up the development environment</h2>
+<h3 id="prerequisites">Prerequisites</h3>
+<p>In order to install the dependencies of this project, you will need to have some basic
+development tools installed.  </p>
+<p>Otherwise, if you have Docker installed in your machine, you could simplify the process by just downloading the latest docker image or building your own thanks to the Dockerfile provided</p>
+<h4 id="docker">Docker</h4>
+<p>From the root folder, just run</p>
+<pre><code class="language-bash">docker compose up -d
+</code></pre>
+<p>After the image has been downloaded / built, you should run the following command for letting the deps installs correctly:</p>
+<pre><code class="language-bash">docker compose exec -it app pdm install
+</code></pre>
+<p>This is due for the paths mounted in the docker-compose.yaml file</p>
+<h4 id="ubuntu">Ubuntu</h4>
+<p>If you are on Ubuntu, and you wish to install python environment and all the necessary deps on your machine, run this command in order to make sure you have all the basic dependencies:</p>
+<pre><code class="language-bash">apt-get install curl git python3-venv libpython3-dev wget unzip gcc libyaml-dev npm
+</code></pre>
+<p>On Ubuntu, it is also recommended to use Python 3.x as your default Python version:</p>
+<pre><code class="language-bash">apt-get install python-is-python3
+</code></pre>
+<h3 id="web-app">Web app</h3>
+<p>Source code can be found under /apps/web</p>
+<h4 id="having-the-correct-version-of-node">Having the correct version of Node</h4>
+<p>You will need <a href="https://nodejs.org/en/">Node</a>.</p>
+<p>In order to make sure you have the correct <code>node</code> version, it's recommended to use
+<code>nvm</code>. To install <code>nvm</code>, please <a href="https://github.com/nvm-sh/nvm#installing-and-updating">consult nvm's official documentation</a>, but if you already have the correct version, you might not strictly need it.</p>
+<p>First, install the correct <code>node</code> version with this command:</p>
+<pre><code class="language-bash">nvm install 20
+</code></pre>
+<p>Then, to choose this version of <code>node</code> in your terminal, use</p>
+<pre><code class="language-bash">nvm use 16
+</code></pre>
+<h4 id="install-dependencies">Install dependencies:</h4>
+<p>For this project it's recommended to use npm.<br/>
+Although, you could try to use yarn and open issue if there are some problems, so it could be tried to letting the two package managers cohesists. </p>
+<p>Yarn is a package manager for JavaScript that helps manage project dependencies, ensuring consistent and efficient installations. For more information about Yarn, <a href="https://yarnpkg.com/">please refer to the official documentation</a>. <a href="https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable">The steps required to install yarn itself are documented here</a>.</p>
+<p>Once you're in the root folder of the web app, just run</p>
+<pre><code class="language-sh">npm install
+</code></pre>
+<p>or </p>
+<pre><code class="language-sh">yarn install
+</code></pre>
+<h4 id="starting-the-development-server">Starting the development server</h4>
+<p>Start the development server:</p>
+<pre><code class="language-sh">npm run dev
+</code></pre>
+<p>or</p>
+<pre><code class="language-sh">yarn run web dev
+</code></pre>
+<p>Now you should be able to see your app on <a href="http://localhost:5173/">http://localhost:5173/</a></p>
+<h3 id="python-packages">Python packages</h3>
+<p>If you want to test export new / updated courses, new features in the YAML format, or some changes in how they are being used
+in the frontend, you need to be able to export YAML courses locally.
+If you will use docker, everything will be included in the image, otherwise you could choose to install locally the tools needed.</p>
+<h4 id="install-pdm">Install <code>pdm</code></h4>
+<p>You will need <a href="https://pdm-project.org/latest/">PDM</a>. If you don't have PDM, you can install it with</p>
+<pre><code class="language-bash">curl -sSL https://pdm-project.org/install-pdm.py | python3 -
+</code></pre>
+<p>For more information, check out <a href="https://pdm-project.org/latest/#installation">PDM's official documentation</a>.</p>
+<h4 id="install-dependencies-using-pdm">Install dependencies using PDM</h4>
+<p>Run</p>
+<pre><code class="language-sh">pdm install
+</code></pre>
+<p>This command ensures your local dependencies match the project's <strong>pyproject.toml</strong> and <strong>pdm.lock</strong> files.</p>
+<h5 id="handling-outdated-local-dependencies">Handling Outdated Local Dependencies</h5>
+<p>When you update your local repository by pulling remote changes, your local dependencies might become outdated. To ensure your local dependencies are in sync with the project requirements, follow these brief steps:</p>
+<h6 id="updating-javascript-dependencies-with-yarn">Updating JavaScript Dependencies with Yarn</h6>
+<p>Update your local dependencies:</p>
+<pre><code class="language-bash">npm install
+</code></pre>
+<p>This command ensures your local dependencies match the project's <strong>package.json</strong> file. For more information, <a href="https://yarnpkg.com/getting-started/usage">refer to the Yarn documentation</a>.</p>
+<h3 id="locally-test-librelingo-with-real-courses">Locally test LibreLingo with real courses</h3>
+<p>In order to test LibreLingo with real courses just like in the deployed production version, you
+need to install courses locally and export them from YAML to JSON.</p>
+<h4 id="install-courses">Install courses</h4>
+<p>The following command installs all courses listed in the courses.json file just like
+in production. <em>Keep in mind that in order to use them in the frontend, the courses
+also need to be exported!</em></p>
+<pre><code class="language-bash">yarn web run installAllExternalCourses
+</code></pre>
+<h4 id="export-courses">Export courses</h4>
+<p>In order to use a locally installed course when locally testing the frontend, you should
+export the course first. You should also export the course every time you make local
+changes to this course and you want the changes to be visible in the frontend.</p>
+<p>Use the following command:</p>
+<pre><code class="language-bash">yarn exportAllCourses
+</code></pre>
+<p>You can export a single course using the following command (change the name of the course for the one that you need to export):</p>
+<pre><code class="language-bash">yarn run exportCourse spanish-from-english
+</code></pre>
+<h6 id="docker_1">Docker</h6>
+<pre><code class="language-bash">docker compose exec -it app python3 /LibreLingo/app/librelingo_json_export/cli.py /LibreLingo/courses/&lt;course_name&gt; /LibreLingo/librelingo-web/src/courses/&lt;course_name&gt;
+</code></pre>
+<h2 id="setting-up-semaphore-ci-in-a-clone">Setting up Semaphore CI in a clone</h2>
+<p>In order for Semaphore CI to correctly operate, you will need to set up certain secrets.</p>
+<p>This might not be necessary for you in all cases, but it cannot be avoided if you want to fully fork the repo, or work on CI configuration related tasks.</p>
+<p><a href="https://docs.semaphoreci.com/essentials/using-secrets/">Consult this page to read about setting up secrets in Semaphore CI.</a></p>
+<p>Here's a list of the tokens you need to set up. Each of them is a link to a page explaining how to obtain the token:</p>
+<ul>
+<li><a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token">GH_TOKEN</a></li>
+<li><a href="https://www.npmjs.com/package/@knapsack-pro/cypress#configuration-steps">KNAPSACK_PRO_TEST_SUITE_TOKEN_CYPRESS</a></li>
+<li><a href="https://docs.percy.io/docs/environment-variables">PERCY_TOKEN</a></li>
+</ul>
+<h2 id="testing-courses-using-github-gists">Testing courses using GitHub gists</h2>
+<p>It's possible to test courses without them as HTML and deploying them.</p>
+<p>One way of doing that is using GitHub gists. You can create a GitHub gist with the course JSON files.</p>
+<p>The first step is to export the course as JSON. Then, you have to create a GitHub gist with the
+course files.</p>
+<p>Keep in mind, that you have to prefix all file names with <code>librelingo___</code> and therefore
+The first step is to export the course as JSON. Then, you have to create a GitHub gist with the
+course files.</p>
+<p>Keep in mind, that you have to prefix all file names with <code>librelingo___</code> and replace
+<code>/</code> with <code>___</code> in your paths, as GitHub gists don't natively support uploading folders.</p>
+<p>So, for example <code>challenges/animals.json</code> should be uploaded as the GitHub gist file
+<code>librelingo___challenges___animals.json</code>.</p>
+<h2 id="mocks">Mocks</h2>
+<p>For mocks in the frontend, LibreLingo uses <a href="https://mswjs.io/">MSW</a>. For Cypress tests, <code>cy.intercept()</code> is
+used. All of these mocks are defined in apps/web/src/mocks/handlers.js.</p>
+</article>
+</div>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="assets/javascripts/bundle.a7c05c9e.min.js"></script>
+<script type="module">import mermaid from "https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs";
+mermaid.initialize({});</script></body>
+</html>
