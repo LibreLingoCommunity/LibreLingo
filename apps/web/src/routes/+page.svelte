@@ -37,12 +37,17 @@
 						<Translate key="index.start_spanish_course">Start learning Spanish</Translate>
 					</Button>
 				</Stack>
+				<Stack justify="center">
+					<Button style="primary" href="course/french-from-english">
+						<Translate key="index.start_french_course">Start learning French</Translate>
+					</Button>
+				</Stack>
 			</Stack>
 
 			<Hidden>
 				<Button style="primary" href="course/german-from-english">Start learning German</Button>
 
-				<Button style="primary" href="course/french-from-english">Start learning French</Button>
+				
 
 				<Button style="primary" href="course/bangla-from-english">Start learning Bangla</Button>
 
