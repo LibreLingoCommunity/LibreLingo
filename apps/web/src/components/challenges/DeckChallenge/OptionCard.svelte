@@ -31,6 +31,7 @@
 <style type="text/scss">
 	li {
 		border: 3px solid transparent;
+		display: flex;
 		flex-direction: column;
 		width: 100%;
 		max-width: 20em;

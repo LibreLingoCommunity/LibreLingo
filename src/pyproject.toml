@@ -27,8 +27,7 @@ dev = [
     "mkdocs-mermaid2-plugin>=1.1.1",
     "tqdm>=4.66.4",
     "awscli>=1.37.6",
-    "ipython>=8.12.3",
-
+    "ipython>=8.12.3"
 ]
 
 [tool.pdm.scripts]

@@ -5,21 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 content_hash = "sha256:60a4dc8750e4585eab569f3f28ad87709d179bf30180bd8db2aeecdf17b92754"
-=======
-content_hash = "sha256:d2bffa5c17f63b337c289ca50b8ed9d07f63bec0bbd7fd5c5ee98fa29add7410"
->>>>>>> 4c9535156c4 (fix: :art: restored icons not working)
-=======
-content_hash = "sha256:dbbea512474e4e8efa9063c2b4131b8c5ce18aca1142ec192c983d25955b8d3a"
->>>>>>> 3a773eec12b (build: :technologist: added script for running dev server for web app, fixed cmds for docker)
-=======
-content_hash = "sha256:60a4dc8750e4585eab569f3f28ad87709d179bf30180bd8db2aeecdf17b92754"
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 
 [[metadata.targets]]
 requires_python = ">=3.8,<3.11"
@@ -35,18 +21,6 @@ files = [
     {file = "appnope-0.1.4-py2.py3-none-any.whl", hash = "sha256:502575ee11cd7a28c0205f379b525beefebab9d161b7c964670864014ed7213c"},
     {file = "appnope-0.1.4.tar.gz", hash = "sha256:1de3860566df9caf38f01f86f65e0e13e379af54f9e4bee1e66b48f2efffd1ee"},
 ]
-<<<<<<< HEAD
-=======
-content_hash = "sha256:1738d355ace1c71a650a627a72b7335fdc47d3d55611c085d53b96703686dc5f"
-=======
-content_hash = "sha256:f031fc9225ed330c575f56d5eed8b2296be63a55f307975eaeee5929bc8a1e75"
->>>>>>> 2a3313d31b3 (build: added aws cli tool in pdm)
-
-[[metadata.targets]]
-requires_python = ">=3.8,<3.11"
->>>>>>> 855dc0ccd87 (refactor(python): moved python files from root into src folder)
-=======
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 
 [[package]]
 name = "astroid"
@@ -88,42 +62,6 @@ files = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-<<<<<<< HEAD
-name = "awscli"
-version = "1.37.6"
-requires_python = ">=3.8"
-summary = "Universal Command Line Environment for AWS."
-groups = ["default", "dev"]
-dependencies = [
-    "PyYAML<6.1,>=3.10",
-    "botocore==1.36.6",
-    "colorama<0.4.7,>=0.2.5",
-    "docutils<0.17,>=0.10",
-    "rsa<4.8,>=3.1.2",
-    "s3transfer<0.12.0,>=0.11.0",
-]
-files = [
-    {file = "awscli-1.37.6-py3-none-any.whl", hash = "sha256:e5f9d19718d43f9b03e3258fcc97e61cef21187f7956615f2100cc9d810993e8"},
-    {file = "awscli-1.37.6.tar.gz", hash = "sha256:035cc2a291c496a2e50e5459c343e5333dfa97a7506ca4ce08707408b1d7d989"},
-=======
-name = "aws"
-version = "0.2.5"
-summary = "Utility to manage your Amazon Web Services and run Fabric against filtered set of EC2 instances."
-groups = ["dev"]
-dependencies = [
-    "boto",
-    "fabric>=1.6",
-    "prettytable>=0.7",
-]
-files = [
-    {file = "aws-0.2.5.tar.gz", hash = "sha256:460cd737dee028bcebdb626f0c7acf87753f9e04e3317fda05929625419f2989"},
->>>>>>> 2a3313d31b3 (build: added aws cli tool in pdm)
-]
-
-[[package]]
-=======
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 name = "awscli"
 version = "1.37.6"
 requires_python = ">=3.8"
@@ -157,8 +95,6 @@ files = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-<<<<<<< HEAD
 name = "backcall"
 version = "0.2.0"
 summary = "Specifications for callback functions passed in to an API"
@@ -166,48 +102,6 @@ groups = ["dev"]
 files = [
     {file = "backcall-0.2.0-py2.py3-none-any.whl", hash = "sha256:fbbce6a29f263178a1f7915c1940bde0ec2b2a967566fe1c65c1dfb7422bd255"},
     {file = "backcall-0.2.0.tar.gz", hash = "sha256:5cbdbf27be5e7cfadb448baf0aa95508f91f2bbc6c6437cd9cd06e2a4c215e1e"},
-=======
-name = "bcrypt"
-version = "4.2.1"
-requires_python = ">=3.7"
-summary = "Modern password hashing for your software and your servers"
-groups = ["dev"]
-files = [
-    {file = "bcrypt-4.2.1-cp37-abi3-macosx_10_12_universal2.whl", hash = "sha256:1340411a0894b7d3ef562fb233e4b6ed58add185228650942bdc885362f32c17"},
-    {file = "bcrypt-4.2.1-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:b1ee315739bc8387aa36ff127afc99120ee452924e0df517a8f3e4c0187a0f5f"},
-    {file = "bcrypt-4.2.1-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:8dbd0747208912b1e4ce730c6725cb56c07ac734b3629b60d4398f082ea718ad"},
-    {file = "bcrypt-4.2.1-cp37-abi3-manylinux_2_28_aarch64.whl", hash = "sha256:aaa2e285be097050dba798d537b6efd9b698aa88eef52ec98d23dcd6d7cf6fea"},
-    {file = "bcrypt-4.2.1-cp37-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:76d3e352b32f4eeb34703370e370997065d28a561e4a18afe4fef07249cb4396"},
-    {file = "bcrypt-4.2.1-cp37-abi3-musllinux_1_1_aarch64.whl", hash = "sha256:b7703ede632dc945ed1172d6f24e9f30f27b1b1a067f32f68bf169c5f08d0425"},
-    {file = "bcrypt-4.2.1-cp37-abi3-musllinux_1_1_x86_64.whl", hash = "sha256:89df2aea2c43be1e1fa066df5f86c8ce822ab70a30e4c210968669565c0f4685"},
-    {file = "bcrypt-4.2.1-cp37-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:04e56e3fe8308a88b77e0afd20bec516f74aecf391cdd6e374f15cbed32783d6"},
-    {file = "bcrypt-4.2.1-cp37-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:cfdf3d7530c790432046c40cda41dfee8c83e29482e6a604f8930b9930e94139"},
-    {file = "bcrypt-4.2.1-cp37-abi3-win32.whl", hash = "sha256:adadd36274510a01f33e6dc08f5824b97c9580583bd4487c564fc4617b328005"},
-    {file = "bcrypt-4.2.1-cp37-abi3-win_amd64.whl", hash = "sha256:8c458cd103e6c5d1d85cf600e546a639f234964d0228909d8f8dbeebff82d526"},
-    {file = "bcrypt-4.2.1-cp39-abi3-macosx_10_12_universal2.whl", hash = "sha256:8ad2f4528cbf0febe80e5a3a57d7a74e6635e41af1ea5675282a33d769fba413"},
-    {file = "bcrypt-4.2.1-cp39-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:909faa1027900f2252a9ca5dfebd25fc0ef1417943824783d1c8418dd7d6df4a"},
-    {file = "bcrypt-4.2.1-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:cde78d385d5e93ece5479a0a87f73cd6fa26b171c786a884f955e165032b262c"},
-    {file = "bcrypt-4.2.1-cp39-abi3-manylinux_2_28_aarch64.whl", hash = "sha256:533e7f3bcf2f07caee7ad98124fab7499cb3333ba2274f7a36cf1daee7409d99"},
-    {file = "bcrypt-4.2.1-cp39-abi3-manylinux_2_28_x86_64.whl", hash = "sha256:687cf30e6681eeda39548a93ce9bfbb300e48b4d445a43db4298d2474d2a1e54"},
-    {file = "bcrypt-4.2.1-cp39-abi3-musllinux_1_1_aarch64.whl", hash = "sha256:041fa0155c9004eb98a232d54da05c0b41d4b8e66b6fc3cb71b4b3f6144ba837"},
-    {file = "bcrypt-4.2.1-cp39-abi3-musllinux_1_1_x86_64.whl", hash = "sha256:f85b1ffa09240c89aa2e1ae9f3b1c687104f7b2b9d2098da4e923f1b7082d331"},
-    {file = "bcrypt-4.2.1-cp39-abi3-musllinux_1_2_aarch64.whl", hash = "sha256:c6f5fa3775966cca251848d4d5393ab016b3afed251163c1436fefdec3b02c84"},
-    {file = "bcrypt-4.2.1-cp39-abi3-musllinux_1_2_x86_64.whl", hash = "sha256:807261df60a8b1ccd13e6599c779014a362ae4e795f5c59747f60208daddd96d"},
-    {file = "bcrypt-4.2.1-cp39-abi3-win32.whl", hash = "sha256:b588af02b89d9fad33e5f98f7838bf590d6d692df7153647724a7f20c186f6bf"},
-    {file = "bcrypt-4.2.1-cp39-abi3-win_amd64.whl", hash = "sha256:e84e0e6f8e40a242b11bce56c313edc2be121cec3e0ec2d76fce01f6af33c07c"},
-    {file = "bcrypt-4.2.1-pp310-pypy310_pp73-manylinux_2_28_aarch64.whl", hash = "sha256:76132c176a6d9953cdc83c296aeaed65e1a708485fd55abf163e0d9f8f16ce0e"},
-    {file = "bcrypt-4.2.1-pp310-pypy310_pp73-manylinux_2_28_x86_64.whl", hash = "sha256:e158009a54c4c8bc91d5e0da80920d048f918c61a581f0a63e4e93bb556d362f"},
-    {file = "bcrypt-4.2.1.tar.gz", hash = "sha256:6765386e3ab87f569b276988742039baab087b2cdb01e809d74e74503c2faafe"},
->>>>>>> 2a3313d31b3 (build: added aws cli tool in pdm)
-=======
-name = "backcall"
-version = "0.2.0"
-summary = "Specifications for callback functions passed in to an API"
-groups = ["dev"]
-files = [
-    {file = "backcall-0.2.0-py2.py3-none-any.whl", hash = "sha256:fbbce6a29f263178a1f7915c1940bde0ec2b2a967566fe1c65c1dfb7422bd255"},
-    {file = "backcall-0.2.0.tar.gz", hash = "sha256:5cbdbf27be5e7cfadb448baf0aa95508f91f2bbc6c6437cd9cd06e2a4c215e1e"},
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 ]
 
 [[package]]
@@ -290,36 +184,6 @@ files = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-<<<<<<< HEAD
-name = "botocore"
-version = "1.36.6"
-requires_python = ">=3.8"
-summary = "Low-level, data-driven core of boto 3."
-groups = ["default", "dev"]
-dependencies = [
-    "jmespath<2.0.0,>=0.7.1",
-    "python-dateutil<3.0.0,>=2.1",
-    "urllib3!=2.2.0,<3,>=1.25.4; python_version >= \"3.10\"",
-    "urllib3<1.27,>=1.25.4; python_version < \"3.10\"",
-]
-files = [
-    {file = "botocore-1.36.6-py3-none-any.whl", hash = "sha256:f77bbbb03fb420e260174650fb5c0cc142ec20a96967734eed2b0ef24334ef34"},
-    {file = "botocore-1.36.6.tar.gz", hash = "sha256:4864c53d638da191a34daf3ede3ff1371a3719d952cc0c6bd24ce2836a38dd77"},
-=======
-name = "boto"
-version = "2.49.0"
-summary = "Amazon Web Services Library"
-groups = ["dev"]
-files = [
-    {file = "boto-2.49.0-py2.py3-none-any.whl", hash = "sha256:147758d41ae7240dc989f0039f27da8ca0d53734be0eb869ef16e3adcfa462e8"},
-    {file = "boto-2.49.0.tar.gz", hash = "sha256:ea0d3b40a2d852767be77ca343b58a9e3a4b00d9db440efb8da74b4e58025e5a"},
->>>>>>> 2a3313d31b3 (build: added aws cli tool in pdm)
-]
-
-[[package]]
-=======
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 name = "botocore"
 version = "1.36.6"
 requires_python = ">=3.8"
@@ -511,15 +375,7 @@ name = "decorator"
 version = "5.1.1"
 requires_python = ">=3.5"
 summary = "Decorators for Humans"
-<<<<<<< HEAD
-<<<<<<< HEAD
 groups = ["dev"]
-=======
-groups = ["default", "dev"]
->>>>>>> 2a3313d31b3 (build: added aws cli tool in pdm)
-=======
-groups = ["dev"]
->>>>>>> 4c9535156c4 (fix: :art: restored icons not working)
 files = [
     {file = "decorator-5.1.1-py3-none-any.whl", hash = "sha256:b8c3f85900b9dc423225913c5aace94729fe1fa9763b38939a95226f02d37186"},
     {file = "decorator-5.1.1.tar.gz", hash = "sha256:637996211036b6385ef91435e4fae22989472f9d571faba8927ba8253acbc330"},
@@ -605,15 +461,7 @@ name = "docutils"
 version = "0.16"
 requires_python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 summary = "Docutils -- Python Documentation Utilities"
-<<<<<<< HEAD
-<<<<<<< HEAD
 groups = ["default", "dev"]
-=======
-groups = ["default"]
->>>>>>> 4c9535156c4 (fix: :art: restored icons not working)
-=======
-groups = ["default", "dev"]
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 files = [
     {file = "docutils-0.16-py2.py3-none-any.whl", hash = "sha256:0c5b78adfbf7762415433f5515cd5c9e762339e23369dbe8000d84a4bf4ab3af"},
     {file = "docutils-0.16.tar.gz", hash = "sha256:c2de3a60e9e7d07be26b7f2b00ca0309c207e06c100f9cc2a94931fc75a478fc"},
@@ -721,35 +569,14 @@ files = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 name = "executing"
 version = "2.2.0"
 requires_python = ">=3.8"
 summary = "Get the currently executing AST node of a frame, and other information"
-<<<<<<< HEAD
 groups = ["dev"]
 files = [
     {file = "executing-2.2.0-py2.py3-none-any.whl", hash = "sha256:11387150cad388d62750327a53d3339fad4888b39a6fe233c3afbb54ecffd3aa"},
     {file = "executing-2.2.0.tar.gz", hash = "sha256:5d108c028108fe2551d1a7b2e8b713341e2cb4fc0aa7dcf966fa4327a5226755"},
-=======
-name = "fabric"
-version = "3.2.2"
-summary = "High level SSH command execution"
-=======
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
-groups = ["dev"]
-files = [
-<<<<<<< HEAD
-    {file = "fabric-3.2.2-py3-none-any.whl", hash = "sha256:91c47c0be68b14936c88b34da8a1f55e5710fd28397dac5d4ff2e21558113a6f"},
-    {file = "fabric-3.2.2.tar.gz", hash = "sha256:8783ca42e3b0076f08b26901aac6b9d9b1f19c410074e7accfab902c184ff4a3"},
->>>>>>> 2a3313d31b3 (build: added aws cli tool in pdm)
-=======
-    {file = "executing-2.2.0-py2.py3-none-any.whl", hash = "sha256:11387150cad388d62750327a53d3339fad4888b39a6fe233c3afbb54ecffd3aa"},
-    {file = "executing-2.2.0.tar.gz", hash = "sha256:5d108c028108fe2551d1a7b2e8b713341e2cb4fc0aa7dcf966fa4327a5226755"},
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 ]
 
 [[package]]
@@ -844,15 +671,10 @@ files = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 name = "ipython"
 version = "8.12.3"
 requires_python = ">=3.8"
 summary = "IPython: Productive Interactive Computing"
-<<<<<<< HEAD
 groups = ["dev"]
 dependencies = [
     "appnope; sys_platform == \"darwin\"",
@@ -872,38 +694,6 @@ dependencies = [
 files = [
     {file = "ipython-8.12.3-py3-none-any.whl", hash = "sha256:b0340d46a933d27c657b211a329d0be23793c36595acf9e6ef4164bc01a1804c"},
     {file = "ipython-8.12.3.tar.gz", hash = "sha256:3910c4b54543c2ad73d06579aa771041b7d5707b033bd488669b4cf544e3b363"},
-=======
-name = "invoke"
-version = "2.2.0"
-requires_python = ">=3.6"
-summary = "Pythonic task execution"
-=======
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
-groups = ["dev"]
-dependencies = [
-    "appnope; sys_platform == \"darwin\"",
-    "backcall",
-    "colorama; sys_platform == \"win32\"",
-    "decorator",
-    "jedi>=0.16",
-    "matplotlib-inline",
-    "pexpect>4.3; sys_platform != \"win32\"",
-    "pickleshare",
-    "prompt-toolkit!=3.0.37,<3.1.0,>=3.0.30",
-    "pygments>=2.4.0",
-    "stack-data",
-    "traitlets>=5",
-    "typing-extensions; python_version < \"3.10\"",
-]
-files = [
-<<<<<<< HEAD
-    {file = "invoke-2.2.0-py3-none-any.whl", hash = "sha256:6ea924cc53d4f78e3d98bc436b08069a03077e6f85ad1ddaa8a116d7dad15820"},
-    {file = "invoke-2.2.0.tar.gz", hash = "sha256:ee6cbb101af1a859c7fe84f2a264c059020b0cb7fe3535f9424300ab568f6bd5"},
->>>>>>> 2a3313d31b3 (build: added aws cli tool in pdm)
-=======
-    {file = "ipython-8.12.3-py3-none-any.whl", hash = "sha256:b0340d46a933d27c657b211a329d0be23793c36595acf9e6ef4164bc01a1804c"},
-    {file = "ipython-8.12.3.tar.gz", hash = "sha256:3910c4b54543c2ad73d06579aa771041b7d5707b033bd488669b4cf544e3b363"},
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 ]
 
 [[package]]
@@ -950,15 +740,7 @@ name = "jmespath"
 version = "1.0.1"
 requires_python = ">=3.7"
 summary = "JSON Matching Expressions"
-<<<<<<< HEAD
-<<<<<<< HEAD
 groups = ["default", "dev"]
-=======
-groups = ["default"]
->>>>>>> 4c9535156c4 (fix: :art: restored icons not working)
-=======
-groups = ["default", "dev"]
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 files = [
     {file = "jmespath-1.0.1-py3-none-any.whl", hash = "sha256:02e2e4cc71b5bcab88332eebf907519190dd9e6e82107fa7f83b1003a6252980"},
     {file = "jmespath-1.0.1.tar.gz", hash = "sha256:90261b206d6defd58fdd5e85f478bf633a2901798906be2ad389150c5c60edbe"},
@@ -1307,8 +1089,6 @@ files = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-<<<<<<< HEAD
 name = "parso"
 version = "0.8.4"
 requires_python = ">=3.6"
@@ -1317,25 +1097,6 @@ groups = ["dev"]
 files = [
     {file = "parso-0.8.4-py2.py3-none-any.whl", hash = "sha256:a418670a20291dacd2dddc80c377c5c3791378ee1e8d12bffc35420643d43f18"},
     {file = "parso-0.8.4.tar.gz", hash = "sha256:eb3a7b58240fb99099a345571deecc0f9540ea5f4dd2fe14c2a99d6b281ab92d"},
-=======
-name = "paramiko"
-version = "3.5.0"
-=======
-name = "parso"
-version = "0.8.4"
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
-requires_python = ">=3.6"
-summary = "A Python Parser"
-groups = ["dev"]
-files = [
-<<<<<<< HEAD
-    {file = "paramiko-3.5.0-py3-none-any.whl", hash = "sha256:1fedf06b085359051cd7d0d270cebe19e755a8a921cc2ddbfa647fb0cd7d68f9"},
-    {file = "paramiko-3.5.0.tar.gz", hash = "sha256:ad11e540da4f55cedda52931f1a3f812a8238a7af7f62a60de538cd80bb28124"},
->>>>>>> 2a3313d31b3 (build: added aws cli tool in pdm)
-=======
-    {file = "parso-0.8.4-py2.py3-none-any.whl", hash = "sha256:a418670a20291dacd2dddc80c377c5c3791378ee1e8d12bffc35420643d43f18"},
-    {file = "parso-0.8.4.tar.gz", hash = "sha256:eb3a7b58240fb99099a345571deecc0f9540ea5f4dd2fe14c2a99d6b281ab92d"},
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 ]
 
 [[package]]
@@ -1411,37 +1172,15 @@ files = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 name = "prompt-toolkit"
 version = "3.0.50"
 requires_python = ">=3.8.0"
 summary = "Library for building powerful interactive command lines in Python"
-<<<<<<< HEAD
 groups = ["dev"]
-=======
-name = "prettytable"
-version = "3.11.0"
-requires_python = ">=3.8"
-summary = "A simple Python library for easily displaying tabular data in a visually appealing ASCII table format"
-<<<<<<< HEAD
-groups = ["default", "dev"]
->>>>>>> 2a3313d31b3 (build: added aws cli tool in pdm)
-=======
-=======
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
-groups = ["dev"]
->>>>>>> 4c9535156c4 (fix: :art: restored icons not working)
 dependencies = [
     "wcwidth",
 ]
 files = [
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
     {file = "prompt_toolkit-3.0.50-py3-none-any.whl", hash = "sha256:9b6427eb19e479d98acff65196a307c555eb567989e6d88ebbb1b509d9779198"},
     {file = "prompt_toolkit-3.0.50.tar.gz", hash = "sha256:544748f3860a2623ca5cd6d2795e7a14f3d0e1c3c9728359013f79877fc89bab"},
 ]
@@ -1465,23 +1204,6 @@ groups = ["dev"]
 files = [
     {file = "pure_eval-0.2.3-py3-none-any.whl", hash = "sha256:1db8e35b67b3d218d818ae653e27f06c3aa420901fa7b081ca98cbedc874e0d0"},
     {file = "pure_eval-0.2.3.tar.gz", hash = "sha256:5f4e983f40564c576c7c8635ae88db5956bb2229d7e9237d03b3c0b0190eaf42"},
-<<<<<<< HEAD
-]
-
-[[package]]
-name = "pyasn1"
-version = "0.6.1"
-requires_python = ">=3.8"
-summary = "Pure-Python implementation of ASN.1 types and DER/BER/CER codecs (X.208)"
-groups = ["default", "dev"]
-files = [
-    {file = "pyasn1-0.6.1-py3-none-any.whl", hash = "sha256:0d632f46f2ba09143da3a8afe9e33fb6f92fa2320ab7e886e2d0f7672af84629"},
-    {file = "pyasn1-0.6.1.tar.gz", hash = "sha256:6f580d2bdd84365380830acf45550f2511469f673cb4a5ae3857a3170128b034"},
-=======
-    {file = "prettytable-3.11.0-py3-none-any.whl", hash = "sha256:aa17083feb6c71da11a68b2c213b04675c4af4ce9c541762632ca3f2cb3546dd"},
-    {file = "prettytable-3.11.0.tar.gz", hash = "sha256:7e23ca1e68bbfd06ba8de98bf553bf3493264c96d5e8a615c0471025deeba722"},
-=======
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 ]
 
 [[package]]
@@ -1496,21 +1218,6 @@ files = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-name = "pycparser"
-version = "2.22"
-requires_python = ">=3.8"
-summary = "C parser in Python"
-groups = ["dev"]
-files = [
-    {file = "pycparser-2.22-py3-none-any.whl", hash = "sha256:c3702b6d3dd8c7abc1afa565d7e63d53a1d0bd86cdc24edd75470f4de499cfcc"},
-    {file = "pycparser-2.22.tar.gz", hash = "sha256:491c8be9c040f5390f5bf44a5b07752bd07f56edf992381b05c701439eec10f6"},
->>>>>>> 2a3313d31b3 (build: added aws cli tool in pdm)
-]
-
-[[package]]
-=======
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 name = "pydoc-markdown"
 version = "4.7.0"
 requires_python = ">=3.7,<4.0"
@@ -1994,15 +1701,7 @@ name = "rsa"
 version = "4.7.2"
 requires_python = ">=3.5, <4"
 summary = "Pure-Python RSA implementation"
-<<<<<<< HEAD
-<<<<<<< HEAD
 groups = ["default", "dev"]
-=======
-groups = ["default"]
->>>>>>> 4c9535156c4 (fix: :art: restored icons not working)
-=======
-groups = ["default", "dev"]
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 dependencies = [
     "pyasn1>=0.1.3",
 ]
@@ -2016,15 +1715,7 @@ name = "s3transfer"
 version = "0.11.2"
 requires_python = ">=3.8"
 summary = "An Amazon S3 Transfer Manager"
-<<<<<<< HEAD
-<<<<<<< HEAD
 groups = ["default", "dev"]
-=======
-groups = ["default"]
->>>>>>> 4c9535156c4 (fix: :art: restored icons not working)
-=======
-groups = ["default", "dev"]
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 dependencies = [
     "botocore<2.0a.0,>=1.36.0",
 ]
@@ -2165,10 +1856,6 @@ files = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 name = "traitlets"
 version = "5.14.3"
 requires_python = ">=3.8"
@@ -2180,11 +1867,6 @@ files = [
 ]
 
 [[package]]
-<<<<<<< HEAD
-=======
->>>>>>> 855dc0ccd87 (refactor(python): moved python files from root into src folder)
-=======
->>>>>>> e280f41790e (docs: :memo: added more docs on code and modules)
 name = "types-bleach"
 version = "6.1.0.20240331"
 requires_python = ">=3.8"
@@ -2358,15 +2040,7 @@ files = [
 name = "wcwidth"
 version = "0.2.13"
 summary = "Measures the displayed width of unicode strings in a terminal"
-<<<<<<< HEAD
-<<<<<<< HEAD
 groups = ["dev"]
-=======
-groups = ["default", "dev"]
->>>>>>> 2a3313d31b3 (build: added aws cli tool in pdm)
-=======
-groups = ["dev"]
->>>>>>> 4c9535156c4 (fix: :art: restored icons not working)
 dependencies = [
     "backports-functools-lru-cache>=1.2.1; python_version < \"3.2\"",
 ]
