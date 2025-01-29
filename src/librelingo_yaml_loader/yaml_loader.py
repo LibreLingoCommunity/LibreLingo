@@ -521,6 +521,8 @@ def _convert_settings(data, course: Course):
 def load_course(path: str):
     """
     Load a YAML-based course into a Course() object
+    See Course data type for the object model 
+    
     """
     data = _load_yaml(Path(path) / "course.yaml")
     course = data["Course"]
