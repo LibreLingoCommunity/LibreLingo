@@ -12,3 +12,17 @@ services:
     ports:
       - '8000:8000' # for mkdocs serve
     #environment:
+  web:
+    build:
+      dockerfile: Dockerfile_web
+      context: .
+    #volumes:
+    #  - ./apps/web:/LibreLingo/librelingo-web
+    #  - ./apps/docs/build:/LibreLingo/build/docs
+    #  - ./scripts:/LibreLingo/scripts
+    #  - ./src:/LibreLingo/app # Python tools
+    #  - ./docs:/LibreLingo/docs
+    #  - ./courses:/LibreLingo/courses
+    ports:
+      - '5173:5173'
+    #environment:
