@@ -2,12 +2,12 @@ services:
   app:
     build: .
     volumes:
-      - ./apps/web:/LibreLingo/librelingo-web
-      - ./apps/docs/build:/LibreLingo/build/docs
-      - ./scripts:/LibreLingo/scripts
-      - ./src:/LibreLingo/app # Python tools
-      - ./docs:/LibreLingo/docs
-      - ./courses:/LibreLingo/courses
+      - ./apps/web:/LibreLingo/librelingo-web:Z
+      - ./apps/docs/build:/LibreLingo/build/docs:Z
+      - ./scripts:/LibreLingo/scripts:Z
+      - ./src:/LibreLingo/app:Z # Python tools
+      - ./docs:/LibreLingo/docs:Z
+      - ./courses:/LibreLingo/courses:Z
     command: ['tail', '-f', '/dev/null']
     ports:
       - '8000:8000' # for mkdocs serve
@@ -16,8 +16,8 @@ services:
     build:
       dockerfile: Dockerfile_web
       context: .
-    #volumes:
-    #  - ./apps/web:/LibreLingo/librelingo-web
+    volumes:
+      - ./apps/web/src/courses:/app/apps/web/src/courses:Z
     #  - ./apps/docs/build:/LibreLingo/build/docs
     #  - ./scripts:/LibreLingo/scripts
     #  - ./src:/LibreLingo/app # Python tools
