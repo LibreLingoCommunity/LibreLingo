@@ -47,14 +47,27 @@ type RawGistFileType = {
 const fetchGistFiles = async (gistId: string) => {
 	// get the data from a Github gist served through a CORS proxy
 	try {
-		const toAWait = fetch(`${baseURL}/${gistId}`);
+		const baseURL2 = "https://api.github.com/gists"
+		const headers = {
+			'Accept': 'application/vnd.github+json',
+			'Authorization': 'token ' + process.env.github_pat,
+			'X-GitHub-Api-Version': '2022-11-28'
+		  };
+		const toAWait = fetch(`${baseURL2}/${gistId}`, {method: 'GET', headers: headers});
 		const rawResponse = await toAWait;
+		
 		const response = await rawResponse.json();
+
 		const gistFiles = Object.fromEntries(
-			Object.entries(response.files).map(([filename, value]: [string, RawGistFileType]) => [
-				filename.replace('librelingo___', '').replace('___', '/'),
-				filename.endsWith('.json') ? JSON.parse(value?.content) : value?.content
-			])
+			Object
+				.entries(response.files)
+				.map(
+					([filename, value]: [string, RawGistFileType]) => [
+
+					filename.replace('librelingo___', '').replace('___', '/'),
+					filename.endsWith('.json') ? JSON.parse(value?.content) : value?.content
+				]
+			)
 		);
 
 		return gistFiles;
@@ -72,6 +85,8 @@ export const get_course = async ({
 }): Promise<CourseDataType> => {
 	if (gistId !== null) {
 		const files = await fetchGistFiles(gistId);
+		console.log(files);
+		
 		return formatCourseData(files['courseData.json'], { courseName });
 	}
 
