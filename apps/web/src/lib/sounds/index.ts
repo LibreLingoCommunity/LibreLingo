@@ -26,7 +26,7 @@ export const playAudio = (type, filename) => {
 	disableHowlerForCypress();
 
 	new Howl({
-		src: [`/${type}/${filename}.mp3`]
+		src: [`https://ax8kdzphlf64.objectstorage.eu-milan-1.oci.customer-oci.com/n/ax8kdzphlf64/b/librelingo_audios/o/spanish-from-english%2F${filename}.mp3`]
 	}).play();
 };
 

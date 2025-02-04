@@ -85,7 +85,6 @@ export const get_course = async ({
 }): Promise<CourseDataType> => {
 	if (gistId !== null) {
 		const files = await fetchGistFiles(gistId);
-		console.log(files);
 		
 		return formatCourseData(files['courseData.json'], { courseName });
 	}

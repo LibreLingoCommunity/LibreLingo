@@ -2,9 +2,9 @@ import { get_skill_data } from 'course-client';
 
 export async function load(page) {
 	const { skillName, courseName } = page.params;
-
+	
+	const gistId = page.url.searchParams.get('gistId');
 	if (courseName === 'preview') {
-		const gistId = page.url.searchParams.get('gistId');
 		const skillNameFromQuery = page.url.searchParams.get('skillName');
 
 		return {
@@ -16,9 +16,9 @@ export async function load(page) {
 			}
 		};
 	}
-
+	
 	return {
-		...(await get_skill_data({ skillName, courseName })),
+		...(await get_skill_data({ skillName, courseName, gistId})),
 		loading: false,
 		preview: null
 	};
