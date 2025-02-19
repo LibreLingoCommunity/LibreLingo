@@ -24,7 +24,8 @@ export default defineConfig({
 				// search up for workspace root
 				//searchForWorkspaceRoot('.'),
 				// your custom rules
-				'config'
+				'config',
+				'static'
 			]
 		}
 	}

@@ -27,7 +27,7 @@ const config = {
 			components: 'src/components',
 			types: 'src/types',
 			utils: 'src/utils',
-			sounds: './static/sounds',
+			assets: 'src/assets',
 			'course-client': 'src/course-client'
 		}
 	}
