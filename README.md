@@ -388,6 +388,7 @@ Help us to keep going
 - Audio generation (wip)
 `python3 /LibreLingo/app/librelingo_audios/cli.py /LibreLingo/courses/test-1/ /LibreLingo/librelingo-web/static/voice spanish-from-english`
 
-docker volume rm example_node_modules
-rm -rf local/path/to/node_modules
+##### Docker volume mounting (only for first time)
+docker volume rm example_node_modules (see in the docker compose - volumes section)
+rm -rf local/path/to/node_modules  
 mkdir local/path/to/node_modules

@@ -8,7 +8,7 @@ services:
       - ./src:/LibreLingo/app:Z # Python tools
       - ./docs:/LibreLingo/docs:Z
       - ./courses:/LibreLingo/courses:Z
-    command: ['tail', '-f', '/dev/null']
+    command: [ 'tail', '-f', '/dev/null' ]
     ports:
       - '8000:8000' # for mkdocs serve
     #environment:
@@ -35,3 +35,9 @@ volumes:
       type: none
       o: bind
       device: ./node_modules
+  web_node_modules:
+    driver: local
+    driver_opts:
+      type: none
+      o: bind
+      device: ./apps/web/node_modules
