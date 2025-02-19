@@ -1,26 +1,16 @@
 <script lang="ts">
   // TODO: deal with this ignore comment
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  import db from "../db/db.js"
-  import NavBar from "../components/NavBar.svelte"
+  //import db from "../db/db.js"
+  import NavBar from "../../components/NavBar.svelte"
   import Button from "lluis/DeprecatedButton.svelte"
   import FormField from "lluis/FormField.svelte"
+  import {handleLogin} from "./_logic"
 
-  let error: string | null = null
-  let username = ""
-  let password = ""
-
-  type WindowWithLogin = Window & {
-    _Login: (username: string, password: string) => Promise<void>
-  }
-
-  const handleLogin = async () => {
-      try {
-          await (window as unknown as WindowWithLogin)._Login(username, password)
-      } catch (e) {
-          error = e
-      }
-  }
+  import { page } from '$app/state';
+  let username = page.data.username
+  let password = page.data.password
+  let error: string | null = page.data.error
 </script>
 
 <svelte:head>
