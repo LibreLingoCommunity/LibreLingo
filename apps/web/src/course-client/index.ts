@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-fetch';
 import parseMarkdown from '../utils/parseMarkdown';
 import { baseURL } from './../../config/gists.json';
-
+import { PUBLIC_GITHUB_PAT } from '$env/static/public';
 export type SkillDataType = {
 	id: string;
 	practiceHref: string;
@@ -48,14 +48,16 @@ const fetchGistFiles = async (gistId: string) => {
 	// get the data from a Github gist served through a CORS proxy
 	try {
 		const baseURL2 = "https://api.github.com/gists"
+
 		const headers = {
 			'Accept': 'application/vnd.github+json',
-			'Authorization': 'token ' + process.env.github_pat,
+			'Authorization': 'token ' + PUBLIC_GITHUB_PAT,
 			'X-GitHub-Api-Version': '2022-11-28'
-		  };
-		const toAWait = fetch(`${baseURL2}/${gistId}`, {method: 'GET', headers: headers});
+		};
+
+		const toAWait = fetch(`${baseURL2}/${gistId}`, { method: 'GET', headers: headers });
 		const rawResponse = await toAWait;
-		
+
 		const response = await rawResponse.json();
 
 		const gistFiles = Object.fromEntries(
@@ -64,10 +66,10 @@ const fetchGistFiles = async (gistId: string) => {
 				.map(
 					([filename, value]: [string, RawGistFileType]) => [
 
-					filename.replace('librelingo___', '').replace('___', '/'),
-					filename.endsWith('.json') ? JSON.parse(value?.content) : value?.content
-				]
-			)
+						filename.replace('librelingo___', '').replace('___', '/'),
+						filename.endsWith('.json') ? JSON.parse(value?.content) : value?.content
+					]
+				)
 		);
 
 		return gistFiles;
@@ -85,7 +87,7 @@ export const get_course = async ({
 }): Promise<CourseDataType> => {
 	if (gistId !== null) {
 		const files = await fetchGistFiles(gistId);
-		
+
 		return formatCourseData(files['courseData.json'], { courseName });
 	}
 

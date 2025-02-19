@@ -9,6 +9,12 @@
 	import Footer from 'components/Footer.svelte';
 	import Mascot from 'components/NewMascot.svelte';
 	import Heading from 'components/Heading.svelte';
+
+	import {page} from '$app/state';
+
+	let coursesFs = page.data.coursesFs
+	let coursesGists = page.data.coursesGists
+
 </script>
 
 <svelte:head>
@@ -20,6 +26,7 @@
 	<Page>
 		<Hero>
 			<Stack direction="column" spacing="m" fullHeight justify="center">
+
 				<Stack spacing="m" direction="column" directionDesktop="row">
 					<Stack shrink={4}>
 						<Mascot shadow={false} glow={true} />
@@ -32,51 +39,39 @@
 						</Heading>
 					</Stack>
 				</Stack>
-				<Stack justify="center">
-					<Button style="primary" size="large" href="course/spanish-from-english">
-						<Translate key="index.start_spanish_course">Start learning Spanish</Translate>
-					</Button>
+
+				<Stack spacing="m" direction="column">
+					<!-- For each courses available locally.. -->
+					 {#if coursesFs}
+						<h3 style="text-align:center">Courses available locally</h3>
+						{#each coursesFs as course }
+							<Stack justify="center">
+								<Button style="primary" size="large" href="course/{course.path}">
+									<Translate key="index.start_{course.language}_course">Start learning {course.language}</Translate>
+								</Button>
+							</Stack>
+						{/each}
+					 {/if}
 				</Stack>
-				<Stack justify="center">
-					<Button style="primary" href="course/french-from-english">
-						<Translate key="index.start_french_course">Start learning French</Translate>
-					</Button>
+
+				<Stack spacing="m" direction="column" >
+					<!-- For each courses in gists available.. -->
+					{#if coursesGists}
+						<h3 style="text-align:center">Courses available from gists</h3>
+						{#each coursesGists as course }
+							<Stack justify="center">
+								<Button style="primary" size="large" href="course/{course.path}?gistId={course.gistId}">
+									<Translate key="index.start_{course.language}_course">Start learning {course.language}</Translate>
+								</Button>
+							</Stack>
+						{/each}
+					{/if}
+					
 				</Stack>
+
 			</Stack>
-
-			<Hidden>
-				<Button style="primary" href="course/german-from-english">Start learning German</Button>
-
-				
-
-				<Button style="primary" href="course/bangla-from-english">Start learning Bangla</Button>
-
-				<Button style="primary" href="course/parsig-from-english"
-					>Start learning Middle Persian</Button
-				>
-
-				<Button style="primary" href="course/basque-from-english">Start learning Basque</Button>
-
-				<Button style="primary" href="course/ladino-from-english">
-					Start learning Ladino (for English speakers)
-				</Button>
-
-				<Button style="primary" href="course/ladino-from-hebrew">
-					Start learning Ladino (for Hebrew speakers)
-				</Button>
-
-				<Button style="primary" href="course/ladino-from-spanish">
-					Start learning Ladino (for Spanish speakers)
-				</Button>
-
-				<Button style="primary" href="course/houma-from-english">
-					Start learning Houma (for English speakers)
-				</Button>
-			</Hidden>
+			
 		</Hero>
 		<Footer />
 	</Page>
 </main>
-
-<style lang="text/scss">
-</style>

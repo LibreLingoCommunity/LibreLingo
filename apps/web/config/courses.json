@@ -9,6 +9,7 @@
     "deploy": true,
     "devtoolsEnabled": true,
     "inProduction": true,
+    "gistId": "2c30ff4184a81074516280ef2bee5460",
     "name": "spanish-from-english",
     "source": "English",
     "target": "Spanish",
