@@ -14,7 +14,7 @@
     position: relative;
     max-width: var(--hero-max-width);
     margin: auto;
-    aspect-ratio: 17/10;
+    /* aspect-ratio: 17/10; */
     padding-left: 10%;
     padding-right: 10%;
     overflow: hidden;

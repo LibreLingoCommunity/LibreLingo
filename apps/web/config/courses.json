@@ -9,6 +9,7 @@
     "deploy": true,
     "devtoolsEnabled": true,
     "inProduction": true,
+    "gistId": "2c30ff4184a81074516280ef2bee5460",
     "name": "spanish-from-english",
     "source": "English",
     "target": "Spanish",
@@ -244,13 +245,13 @@
     "repositoryURL": "https://github.com/LibreLingoCommunity/LibreLingo-RU-from-EN",
     "paths": {
       "yamlFolder": "LibreLingo-RU-from-EN",
-      "jsonFolder": "ru-from-en"
+      "jsonFolder": "russian-from-english"
     },
-    "gist": "https://gist.github.com/giorginogreg/2fdea7b3778884390811facfb609f0f6",
+    "gistId": "2fdea7b3778884390811facfb609f0f6",
     "deploy": true,
     "devtoolsEnabled": false,
-    "inProduction": false,
-    "name": "ru-from-en",
+    "inProduction": true,
+    "name": "russian-from-english",
     "source": "English",
     "target": "Russian",
     "description": "Russian Course for English speakers"

@@ -19,7 +19,7 @@
 	};
 	const _Logout = () => (window as unknown as WindowWithLogout)._Logout();
 
-	const homepageLink = page?.params?.courseName ? `course/${page.params.courseName}/` : '/';
+	const homepageLink = page?.params?.courseName ? `/course/${page.params.courseName}/` : '/';
 </script>
 
 <NavBar>

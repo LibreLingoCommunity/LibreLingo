@@ -17,12 +17,13 @@
 	//export let id: string; // Re-enable when db and onmount
 	export let imageSet: string[] = [];
 	export let summary: string;
+	export let gistId: string | null = null;
 
 	let completed: boolean = false;
 	let started: boolean = false;
 	let stale: boolean = false;
 	let progress: boolean = false;
-	let introductionPageHref = introduction ? `${practiceHref}/introduction` : null;
+	let introductionPageHref = introduction ? `${practiceHref}/introduction` + (gistId ? `?gistId=${gistId}` : '') : null;
 	let backgroundColor = 'white';
 	let foregroundColor = 'black';
 

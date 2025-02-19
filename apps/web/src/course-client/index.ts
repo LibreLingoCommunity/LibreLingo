@@ -1,7 +1,6 @@
 import fetch from 'isomorphic-fetch';
 import parseMarkdown from '../utils/parseMarkdown';
 import { baseURL } from './../../config/gists.json';
-
 export type SkillDataType = {
 	id: string;
 	practiceHref: string;
@@ -49,11 +48,17 @@ const fetchGistFiles = async (gistId: string) => {
 	try {
 		const rawResponse = await fetch(`${baseURL}/${gistId}`);
 		const response = await rawResponse.json();
+		
 		const gistFiles = Object.fromEntries(
-			Object.entries(response.files).map(([filename, value]: [string, RawGistFileType]) => [
-				filename.replace('librelingo___', '').replace('___', '/'),
-				filename.endsWith('.json') ? JSON.parse(value?.content) : value?.content
-			])
+			Object
+				.entries(response.files)
+				.map(
+					([filename, value]: [string, RawGistFileType]) => [
+
+						filename.replace('librelingo___', '').replace('___', '/'),
+						filename.endsWith('.json') ? JSON.parse(value?.content) : value?.content
+					]
+				)
 		);
 
 		return gistFiles;
