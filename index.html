@@ -844,6 +844,10 @@ changes to this course and you want the changes to be visible in the frontend.</
 <h6 id="docker_1">Docker</h6>
 <pre><code class="language-bash">docker compose exec -it app python3 /LibreLingo/app/librelingo_json_export/cli.py /LibreLingo/courses/&lt;course_name&gt; /LibreLingo/librelingo-web/src/courses/&lt;course_name&gt;
 </code></pre>
+<p>or</p>
+<p>N.B. be sure that the course name has the correct name (e.g. <code>fr-from-en</code>), and that the folder contains directly all the course files and the course.yaml at the root (check <a href="https://github.com/LibreLingoCommunity/course-template">course template</a>)</p>
+<pre><code class="language-bash">docker compose exec -it app bash /LibreLingo/scripts/exportYamlCourse.sh &lt;course_name&gt;
+</code></pre>
 <h2 id="setting-up-semaphore-ci-in-a-clone">Setting up Semaphore CI in a clone</h2>
 <p>In order for Semaphore CI to correctly operate, you will need to set up certain secrets.</p>
 <p>This might not be necessary for you in all cases, but it cannot be avoided if you want to fully fork the repo, or work on CI configuration related tasks.</p>
