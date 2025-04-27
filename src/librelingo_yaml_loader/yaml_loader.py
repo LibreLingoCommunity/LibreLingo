@@ -395,7 +395,10 @@ def _load_skill(path: Path, course: Course) -> Skill:
         jsonschema.validate(data, _get_skill_schema(course))
         introduction = _load_introduction(str(path).replace(".yaml", ".md"))
         skill = data["Skill"]
-        characters = data["New Characters"]
+        characters = data.get("New Characters")
+        if characters is not None:
+            characters = _convert_characters(characters)
+
         words = data["New words"]
         phrases = data["Phrases"]
     except TypeError as type_error:
