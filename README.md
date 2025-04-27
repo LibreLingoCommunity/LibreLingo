@@ -11,33 +11,35 @@
 </p>
 <hr/>
 
-
 [![This project is using Percy.io for visual regression testing.](https://percy.io/static/images/percy-badge.svg)](https://percy.io/LibreLingo/LibreLingo)
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/kantord/LibreLingo?color=darkcyan)](https://github.com/kantord/LibreLingo/releases)
-![Build status](https://kantord.semaphoreci.com/badges/LibreLingo.svg?style=shields "Build status")
+![Build status](https://kantord.semaphoreci.com/badges/LibreLingo.svg?style=shields 'Build status')
 [![Matrix](https://img.shields.io/matrix/space-librelingo:matrix.org?color=%23000&label=chat%20on%20matrix&logo=matrix)](https://matrix.to/#/#LibreLingoCommunity:matrix.org)
 
 # Disclaimer
+
 All the credit for this project goes to Dániel Kántor for its creation and design.  
 The owner of this repository doesn't want any kind of merits, as them goes only to the creator and project's contributors.
 
-This project is simply a fork born from [his original idea](https://github.com/kantord/LibreLingo), created to continue to allow members to contribute, since communication with the original owner was difficult and often without replies and therefore hindered. 
+This project is simply a fork born from [his original idea](https://github.com/kantord/LibreLingo), created to continue to allow members to contribute, since communication with the original owner was difficult and often without replies and therefore hindered.
 
 We deeply appreciate his work and vision, and this fork aims to ensure the project continues to grow and evolve with the community's involvement.
 
 If there are any broken links in the docs or in the repo, please open an issue so we could work to fix it!
 
 # Why LibreLingo Community?
-LibreLingo is the original project of Dániel Kántor.  
- Unfortunately, LibreLingo's software stopped working because of Svelte problems that haven't been fixed for two years. In the meantime Dániel also decided to use another framework.  
- 
-  So the project was paused until 2025, when @giorginogreg forked it, fixed the Svelte Issues (and other bugs), and revived it for the community. 
-  
-  The LibreLingo Community was born. This also means that this course only works with LibreLingo Community at the moment, as LibreLingo is still broken.
 
-  (Thanks to @kate for having helped writing this!)
+LibreLingo is the original project of Dániel Kántor.  
+ Unfortunately, LibreLingo's software stopped working because of Svelte problems that haven't been fixed for two years. In the meantime Dániel also decided to use another framework.
+
+So the project was paused until 2025, when @giorginogreg forked it, fixed the Svelte Issues (and other bugs), and revived it for the community.
+
+The LibreLingo Community was born. This also means that this course only works with LibreLingo Community at the moment, as LibreLingo is still broken.
+
+(Thanks to @kate for having helped writing this!)
 
 # Documentation
+
 You can read the updated documentation [here](https://librelingocommunity.github.io/LibreLingo).
 
 ## Developing
@@ -110,23 +112,24 @@ Here there is an article of [why the original author has built LibreLingo](https
   </ol>
 </details>
 
-
-
 ## Using LibreLingo
 
 ### Web app
+
 LibreLingo offers an official [web app](https://librelingo.app/), which is very lightweight and written in Javascript using Svelte framework and pouchDB by the way, to try out LibreLingo courses interactively right in your browser, no installation required!
 
 #### Features
-* :bow_and_arrow: practice using interactive exercises
-* :juggling_person: spaced repetition
-* :bar_chart: save and monitor progress
-* :arrows_counterclockwise: synchronise progress across multiple devices
-* :iphone: works on various devices such as phones, tablets and desktop computers
-* :people_holding_hands: owned by you, the community
-* :dove: most courses are free, as in freedom and also as in beer
+
+- :bow_and_arrow: practice using interactive exercises
+- :juggling_person: spaced repetition
+- :bar_chart: save and monitor progress
+- :arrows_counterclockwise: synchronise progress across multiple devices
+- :iphone: works on various devices such as phones, tablets and desktop computers
+- :people_holding_hands: owned by you, the community
+- :dove: most courses are free, as in freedom and also as in beer
 
 #### Screenshots
+
 <p align="center">
   <img src="/docs/screenshots/screenshot1.png" width="15%" />
   <img src="/docs/screenshots/screenshot2.png" width="15%" />
@@ -135,30 +138,45 @@ LibreLingo offers an official [web app](https://librelingo.app/), which is very 
 </p>
 
 ### librelingo-yaml-loader
+
 [librelingo-yaml-loader](https://pypi.org/project/librelingo-yaml-loader/) is a Python 🐍 package that lets you load LibreLingo courses to create software based on LibreLingo. To see an extensive tutorial, [check out this article](https://dev.to/kantord/practice-tdd-by-creating-a-librelingo-based-language-learning-app-4apf).
+
 #### Setup
+
 [librelingo-yaml-loader](https://pypi.org/project/librelingo-yaml-loader/) can be installed using pip:
+
 ```sh
 pip install librelingo-yaml-loader
 ```
+
 #### Loading courses in a Python program
+
 You can use librelingo-yaml-loader to load YAML-based LibreLingo courses in your Python program.
+
 ```python
 from librelingo_yaml_loader import yaml_loader
 
-course = yaml_loader.load_course("./path/to/my/course") 
+course = yaml_loader.load_course("./path/to/my/course")
 ```
+
 `load_course` returns a [Course()](https://github.com/kantord/LibreLingo/blob/main/apps/librelingo_yaml_loader/librelingo_yaml_loader/data_types.py) object.
 
 ### librelingo-json-export
+
 [librelingo-json-export](https://pypi.org/project/librelingo-json-export/) is a Python 🐍 package that contains modules that let's you export LibreLingo courses into JSON files that will be read by the web app. This might be useful if you want to deploy YAML-based LibreLingo courses as a web app.
+
 #### Setup
+
 [librelingo-json-export](https://pypi.org/project/librelingo-json-export/) can be installed using pip:
+
 ```sh
 pip install librelingo-json-export
 ```
+
 #### Exporting courses to JSON
+
 [librelingo-json-export](https://pypi.org/project/librelingo-json-export/) has a command line program that can export YAML-based LibreLingo courses into the JSON format used by the web app.
+
 ```sh
 Usage:
   cli.py [OPTIONS] INPUT_PATH OUTPUT_PATH
@@ -174,8 +192,6 @@ Want to contribute to LibreLingo? Or create your own fork? Perhaps you want to u
 
 To get started with running the development environment on your computer and understanding the software architecture, [head to our development documentation](https://librelingo.app/docs/).
 
-
-
 ## Milestones reached
 
 - [x] 🏁 Demo course content in Spanish for English speakers
@@ -190,19 +206,23 @@ To get started with running the development environment on your computer and und
 - [x] 🏁 Spaced repetition implemented
 
 ## Roadmap
+
 All the in-progress / future work is updated in the "[Projects](https://github.com/users/giorginogreg/projects/1)" Github section.
 
 ### Starting Dev environment
+
 for starting the frontend container, you should create an empty folder in the root, called node_modules.
 Then you can start running `docker-compose up`
 
 ## Generating docs
+
 ### Docker
-For building all the docs that you see in https://librelingo.app/docs you can run the command `docker compose exec -it app pdm run mkdocs build`.  
 
-This command will read the src/mkdocs.yml file, will read the docs_dir path (in which all the .MD resides), and will generate the build outcome into the site_dir parameter. In this folder all the .html will be released.  
+For building all the docs that you see in https://librelingo.app/docs you can run the command `docker compose exec -it app pdm run mkdocs build`.
 
-For the sake of comfort, this path is mapped into the docker-compose.yml file, so files will be released into the mapped folders in your local system. 
+This command will read the src/mkdocs.yml file, will read the docs_dir path (in which all the .MD resides), and will generate the build outcome into the site_dir parameter. In this folder all the .html will be released.
+
+For the sake of comfort, this path is mapped into the docker-compose.yml file, so files will be released into the mapped folders in your local system.
 
 You could also start the serve command, so that you could edit live docs and see directly the outcome.
 
@@ -210,39 +230,58 @@ You could also start the serve command, so that you could edit live docs and see
 
 Then navigate at http://localhost:8000, and you should be able to see docs.
 
+### Note!
+
+If you want to push docs, you should install locally pdm, and run `pdm run mkdocs gh-deploy`.
+
+Otherwise...
+
+Once you have generated the docs, you can copy the folder `apps/docs/build` to the `docs` branch and push it.
+
 Note: in the docker-compose.yml file, you will find the volumes mounted with the :Z flag. This is for preventing environments with SElinux to cause issues in the containers.
 
 ## Contribution
+
 ### Become a contributor
+
 #### are you a developer?
+
 You can help LibreLingo by testing it and submitting feature requests or bug reports: [here](https://github.com/giorginogreg/LibreLingo/issues/new).
 Go through the dev docs [here](https://librelingo.app/docs/).
 
 Still got questions? Our Matrix/FreeNode IRC channel is `#LibreLingo`, join the dev community there and feel free to ask anything.
-* Matrix: [`#LibreLingo`](https://app.element.io/#/room/#space-librelingo:matrix.org) on `matrix.org`
-* IRC: connect to `irc.freenode.net` with your favourite client and join `#LibreLingo` 
+
+- Matrix: [`#LibreLingo`](https://app.element.io/#/room/#space-librelingo:matrix.org) on `matrix.org`
+- IRC: connect to `irc.freenode.net` with your favourite client and join `#LibreLingo`
 
 #### are you a linguaphile?
+
 Learning new language is an awesome experience right? If you wanna let others experience that too, make a course on LibreLingo! Get started [here](https://github.com/kantord/LibreLingo/tree/main/docs/courses).
 
 We are working on the process of creating courses, to make it more streamlined, if you have an idea to make it better, do share with us, create an [issue](https://github.com/kantord/LibreLingo/issues/new).
 Note: You are always encouraged to release the courses under a free license.
 
 #### are you a wordsmith?
+
 Translate the LibreLingo UI(LLUI) to make it more accessible, you can start [here](https://poeditor.com/join/project?hash=jKiKfen2Ye).
 
 ### Attributions
+
 #### Mascot
+
 The mascot is designed by [@almostdesigner](https://github.com/almostdesigner).
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Mascot images are released under <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
 
 ### Contributors
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-91-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-91-orange.svg?style=flat-square)](#contributors-)
+
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -376,12 +415,11 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
-
 ## Contributors who don't have a GitHub account.
 
 Since [All Contributors](https://allcontributors.org/) relies on GitHub accounts to show user info, it's not possible to use it to credit people who don't have a GitHub account. This place is intended as a list of people who contributed without registering for a GitHub account.
 
-* **[Kate](https://codeberg.org/kate)** - creating a [LibreLingo course](https://codeberg.org/kate/LibreLingo_FR_from_EN) on Codeberg
+- **[Kate](https://codeberg.org/kate)** - creating a [LibreLingo course](https://codeberg.org/kate/LibreLingo_FR_from_EN) on Codeberg
 
 ## License
 
@@ -389,16 +427,18 @@ LibreLingo is licensed under the AGPL-3.0 license. In addition, course content a
 
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkantord%2FLibreLingo.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkantord%2FLibreLingo?ref=badge_large)
 
-
 ## See also
-* [omnilingo](https://github.com/omnilingo/omnilingo), listening-based language learning
+
+- [omnilingo](https://github.com/omnilingo/omnilingo), listening-based language learning
 
 ## Donate
+
 Help us to keep going
 
-#### Others 
+#### Others
+
 - Audio generation (wip)
-`python3 /LibreLingo/app/librelingo_audios/cli.py /LibreLingo/courses/test-1/ /LibreLingo/librelingo-web/static/voice spanish-from-english`
+  `python3 /LibreLingo/app/librelingo_audios/cli.py /LibreLingo/courses/test-1/ /LibreLingo/librelingo-web/static/voice spanish-from-english`
 
 docker volume rm example_node_modules
 rm -rf local/path/to/node_modules
