@@ -44,18 +44,21 @@ about LibreLingo's background, [I recommend reading this article](https://dev.to
 ### Prerequisites
 
 In order to install the dependencies of this project, you will need to have some basic
-development tools installed.  
+development tools installed.
 
 Otherwise, if you have Docker installed in your machine, you could simplify the process by just downloading the latest docker image or building your own thanks to the Dockerfile provided
 
 #### Docker
 
 From the root folder, just run
+
 ```bash
-docker compose up -d
+mkdir node_modules #needed for having node dependencies while developing
+docker compose down -v && docker compose up -d
 ```
 
 After the image has been downloaded / built, you should run the following command for letting the deps installs correctly:
+
 ```bash
 docker compose exec -it app pdm install
 ```
@@ -102,7 +105,7 @@ nvm use 16
 #### Install dependencies:
 
 For this project it's recommended to use npm.  
-Although, you could try to use yarn and open issue if there are some problems, so it could be tried to letting the two package managers cohesists. 
+Although, you could try to use yarn and open issue if there are some problems, so it could be tried to letting the two package managers cohesists.
 
 Yarn is a package manager for JavaScript that helps manage project dependencies, ensuring consistent and efficient installations. For more information about Yarn, [please refer to the official documentation](https://yarnpkg.com/). [The steps required to install yarn itself are documented here](https://classic.yarnpkg.com/lang/en/docs/install/#debian-stable).
 
@@ -111,7 +114,9 @@ Once you're in the root folder of the web app, just run
 ```sh
 npm install
 ```
-or 
+
+or
+
 ```sh
 yarn install
 ```
@@ -155,6 +160,7 @@ Run
 ```sh
 pdm install
 ```
+
 This command ensures your local dependencies match the project's **pyproject.toml** and **pdm.lock** files.
 
 ##### Handling Outdated Local Dependencies
