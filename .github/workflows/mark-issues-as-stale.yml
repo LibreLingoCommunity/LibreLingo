@@ -6,7 +6,7 @@ on:
       - labeled
 
 jobs:
-  gestisci_stale:
+  manage_stales:
     if: github.event.label.name == 'stale'
     runs-on: ubuntu-latest
     steps:
