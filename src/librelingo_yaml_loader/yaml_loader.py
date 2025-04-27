@@ -429,7 +429,6 @@ def _load_skill(path: Path, course: Course) -> Skill:
     skill_id = skill["Id"]
     phrases = _convert_phrases(phrases)
     words = _convert_words(words)
-    characters = _convert_characters(character)
 
     _run_skill_spellcheck(phrases, words, course)
 

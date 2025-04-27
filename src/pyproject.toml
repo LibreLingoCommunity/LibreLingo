@@ -32,8 +32,6 @@ dev = [
 
 [tool.pdm.scripts]
 export-course = {call = "librelingo_json_export.cli:main"}
-install-courses = {call = "librelingo_scripts.install_courses:main"}
-
 
 [tool.commitizen]
 name = "cz_conventional_commits"
