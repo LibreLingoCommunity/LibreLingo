@@ -398,6 +398,112 @@
       
   
   
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Apps
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Apps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_1" id="__nav_10_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Python
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_1">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../apps/python/json_yaml_loader.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JSON YAML loader
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -410,10 +516,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" checked>
         
           
-          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -424,8 +530,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_10">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_11">
             <span class="md-nav__icon md-icon"></span>
             Courses
           </label>
@@ -919,12 +1025,25 @@ Two-way-dictionary:
   - says: dit
   - the man: L'homme
 </code></pre>
+<p>Additionally, characters which are unfamiliar to the person learning the new language can be included in skills. These are typically put above <code>New Words</code> in a <code>(skill_name).yaml</code> file.</p>
+<pre><code class="language-yaml">New Characters:
+
+  - Character: ç
+    Transliteration: s
+    IPA: /ç/
+</code></pre>
 <h3 id="data-breakdown">Data breakdown</h3>
 <p><strong><code>Skill</code></strong> has information about the skill.</p>
 <ul>
 <li><code>Skill &gt; Name</code>: The human-friendly name of the skill.</li>
 <li><code>Skill &gt; Id</code>: The ID of the course. <strong>NOTE:</strong> This should be unchanged if you're translating or editing an existing course. Only if you're creating a new course should this have a unique <a href="https://www.uuidgenerator.net/version4">UUID v4</a> string. Details for which you can find <a href="creating-courses.html">here</a>.</li>
 <li><code>Skill &gt; Thumbnails</code>: A list of filenames of the thumbnails to be used on the course page to give an idea of the skill. A list of available files can be found on <a href="https://github.com/LibreLingo/LibreLingo/tree/main/apps/web/static/images"><code>apps/web/static/images/</code></a>. The names should be used without extension and without <code>_tiny</code> or <code>_tinier</code> parts, e.g., <code>banana2_tinier.jpg</code> should be written as <code>banana2</code>.</li>
+</ul>
+<p><strong><code>New Characters</code></strong> has a list of new characters that the lesson teaches. This is only used for languages which use different characters than what the learner already knows. A character in LibreLingo can be a single character or a sound blend. These are currently not implemented in the web app.</p>
+<ul>
+<li><code>Character</code>: The new character. Ensure it has the correct unicode value so it displays correctly.</li>
+<li><code>Transliteration</code>: A list of transliterations of this character in the source language's script. The first one will be taught.</li>
+<li><code>IPA</code>: A list of pronounciations in IPA (Internation Phonetic Language) format. (optional)</li>
 </ul>
 <p><strong><code>New words</code></strong> has a list of new words that the lesson teaches.</p>
 <ul>
