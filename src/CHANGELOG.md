@@ -1,0 +1,898 @@
+## 0.1.0 (2025-04-27)
+
+### Feat
+
+- added new images and updated old ones with csv changes also
+- tool for fetching photo improved for differencing os
+- **frontend**: added whole code inside container
+- added script for gistify folder
+- :construction_worker: added frontend container and image
+- :sparkles: added french course button
+- **favicons**: added favicons
+- added docker compose file for generating courses, with commands
+- added Logo
+- imported course name page
+- imported various components
+- added heading component
+- added Mascot image
+- added style, recovered bulma and plugins
+- added page component
+- added Hero and Backdrop component
+- added all stacks in home
+- added Translate component, starting to add Stack
+- added hidden component
+- added button with all consequentials components in main page
+- adding translations
+- added sass support
+- :sparkles: added french course button
+- removed old svelte file
+- **favicons**: added favicons
+- added docker compose file for generating courses, with commands
+- added Logo
+- imported course name page
+- imported various components
+- added heading component
+- added Mascot image
+- added style, recovered bulma and plugins
+- added page component
+- added Hero and Backdrop component
+- added all stacks in home
+- added Translate component, starting to add Stack
+- added hidden component
+- added button with all consequentials components in main page
+- adding translations
+- added sass support
+- make images in skills optional again
+- enable kabyle-from-french course
+- update set of available pictures
+- enable dutch course
+- remove sponsor links
+- **yaml-loader**: load modules concurrently using threads
+- use JSON schema validation for skill files
+- add some more translation files (#2797)
+- enable Kabyle course (#2790)
+- add json schema validation for modules (#2788)
+- release new version of librelingo fakes
+- **web**: implement new design for landing page
+- add metadata to courses configuration file (#2627)
+- add better error message for misspelled Phrase key in yaml files, and corresponding unit test (#2587)
+- make YAML loader work without binary dependencies
+- show missing dict words without punctuation (#2535)
+- **web**: enable french-from-english
+- **dev**: add more useful links on the devtools page (#2369)
+- **web**: make logo link to home page
+- **devtools**: add devtools index page
+- **lluis**: add <Card />
+- start deploying neolatin course
+- enable portuguese course (#2319)
+- update french course settings
+- add missing images
+- add "go back" button to course introduction page (#2135)
+- add missing images
+- add missing images
+- changed Docker image from nodejs to Arch
+- add new images
+- allow loading course data from github gists (#2073)
+- Eliminate spaces when processing Two-way-dictionary
+- **yaml-loader**: release 1.10.0
+- improve error message by including filename as well
+- make the Two-way-dictionary handle parentheses
+- allow the creation of two-way dictionaries to reduce the need to add every word-pair in both directions (#2067)
+- download missing images
+- add new images
+- **lluis**: add <Footer /> (#2063)
+- fetch new images
+- link houma course on main page (#2053)
+- update image assets
+- enable the deployment of the Houma course (#2050)
+- replace exit() with sys.exit() (#2049)
+- add feedback button that leads to the repository of the course (#2034)
+- **json**: include the repositoryURL in the exported json file of the course
+- add Docker files to /apps folder (#2028)
+- deploy the basque course from the new repo (#2026)
+- **devtool**: fix the urls of the 3 courses that were moved to their own repo (#2019)
+- **web**: allow user to Cancel session at any moment (#2016)
+- use shellcheck in CI (#2010)
+- **devtool**: show markdown, link words in skills to word-page
+- **devtools**: allow underscore in skill filenames
+- **devtools**: allow underscore in skill filenames
+- **devtools**: add a static html page for each skill
+- **devtools**: add link to the new legacy devtool
+- **devtools**: add experimantal history page
+- **devtools**: separate get_template in preparation for multiple templates
+- **devtools**: split up courses.html in preparation for the history.html
+- **devtools**: collect history
+- **devtools**: show all counters on the front pages
+- **devtools**: make program executable
+- **devtools**: move the 4 local courses to the configuration file, simplify code generating dev pages
+- **devtools**: sort json keys in the hope that the file won't keep changing from run-to-run
+- **devtools**: separeate the local source directory from the directory relative to the git repository
+- **devtools**: don't pass args to functions
+- **devtools**: fix relative path
+- **devtools**: replace print with logging, fix relative pathes, fix error handling
+- deploy librelingo tools output to github pages (#1946)
+- update basque course
+- make ids unique in the basque course
+- **devtools**: enable checking the images again
+- **devtools**: separate the translation page
+- **devtools**: collect phrases and show phrase to the user and wait for the translation
+- **devtool**: script to practice a language on the command line
+- update basque course
+- **devtool**: add experimental page to show words missing from a course
+- **devtool**: replace the stat.json by the course.json
+- **devtool**: create json file with the meta-data of all the courses
+- **devtool**: save the course meta information in a json file to be used by the web app
+- **devtool**: be able to select the direction of the translation using buttons
+- **devtool**: improve filtering
+- **tool**: improve filter; run the translation when the page is loaded
+- **tool**: look words up in the new-words sections as well
+- **tool**: try to translate the text in both directions and show the results
+- update basque course
+- **yaml_loader**: add file names to data structures
+- update Basque course
+- update basque course
+- add ladino for spanish speakers fixes #1825
+- add preview deployment for Ladino courses
+- update basque course
+- update basque course
+- update basque course
+- highlight links on the markdown page
+- import german course from external repo (#1659)
+- **yaml_loader**: add hunspell spell checking (#1638)
+- **lluis**: add <Panel /> component (#1637)
+- **web**: create custom <Button /> component implementation (#1533)
+- update german course
+- export audios for words (#1587)
+- add audio generation script with aws support
+- **web**: improve NavBar design (#1522)
+- update basque course
+- display the correct answer on options challenges (#1481)
+- add support for single words/terms with spaces in them (#1452)
+- update basque course
+- update basque course
+- add extra chips in chips challenges This adds extra chips in chips challenges that will not be used in the correct solution.
+- **utils**: add iterate_phrases()
+- update basque course
+- update basque course
+- add repository_url to Course()
+- update basque course Add files via upload
+- add basque course
+- let courses disable listening challenges
+- **types**: add Settings()
+- export course data
+- add first Middle Persian lesson (#1314)
+- **web**: use custom <NavBar /> instead of bulma
+- **lluis**: remove unnecessary "dark" property from <NavBar />
+- **lluis**: add <NavBar />
+- **web**: remove <ChallengePanel /> animation
+- **web**: remove <ChallengePanel /> animation
+- add go server and build binaries in CI
+- **web**: make chips in challenges draggable
+- **web**: remove development page
+- update development docs link
+- create preview for the bangla course
+- add bangla course
+- create librelingo_yaml_loader
+- deprecate librelingo_tools
+- **tools**: release a new version of librelingo-tools
+- click to select word (#1098)
+- convert spanish-from-english course to YAML
+- **tools**: improve error messages for missing dictionary items
+- **tools**: normalize words for looking up dictionary definitions
+- **tools**: improve error messages when exporting skills
+- **tools**: force words to have definitions
+- export new german course
+- delete old experimental german course
+- add german-from-english course
+- **tools**: load mini dictionary from yaml
+- **tools**: add "dictionary" to Skill() type
+- **tools**: improve error messages
+- **tools**: collect multiple definitions for the same word
+- **tools**: handle duplicates words in load_dictionary()
+- **tools**: add new words to dictionary automatically
+- **tools**: add --dry-run
+- **liblili2json**: add cli
+- **liblili2json**: add export_course
+- **liblili2json**: add convert_phrases()
+- **liblili2json**: add convert_word
+- **liblili2json**: add convert_words()
+- **liblili2json**: add load_skill()
+- **liblili2json**: add load_skills
+- **liblili2json**: add load_course
+- **liblili2json**: add source language to Course
+- **liblili2json**: add export_course_skills
+- **liblili2json**: add logging when writing files
+- **liblili2json**: support alternative solutions
+- **liblili2json**: proper support for reverse chips challenges
+- **liblili2json**: export module titles
+- **liblili2json**: export some skill details
+- **liblili2json**: add summary to skills in course meta data
+- **liblili2json**: calculate number of levels
+- **liblili2json**: add opaqueid
+- update course data
+- update course data
+- **liblili2json**: improve license field format
+- update course data
+- **liblili2json**: add get_challenges_data
+- ad
+- add french course
+- add metadata for modules
+- add yaml skill example
+- **course editor**: add a license field (#884)
+- update course data
+- implement title component (#868)
+- Updated Challenge Screen Layout  (#821)
+- skip all listening excercises button
+- **navbar**: added sponsor button
+- **navbar**: added sponsor button
+- modified typo message to make more noticable
+- generate screenshots automatically for translation keys
+- add <Translate />
+- dev-typography ✨ fonts visual guide
+- visual font testing page
+- set up typescript
+- **sounds**: disabling the howler for cypress tests
+- **sounds**: disabling the howler for cypress tests
+- **sounds**: reverting sound const to avoid extra latency, added new line at the end of file
+- **sounds**: disabling the sounds when running cypress
+- add finish early button (#749)
+- add meta descriptions
+- fix bulma helpers
+- use Noto font
+- **coruse page**: add progress bar to skill cards
+- update course data
+- limit the length of each skill practice
+- update course data
+- make it possible to skip challenges
+- add a devtools page
+- enable auth by default
+- **skill-card**: subscribe to database changes
+- disable service worker temporarily
+- **sign-up**: add loading state
+- disable auth by default, but enable in SSR
+- enable auth by default
+- **editor**: add CORS support
+- disable auth by default
+- remove Continue reading on GitHub button from markdown based pages
+- make auth features enable by default
+- add license page
+- implement TOS page
+- link to correct TOS link on sign up form
+- force TOS acceptance before registration
+- use actual sign up backend in sign up form
+- call actual API in sign up form
+- add backend for registration
+- add endpoint for user registration
+- add sign up success page
+- add validation to sign up form
+- add sign-up form
+- **course editor**: support .librelingo.app domains
+- update course data
+- customize things to match theme
+- add bulmaswatch
+- change underline style in <Phrase />
+- add log in form
+- add progress synchronization system
+- remove "alternative form" from course editor
+- update course data
+- update course data
+- export alternative forms in chips challenge
+- export alternative forms in short input
+- export alternative forms in short input
+- update course data
+- update course data
+- update course data
+- update course data
+- **course editor**: add better string representation for models
+- **course editor**: add form for alternative solutions
+- update course data
+- add some images
+- **course editor**: add model for alternative solutions
+- save more data about practice results
+- update course data
+- update course data
+- add new images
+- update course data
+- update course data
+- add og meta tags
+- **index**: improve button layout
+- **development page**: add some buttons
+- add twitter button to development page
+- update course data
+- add skill summary to skills that only have phrases
+- add development progress page
+- **fanfare screen**: improve design on mobile
+- add dictionary to short input challenges
+- improve loading state for GitHubButton
+- make landing page more responsive
+- update fanfare screen design (#364)
+- add twitter button to <FanfareScreen />
+- add mascot to fanfare screen
+- **fanfarescreen**: align Twitter button to the bottom
+- add twitter button to fanfare screen
+- update course data
+- **course editor**: add listview edit to dictionary
+- update course content
+- add some new pictures
+- implement stale skills (spaced repetition) fixes #312
+- save datetime of practices
+- update course data
+- **course page**: make skill images optional
+- add missing audios
+- update course data
+- save course progress
+- **course editor**: add better text summary to dictionary items (#288)
+- clean words properly (#286)
+- update course data
+- **dictionary**: exclude empty definitions
+- update course data
+- **course editor**: automatically create dictionary entries (sentence)
+- **course editor**: add word translations to ChipsChallenge
+- fetch missing photos
+- **chipschallenge**: skip exercises that have too few words
+- **chips**: add translation challanges to source language
+- add footer (#233)
+- add transition when lesson is started
+- add pageloader
+- add alternative forms to words (#216)
+
+### Fix
+
+- added fix suggested by skivling
+- added multiple images
+- updated fetchphoto command for making it work on multiple os
+- fixed issue for mac M1 docker web not working
+- fixed typo
+- restored commit history clean
+- :memo: updated docs for fixing issue (#6)
+- :wastebasket: removed generated audio useless
+- :art: restored icons not working
+- :bug: fixed audio not loading
+- :bug: leven + paths issue
+- :bug: fixed levenshtein issue dep
+- added correct path for static folder
+- fixed sounds and images not appearing correctly
+- fixed images not showing on course
+- **favicons**: added correctly favicons
+- removed redundant import
+- restored challenges
+- fixed introduction sentence parsing
+- started fixing skill page
+- fixed general course page
+- fixed courses page
+- fixed navbar import
+- improved config for letting the components loading starting from the src folder
+- imported layout
+- fixed translations not working correctly
+- :memo: updated docs for fixing issue (#6)
+- :wastebasket: removed generated audio useless
+- :art: restored icons not working
+- :bug: fixed audio not loading
+- :bug: leven + paths issue
+- :bug: fixed levenshtein issue dep
+- added correct path for static folder
+- fixed sounds and images not appearing correctly
+- fixed images not showing on course
+- **favicons**: added correctly favicons
+- removed redundant import
+- restored challenges
+- fixed introduction sentence parsing
+- started fixing skill page
+- fixed general course page
+- fixed courses page
+- fixed navbar import
+- improved config for letting the components loading starting from the src folder
+- fixed deprecation warn
+- imported layout
+- fixed translations not working correctly
+- **deps**: update dependency dayjs to v1.11.11
+- **deps**: update font awesome to v6.5.2
+- **deps**: update dependency editdistance to ^0.8.0
+- **deps**: update dependency hotkeys-js to v3.13.7
+- **deps**: update dependency hotkeys-js to v3.13.6
+- **deps**: update dependency hotkeys-js to v3.13.5
+- **deps**: update dependency sortablejs to v1.15.2
+- **deps**: update dependency hotkeys-js to v3.13.4
+- fix invalid json in librelingo_yaml_loader (#3175)
+- **deps**: update dependency sirv to v2.0.4
+- **deps**: update dependency hotkeys-js to v3.13.3
+- **deps**: update dependency hotkeys-js to v3.13.2
+- **deps**: update dependency hotkeys-js to v3.13.1
+- **deps**: update dependency hotkeys-js to v3.13.0
+- **deps**: update font awesome to v6.5.1
+- **deps**: update dependency sortablejs to v1.15.1
+- **deps**: update font awesome to v6.5.0
+- **deps**: update dependency hotkeys-js to v3.12.2
+- **deps**: update dependency hotkeys-js to v3.12.1
+- enforce images are present in all skills
+- fix dutch course deployment
+- **deps**: update dependency mkdocs-mermaid2-plugin to v1.1.1
+- **deps**: update dependency howler to v2.2.4
+- **deps**: update dependency dayjs to v1.11.10
+- **deps**: update dependency svelte-i18n to v3.7.4
+- **deps**: update dependency svelte-i18n to v3.7.3
+- **deps**: update dependency mkdocs-mermaid2-plugin to v1.1.0
+- **deps**: update dependency mkdocs-mermaid2-plugin to v1.0.8
+- **deps**: update dependency mkdocs-mermaid2-plugin to v1.0.6
+- **deps**: update font awesome to v6.4.2
+- **deps**: update dependency hotkeys-js to v3.12.0
+- **deps**: update dependency mkdocs-mermaid2-plugin to v1.0.5
+- **deps**: update dependency pyyaml to v6
+- **deps**: update dependency mkdocs-mermaid2-plugin to v1
+- **deps**: update dependency hotkeys-js to v3.11.2
+- **deps**: update dependency hotkeys-js to v3.11.1
+- **deps**: update dependency hotkeys-js to v3.11.0
+- **deps**: update dependency hotkeys-js to v3.10.4
+- **deps**: update dependency dayjs to v1.11.9
+- **deps**: update dependency hotkeys-js to v3.10.3
+- **deps**: update dependency librelingo-json-export to ^0.11.0
+- **deps**: update dependency dayjs to v1.11.8
+- **deps**: update dependency sirv to v2.0.3
+- **deps**: update dependency js-cookie to v3.0.5
+- **deps**: update dependency js-cookie to v3.0.4
+- cancel session leads to test course
+- **deps**: update dependency hotkeys-js to v3.10.2
+- fix problems with the deployment of KAB course (#2791)
+- **deps**: update font awesome to v6.4.0
+- **deps**: update dependency regex to v2023 (#2770)
+- **deps**: update dependency pouchdb to v8.0.1
+- **deps**: update font awesome to v6.3.0
+- **deps**: update dependency python-slugify to v8 (#2659)
+- **deps**: update dependency bleach to v6 (#2652)
+- **deps**: update dependency pouchdb to v8 (#2614)
+- **deps**: update dependency dayjs to v1.11.7 (#2594)
+- **deps**: update dependency hotkeys-js to v3.10.1
+- **deps**: update dependency python-slugify to v7 (#2568)
+- **deps**: update font awesome to v6.2.1
+- **deps**: update dependency pouchdb to v7.3.1
+- **json-export**: remove duplicated character in progress output (#2534)
+- **utils**: fix issue when phrase has both ' and , fixes #2441
+- **deps**: update dependency pyfakefs to v5
+- **utils**: don't return punctuation as words
+- **deps**: update dependency dayjs to v1.11.6
+- **utils**: don't return punctuation as words (#2500)
+- **deps**: update dependency svelte-i18n to v3.4.0
+- **deps**: update font awesome to v6.2.0
+- **deps**: update dependency hotkeys-js to v3.10.0
+- **deps**: update dependency hotkeys-js to v3.9.5 (#2380)
+- **deps**: update dependency dayjs to v1.11.5 (#2366)
+- fix devtools build
+- **deps**: update font awesome to v6.1.2
+- **deps**: update dependency dayjs to v1.11.4
+- **web**: link Portuguese course from the landing page
+- disable french course in the dev tools (#2324)
+- **deps**: update dependency dayjs to v1.11.3
+- **deps**: update dependency hotkeys-js to v3.9.4
+- **deps**: update dependency bulma to v0.9.4
+- **deps**: update dependency dayjs to v1.11.2
+- **deps**: update dependency hotkeys-js to v3.9.3
+- **deps**: update dependency hotkeys-js to v3.9.2
+- **deps**: update dependency hotkeys-js to v3.9.1
+- **deps**: update dependency hotkeys-js to v3.9.0
+- **deps**: update dependency showdown to v2.1.0
+- **deps**: update dependency mkdocs-mermaid2-plugin to ^0.6.0
+- hide virtual keyboard when it's unusable/not needed (#2160)
+- **deps**: update dependency dayjs to v1.11.1
+- make virtual keyboard work better on touchscreen devices (#2147)
+- **deps**: update dependency pouchdb to v7.3.0
+- **deps**: update dependency hotkeys-js to v3.8.9 (#2141)
+- **deps**: update dependency svelte-i18n to v3.4.0
+- **deps**: update dependency hotkeys-js to v3.8.8
+- **deps**: update dependency bleach to v5 (#2132)
+- **deps**: update font awesome to v6 (#2116)
+- **deps**: update dependency regex to v2022 (#2115)
+- **deps**: update dependency python-slugify to v6 (#2114)
+- **deps**: update dependency sortablejs to v1.15.0 (#2109)
+- **deps**: update dependency dayjs to v1.11.0 (#2108)
+- **deps**: update dependency sirv to v2.0.2
+- fix deployment
+- Houma course has been failing for a couple of days now
+- fix houma course link (#2054)
+- trailing newline in exported course
+- the URL to the new location of the repository
+- the URL to the new location of the repository
+- central courses configuration file
+- linking the contributors batch to the contributors section
+- update links to point to https://github.com/LibreLingo/LibreLingo instead of https://github.com/kantord/LibreLingo
+- avoid potential bugs (#1999)
+- **devtool**: link to basque course fixed
+- **devtools**: fix the url where we link to
+- **devtools**: add trailing slash to url
+- **courses**: fic repository url of courses
+- fix librelingo-tools deployment (#1966)
+- fix course build
+- **tests**: fix typo/missing s
+- **deps**: update dependency sirv to v2 (#1920)
+- add missing f for f string
+- rename 3 images that included backtick in their name fixing #1856 (#1857)
+- **deps**: update dependency rehype-format to v4.0.1
+- **deps**: update dependency sirv to v1.0.19
+- add missing poetry dependency (#1771)
+- update svelte-i18n package to current version (#1720)
+- **utils**: fix version of 'regex'
+- prevent dropping non-Latin diacritics in chips (#1752)
+- fix test course json (#1738)
+- fix test course json
+- add missing basque course JSON files
+- **deps**: update dependency p-memoize to v6 (#1703)
+- about page 500 error (#1711)
+- **deps**: update dependency sirv to v1.0.18
+- **deps**: update dependency svelte-i18n to v3.3.13
+- fix deployment of german course from the external repo
+- Add Development Doc translation and English only notice (#1680)
+- **deps**: update dependency editdistance to ^0.6.0
+- **deps**: update dependency p-memoize to v5.0.1
+- attempt to fix deployment
+- fix hunspell in deployment
+- enable audio settings test course (#1613)
+- **deps**: update dependency p-memoize to v5 (#1611)
+- fixed and updated german course (#1612)
+- **deps**: update dependency p-memoize to v4.0.2
+- **deps**: update dependency dayjs to v1.10.7
+- **deps**: update dependency js-cookie to v3.0.1
+- **deps**: update dependency svelte-i18n to v3.3.10
+- **deps**: update dependency sirv to v1.0.17
+- **deps**: update dependency sirv to v1.0.16
+- **deps**: update dependency sirv to v1.0.14
+- **deps**: update dependency rehype-format to v4 (#1493)
+- **deps**: update dependency bleach to v4 (#1502)
+- **deps**: update font awesome
+- fix about page
+- accept solutions to chips challenges regardless of case (#1494)
+- do not display multiple of the same option in options challenges (#1482)
+- **deps**: update dependency js-cookie to v3 (#1480)
+- fix markdown loading
+- **deps**: update dependency dayjs to v1.10.6
+- **deps**: update dependency sortablejs to v1.14.0
+- **deps**: update dependency howler to v2.2.3
+- **deps**: update dependency howler to v2.2.2
+- **deps**: update dependency hotkeys-js to v3.8.7
+- **deps**: update dependency hotkeys-js to v3.8.6
+- **deps**: update dependency dayjs to v1.10.5
+- **deps**: update dependency sirv to v1.0.12
+- **deps**: update dependency hotkeys-js to v3.8.5
+- correct path for the binary building pipeline
+- **deps**: update dependency ts-loader to v8.2.0
+- **yaml_loader**: don't automatically convert booleans
+- **deps**: update dependency ts-loader to v8.1.0
+- **deps**: update font awesome
+- **deps**: update dependency ts-loader to v8.0.18
+- **deps**: update dependency hotkeys-js to v3.8.3
+- **yaml_loader**: fix failing tests
+- **json_export**: hide distracting private functions
+- **types**: add proper docstrings to types
+- **yaml_loader**: fix documentation issues
+- fix production deployment
+- fix vercel deployment
+- solve some of the problems in the bangla course
+- **web**: fix package release
+- **deps**: update dependency svelte-i18n to v3.3.4
+- **answer-corrector**: fix publish config
+- attempt to fix things
+- attempt to fix things
+- **web**: fix the import of answer corrector
+- **web**: fix broken import of @librelingo/answer-corrector
+- trigger release of "@librelingo/answer-corrector"
+- trigger a release of @librelingo/web
+- trigger a release
+- **tools**: include definitions from new words correctly
+- **deps**: update dependency ts-loader to v8.0.17
+- **deps**: update dependency source-map-loader to v2.0.1
+- **deps**: update dependency ts-loader to v8.0.16
+- **deps**: update dependency ts-loader to v8.0.15
+- **deps**: update dependency sirv to v1.0.11
+- **deps**: update dependency dayjs to v1.10.4
+- **deps**: update dependency hotkeys-js to v3.8.2
+- **deps**: update font awesome
+- **tools**: export yaml_loader
+- **readme**: improve web app documentation
+- **tools**: don't fail if directory already exists
+- **deps**: update dependency dayjs to v1.10.3
+- **deps**: update dependency sortablejs to v1.13.0
+- **deps**: update dependency dayjs to v1.10.2
+- **deps**: update dependency ts-loader to v8.0.14
+- **deps**: update dependency dayjs to v1.10.1
+- **deps**: update dependency dayjs to v1.10.0
+- **deps**: update dependency ts-loader to v8.0.13
+- **deps**: update dependency dayjs to v1.9.8
+- **deps**: update dependency source-map-loader to v2
+- **liblili2json**: liblili2json
+- **deps**: update dependency ts-loader to v8.0.12
+- **deps**: update dependency sirv to v1.0.10
+- **deps**: update dependency sirv to v1.0.9
+- **deps**: update dependency dayjs to v1.9.7
+- **deps**: update dependency source-map-loader to v1.1.3
+- **deps**: update dependency dayjs to v1.9.6
+- **deps**: update dependency ts-loader to v8.0.11
+- **deps**: update dependency ts-loader to v8.0.10
+- **deps**: update dependency ts-loader to v8.0.9
+- **deps**: update dependency dayjs to v1.9.5
+- **deps**: update dependency ts-loader to v8.0.8
+- **deps**: update dependency source-map-loader to v1.1.2
+- **deps**: update dependency howler to v2.2.1 (#858)
+- **deps**: update dependency ts-loader to v8.0.7
+- **deps**: update dependency dayjs to v1.9.4
+- **deps**: update dependency ts-loader to v8.0.6
+- **deps**: update dependency sirv to v1.0.7
+- fix percy in forks
+- **deps**: update remark monorepo
+- add missing translation key
+- **deps**: update dependency dayjs to v1.9.3
+- **deps**: update dependency dayjs to v1.9.2
+- **deps**: update dependency ts-loader to v8.0.5
+- **deps**: update dependency source-map-loader to v1.1.1
+- **deps**: update font awesome
+- **deps**: pin dependencies
+- **deps**: update dependency remark-rehype to v8
+- **deps**: update font awesome
+- **deps**: update dependency bulma to v0.9.1
+- **deps**: update dependency dayjs to v1.9.1
+- **deps**: update dependency sortablejs to v1.12.0
+- **deps**: update dependency @openfonts/noto-sans_all to v1.44.2
+- **deps**: update dependency p-memoize to v4.0.1
+- **deps**: update dependency dayjs to v1.8.36
+- fix stale state on skills that are not completed yet
+- **deps**: pin dependency @openfonts/noto-sans_all to 1.44.1
+- **deps**: pin dependency lodash.uniq to 4.5.0
+- **deps**: update dependency dayjs to v1.8.35
+- switch GPLv3 refs to AGPLv3
+- fix skip action
+- **deps**: update dependency dayjs to v1.8.34
+- **deps**: update dependency sirv to v1.0.6
+- **deps**: update dependency dayjs to v1.8.33
+- **chips challenge**: fix bug in re-ordering mechanism
+- **answer-corrector**: don't return possible suggestions, if there's a fully correct form
+- **button**: fix lowercase typography on the virtual keyboard
+- **deps**: update dependency dayjs to v1.8.32
+- **deps**: update dependency sirv to v1.0.5
+- **answer-corrector**: allow for punctuation mistakes, but suggest correct form
+- fix enter key in ChipsChallenge
+- fix logout feature - don't delete actual documents
+- **github-button**: reduce size on mobile screens (#577)
+- fix database subscriptions
+- **db**: unsubscribe from database changes when component is destroyed
+- **db**: increase maximum number of listeners
+- **deps**: update dependency pouchdb to v7.2.2
+- fix failing tests
+- clear local db after logout fixes #560
+- **auth**: allow forms to be submitted with enter key
+- **auth**: send cookies for synchronization
+- set credentials in login request
+- set credentials in login request
+- fix sign-up success page in SSR
+- add missing title to log in and sign up pages
+- **sign-up**: fix loading state in fake signup
+- **sign-up**: fix redirection on success
+- **deps**: update font awesome
+- fix title on markdown based pages
+- **deps**: update remark monorepo
+- fix typo
+- **deps**: update dependency rehype-format to v3.1.0
+- **deps**: update font awesome
+- **deps**: update dependency sirv to v1.0.1
+- handle incorrect password
+- **deps**: update dependency sirv to v1
+- **deps**: update dependency rehype-stringify to v8
+- **deps**: pin dependency js-cookie to 2.2.1
+- **deps**: update dependency dayjs to v1.8.28
+- fix bug with re-ordering chips in chips challenge
+- **course editor**: fix django static dir
+- **deps**: update dependency sirv to v0.4.6
+- **deps**: pin dependency bulma to 0.8.2
+- **deps**: update dependency remark-rehype to v7
+- **deps**: update dependency hotkeys-js to v3.8.1
+- **deps**: update dependency howler to v2.2.0
+- **deps**: update dependency hotkeys-js to v3.8.0
+- **deps**: update dependency dayjs to v1.8.27
+- fix bug in skill edit links
+- **skill card**: fix unhandled promise warning
+- **course editor**: add missing migration
+- **deps**: update dependency dayjs to v1.8.26
+- **short input**: fix alternative forms
+- **deps**: update dependency remark-parse to v8.0.2
+- **about**: fix typos
+- **development page**: fix buttons layout
+- **development page**: fix loader
+- **development page**: fix mobile layout
+- **development page**: only fetch new issues in the browser
+- **deps**: update dependency dayjs to v1.8.25
+- fix slugs for skills with special characters in their title
+- **deps**: update dependency remark-parse to v8.0.1
+- **deps**: pin dependency p-memoize to 4.0.0
+- **deps**: pin dependency @fortawesome/free-brands-svg-icons to 5.13.0 (#369)
+- **deps**: update dependency bulma to v0.8.2 (#336)
+- **course editor**: fix internal server error when adding new words
+- **deps**: pin dependency dayjs to 1.8.24
+- **deps**: update remark monorepo
+- **deps**: update dependency rehype-stringify to v7
+- **deps**: pin dependencies
+- **deps**: update dependency svelte-i18n to v3.0.3
+- **deps**: pin dependency bulma-tooltip to 3.0.2
+- **deps**: update dependency hotkeys-js to v3.7.6
+- **deps**: update dependency hotkeys-js to v3.7.5
+- **deps**: update dependency hotkeys-js to v3.7.4
+- **deps**: update dependency bulma to v0.8.1
+- **challengescreen**: fix horizontal scrolling issue on mobile devices
+- **deps**: update dependency remark-rehype to v6
+- **deps**: update dependency @fortawesome/fontawesome-free to v5.13.0
+- **bug**: fixes autopcapitalize issue on ios (#250)
+- **deps**: pin dependency bulma-pageloader to 0.3.0
+- **deps**: update dependency rehype-format to v3.0.1
+
+### Refactor
+
+- :truck: renamed old index file in component name
+- **python**: moved python files from root into src folder
+- :truck: renamed old index file in component name
+- **python**: moved python files from root into src folder
+- combine all python modules into a single package using pdm (#3366)
+- rename <NewButton /> to <Button /> (#2715)
+- simplify export.py (#2522)
+- **docker**: rewrite Dockerfile using Ubuntu
+- **courses-json**: rename "enable" to "inProduction"
+- **tools**: rename "dev" to "devtoolsEnabled"
+- **tools**: rename "tdir" to "jsonFolder"
+- **tools**: rename "sdir" to "yamlFolder"
+- **tools**: group paths in courses.json
+- remove unnecessary list() call
+- extract course data layer (#2066)
+- return list if we would flatten it anyway; add type annotation
+- simplify code creating Skill
+- re-organize gitignore
+- **tests**: add test_yaml_loader_load_modules.py (#2047)
+- **tests**: add test_yaml_loader_load_skills.py (#2042)
+- **tests**: move load_dictionary tests into a separated file (#2005)
+- use number(5000) in path() (#2017)
+- move temporarily inactive courses into separate repositories
+- **tests**: add test_export_course_skills.py (#1992)
+- **codebase**: type all possible instances (#1964)
+- **tests**: various test refactors
+- **tests**: use @pytest.mark.parametrize (#1972)
+- **devools**: eliminate some local variables
+- **devools**: eliminate some duplicated code, use less variables
+- **devools**: replace external command by importing and function call
+- **devools**: convert to class, eliminate global variables to make it possible to reuse the code in other process
+- **tests**: refactor test_export.py (#1950)
+- **devtool**: extrace the collect_words function to make it reusable
+- **devtool**: return value, make data collection function reusable
+- **tests**: add test_challenges_get_chips_from_phrase.py
+- **tests**: add test_challenges_get_chips_challenge.py
+- **tests**: add test_challenges_listening_challenge.py
+- **tests**: add test_challenges_get_short_input_challenge.py
+- **tests**: add test_challenges_get_options_challenge.py
+- **tests**: add test_challenges_get_cards_challenge.py
+- **tests**: add test_challenges_get_phrase_challenges.py
+- **tests**: add test_challenges_get_word_challenges.py
+- **tests**: split mocks
+- pass whole data structure so we can use more of its fields
+- **tests**: add test_challenges_get_challenges_data.py (#1921)
+- convert text documentation into doctest
+- run export script from main venv instead of app-specific (#1772)
+- implement themes as JSON
+- add docstring to PhraseIdentity
+- **audios**: use less confusing syntax for NamedTuple
+- **audios**: create terminal.assert_output_matches
+- **audiso**: create index_file.set_entries
+- **audios**: create index_file.assert_exists
+- **audios**: move fixtures to conftest.py
+- **audios**: use pytest fixtures to generate dummy audio files
+- **audios**: use pytest fixture to mock index entries
+- **audios**: reuse list_required_audios()
+- **audios**: improve terminal messages mock
+- **audios**: create a fixture for console messages
+- **audios**: create test helper _mock_audio_file_for_text
+- build test course in YAML
+- **json_export**: make get_chips() take course as an argument
+- **audios**: re-use iterate_phrases() from utils
+- **json_export**: simplify _get_phrase_challenges()
+- **json_export**: allow challenge type callbacks to return multiple or zero challenges
+- **json_export**: make make_challenges_using() easier to change
+- **json_export**: remove deprecated usage of assertEquals
+- **lluis**: extract <ButtonLink />
+- improve typescript configuration
+- **utils**: take `language` instead of `language_id` in audio_id()
+- separate librelingo_tools into multiple packages
+- extract package librelingo_types
+- delete deprecated course editor
+- rename workspaces/ to apps/
+- **tools**: extract get_all_skills()
+- **tools**: extract get_dictionary_items_from_skill_mini_dictionary()
+- **tools**: extract get_dictionary_items_from_new_words()
+- **tools**: rename reverse to is_in_target_language
+- **tools**: load_dictionary(): extract merging logic
+- **tools**: reword data structures in load_dictionary()
+- rename test_liblili2json.py to test_librelingo_tools.py
+- rename liblili2json to librelingo_tools
+- **liblili2json**: minor refactoring of tests
+- **liblili2json**: create Language type
+- **liblili2json**: small improvements
+- write course meta data into files using liblili2json
+- use liblili2json to export course skills to JSON
+- **liblili2json**: minor refactoring of tests
+- **liblili2json**: extract fakes.path()
+- write skill json files using liblili2json
+- **liblili2json**: move challenge tests to a new file
+- **liblili2json**: clean up __init__.py
+- **liblili2json**: move get_skills
+- **liblili2json**: move get_course_data
+- **liblili2json**: move get_module_summary
+- **liblili2json**: move challenge formatters to challenge_types.py
+- **liblili2json**: move hash related functions to utils.py
+- **liblili2json**: rename get_dictionary_item to get_raw_dictionary_item
+- **liblili2json**: move dictionary related function to new file
+- **liblili2json**: move clean_word to utils.py
+- use liblili2json to export skills
+- **liblili2json**: creates fakes.customize
+- **liblili2json**: create get_dictionary_item()
+- **liblili2json**: include actual definiton in "phrase" in chips challenge
+- **liblili2json**: incluse "phrase" in chips challenge
+- **liblili2json**: add 'dictionary' to Course
+- add liblili2json chore: set up boilerplate for liblili_to_json
+- **liblili2json**: add Course()
+- **course editor**: export Course meta data using liblili2json
+- **liblili2json**: reorganize fake skills
+- **liblili2json**: use a test class to simplify test naming
+- create translation key screenshots in a separate cypress command
+- move semaphore config under .github
+- **skillcard**: create <Buttons />
+- **skillcard**: create <ContentCenter />
+- **skillcard**: simplify arguments to <ImageSet />
+- **skillcard**: add <ContentLeft />
+- **skillcard**: add <ImageSet />
+- **lluis**: created <ClampedText />
+- create <Summary /> in <SkillCard />
+- **course editor**: export number of levels for the challenges files too
+- **course editor**: add levels to course data
+- **skill stats**: add 'progress'
+- **skill stats**: rename 'completed' to 'started'
+- **chips challenge**: create a directory-based component
+- **answer-corrector**: create getSuggestion
+- **answer-corrector**: create normalize()
+- **answer-corrector**: create areSentencesIdentical
+- **answer-corrector**: create areSentencesSimilar
+- **answer-corrector**: create function to ignore whitespace and casing
+- create a new package for validating text input answers
+- extract clearLocalDB()
+- make it easier to create markdown based pages
+- refactor forms
+- rename packages/ to workspaces/
+- extract ui components to a new packages (lluis)
+- introduce yarn workspaces
+- **ui-kit/column**: make prop style more readable
+- refactor more things to use <Column>
+- **save practive**: simplify code
+- **save practice**: allow saving n. of correct and incorr. answers
+- create savePractice
+- create getSkillStats
+- move db.js into its own folder
+- create <Column /> and <Columns />
+- use <Button /> everywhere
+- **challenge panel**: use <Button /> component
+- **option**: remove unused prop
+- **listening challenge**: remove unused prop
+- **listening challenge**: remove unused imports
+- **listening challenge**: remove unused style
+- **github button**: use <Button /> component
+- refactor <Button /> component
+- **twitter button**: implement using <Button />
+- create <Button />
+- rewrite cypresss/integration/cards.js in gherkin
+- rewrite cypresss/integration/chips.js in gherkin
+- rewrite cypresss/integration/optionSelection.js in gherkin
+- rewrite cypresss/integration/listening.js in gherkin
+- refactor shortInput test to cucumber
+- **fanfare screen tests**: refactor tests to use cucumber
+- rename tests_exportcourse to test_exportcourse
+- **chips challenge**: extract <Phrase /> component
+- **chipschallenge**: rename meaningInSourceLanguage
+- **chipschallenge**: rename formInTargetLanguage
+- **chips**: disambiguate chips challenge JSON schema
+- extract logic from deckchallenge
+
+### Perf
+
+- **json-export**: update dependencies to improve performance
+- **yaml-loader**: improve performance of loading YAML
+- don't load unused font
+- make tinier images even tinier
+- remove unused CSS
