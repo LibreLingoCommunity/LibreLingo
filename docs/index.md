@@ -216,6 +216,14 @@ yarn run exportCourse spanish-from-english
 docker compose exec -it app python3 /LibreLingo/app/librelingo_json_export/cli.py /LibreLingo/courses/<course_name> /LibreLingo/librelingo-web/src/courses/<course_name>
 ```
 
+or
+
+N.B. be sure that the course name has the correct name (e.g. `fr-from-en`), and that the folder contains directly all the course files and the course.yaml at the root (check [course template](https://github.com/LibreLingoCommunity/course-template))
+
+```bash
+docker compose exec -it app bash /LibreLingo/scripts/exportYamlCourse.sh <course_name>
+```
+
 ## Setting up Semaphore CI in a clone
 
 In order for Semaphore CI to correctly operate, you will need to set up certain secrets.
