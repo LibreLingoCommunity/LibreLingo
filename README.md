@@ -37,6 +37,9 @@ LibreLingo is the original project of Dániel Kántor.
 
   (Thanks to @kate for having helped writing this!)
 
+# Documentation
+You can read the updated documentation [here](https://librelingocommunity.github.io/LibreLingo).
+
 ## Developing
 
 Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
