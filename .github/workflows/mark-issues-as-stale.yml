@@ -1,0 +1,22 @@
+name: Manual management of stale issues
+
+on:
+  issues:
+    types:
+      - labeled
+
+jobs:
+  manage_stales:
+    if: github.event.label.name == 'stale'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          only-labels: stale
+          days-before-issue-stale: -1
+          days-before-issue-close: 7
+          stale-issue-message: >
+            ⚠️ This issue has been marked as stale. If no updates will be received after 7 days, this issue will automatically been closed.
+          close-issue-message: >
+            🔒 This issue was closed automatically due to inactivity.

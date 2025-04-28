@@ -1,14 +1,19 @@
 site_name: LibreLingo Documentation
 repo_url: https://github.com/giorginogreg/LibreLingo
 use_directory_urls: false
-docs_dir: /LibreLingo/docs
-site_dir: /LibreLingo/build/docs
+docs_dir: ../docs
+site_dir: ../apps/docs/build
 
+# For docker container
+#docs_dir: /LibreLingo/docs
+#site_dir: /LibreLingo/build/docs
+
+remote_branch: docs
 theme:
   name: material
   palette:
     primary: #325f74;
 
 plugins:
-    - search
-    - mermaid2
+  - search
+  - mermaid2
