@@ -126,7 +126,7 @@ yarn install
 Start the development server:
 
 ```sh
-npm run dev
+npm run web-serve
 ```
 
 or
