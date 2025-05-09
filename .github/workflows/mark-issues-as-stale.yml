@@ -4,10 +4,11 @@ on:
   issues:
     types:
       - labeled
-
+    schedule:
+      - cron: '0 0 * * *' 
 jobs:
   manage_stales:
-    if: github.event.label.name == 'stale'
+    if: github.event_name == 'schedule' || github.event.label.name == 'stale'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/stale@v9
