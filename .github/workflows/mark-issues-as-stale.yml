@@ -4,8 +4,8 @@ on:
   issues:
     types:
       - labeled
-    schedule:
-      - cron: '0 0 * * *' 
+  schedule:
+    - cron: '0 0 * * *' 
 jobs:
   manage_stales:
     if: github.event_name == 'schedule' || github.event.label.name == 'stale'
