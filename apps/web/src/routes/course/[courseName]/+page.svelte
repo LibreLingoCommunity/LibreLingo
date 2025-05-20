@@ -15,7 +15,7 @@
 	export let languageName = page.data.course.languageName;
 	export const repositoryURL = page.data.course.repositoryURL;
 	export let uiLanguage = 'es';
-
+	const gistId = page.url.searchParams.get('gistId');
 	locale.set(uiLanguage);
 </script>
 
@@ -34,7 +34,7 @@
 					<Column sizeDesktop="1/3" sizeTablet="1/2">
 						<SkillCard
 							{...{ ...skill }}
-							practiceHref={`/course/${courseName}/skill/${skill.practiceHref}`}
+							practiceHref={`/course/${courseName}/skill/${skill.practiceHref}${gistId ? `?gistId=${gistId}` : ''}`}
 						/>
 					</Column>
 				{/each}
