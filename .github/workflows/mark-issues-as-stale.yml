@@ -4,8 +4,8 @@ on:
   issues:
     types:
       - labeled
-    schedule:
-      - cron: '0 0 * * *' 
+  schedule:
+    - cron: '0 0 * * *' 
 jobs:
   manage_stales:
     if: github.event_name == 'schedule' || github.event.label.name == 'stale'
@@ -15,7 +15,7 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           only-labels: stale
-          days-before-issue-stale: -1
+          days-before-issue-stale: 3
           days-before-issue-close: 7
           stale-issue-message: >
             ⚠️ This issue has been marked as stale. If no updates will be received after 7 days, this issue will automatically been closed.
