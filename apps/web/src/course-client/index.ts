@@ -1,6 +1,8 @@
 import fetch from 'isomorphic-fetch';
 import parseMarkdown from '../utils/parseMarkdown';
 import { baseURL } from './../../config/gists.json';
+import { PUBLIC_GITHUB_PAT } from '$env/static/public';
+
 export type SkillDataType = {
 	id: string;
 	practiceHref: string;
@@ -45,8 +47,16 @@ type RawGistFileType = {
 
 const fetchGistFiles = async (gistId: string) => {
 	// get the data from a Github gist served through a CORS proxy
+	const baseURL2 = "https://api.github.com/gists"
+
+		const headers = {
+			'Accept': 'application/vnd.github+json',
+			'Authorization': 'token ' + PUBLIC_GITHUB_PAT,
+			'X-GitHub-Api-Version': '2022-11-28'
+		};
+
 	try {
-		const rawResponse = await fetch(`${baseURL}/${gistId}`);
+		const rawResponse = await fetch(`${baseURL}/${gistId}`, { method: 'GET', headers: headers });
 		const response = await rawResponse.json();
 		
 		const gistFiles = Object.fromEntries(

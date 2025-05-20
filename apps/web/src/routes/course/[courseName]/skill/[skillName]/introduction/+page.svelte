@@ -13,8 +13,10 @@
 	export let title: string = page.data.title;
 	export let practiceHref: string = page.data.practiceHref;
 	export let courseName: string = page.data.courseName;
+	export let gistId: string = page.data.gistId;
 
 	// Fetching preview data
+	
 	if (preview !== null) {
 		let gistParams = preview.gistId;
 		if (isBrowser()) {
@@ -23,11 +25,11 @@
 		}
 
 		const { skillName, gistId } = gistParams;
-
+		
 		get_skill_introduction({ courseName: 'preview', skillName, gistId }).then((skillData) => {
 			title = skillData.title;
 			readmeHTML = skillData.readmeHTML;
-			practiceHref = skillData.practiceHref;
+			practiceHref = skillData.practiceHref + (gistId ? `?gistId=${gistId}` : '');
 			loading = false;
 		});
 	}
@@ -37,7 +39,7 @@
 	<MarkDownPage {readmeHTML} {title} description={$_('about.meta.description')}>
 		<div>
 			<Button style="secondary" href={`/course/${courseName}`}>Go back to the course</Button>
-			<Button style="primary" href={`/course/${courseName}/skill/${practiceHref}`}
+			<Button style="primary" href={`/course/${courseName}/skill/${practiceHref}${gistId ? `?gistId=${gistId}` : ''}`}
 				>Practice {title}</Button
 			>
 		</div>

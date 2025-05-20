@@ -3,8 +3,8 @@ import { get_skill_introduction } from 'course-client';
 export async function load(page) {
 	const { courseName, skillName } = page.params;
 
+	const gistId = page.url.searchParams.get('gistId');
 	if (courseName === 'preview') {
-		const gistId = page.url.searchParams.get('gistId');
 		const skillNameFromQuery = page.url.searchParams.get('skillName');
 
 		return {
@@ -18,8 +18,9 @@ export async function load(page) {
 	}
 
 	return {
-		...(await get_skill_introduction({ courseName, skillName })),
+		...(await get_skill_introduction({ courseName, skillName, gistId })),
 		loading: false,
-		preview: null
+		preview: null,
+		gistId
 	};
 }
