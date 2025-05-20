@@ -42,12 +42,15 @@
 						<Translate key="index.start_french_course">Start learning French</Translate>
 					</Button>
 				</Stack>
+				<Stack justify="center">
+					<Button style="primary" href="course/ru-from-en?gistId=2fdea7b3778884390811facfb609f0f6">
+						<Translate key="index.start_ru_course">Start learning Russian</Translate>
+					</Button>
+				</Stack>
 			</Stack>
 
 			<Hidden>
 				<Button style="primary" href="course/german-from-english">Start learning German</Button>
-
-				
 
 				<Button style="primary" href="course/bangla-from-english">Start learning Bangla</Button>
 

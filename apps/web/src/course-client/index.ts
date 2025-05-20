@@ -47,8 +47,7 @@ type RawGistFileType = {
 const fetchGistFiles = async (gistId: string) => {
 	// get the data from a Github gist served through a CORS proxy
 	try {
-		const toAWait = fetch(`${baseURL}/${gistId}`);
-		const rawResponse = await toAWait;
+		const rawResponse = await fetch(`${baseURL}/${gistId}`);
 		const response = await rawResponse.json();
 		const gistFiles = Object.fromEntries(
 			Object.entries(response.files).map(([filename, value]: [string, RawGistFileType]) => [

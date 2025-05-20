@@ -238,5 +238,21 @@
     "source": "English",
     "target": "Dutch",
     "description": "Dutch for English speakers"
+  },
+  {
+    "url": "https://github.com/LibreLingoCommunity/LibreLingo-RU-from-EN",
+    "repositoryURL": "https://github.com/LibreLingoCommunity/LibreLingo-RU-from-EN",
+    "paths": {
+      "yamlFolder": "LibreLingo-RU-from-EN",
+      "jsonFolder": "ru-from-en"
+    },
+    "gist": "https://gist.github.com/giorginogreg/2fdea7b3778884390811facfb609f0f6",
+    "deploy": true,
+    "devtoolsEnabled": false,
+    "inProduction": false,
+    "name": "ru-from-en",
+    "source": "English",
+    "target": "Russian",
+    "description": "Russian Course for English speakers"
   }
 ]
