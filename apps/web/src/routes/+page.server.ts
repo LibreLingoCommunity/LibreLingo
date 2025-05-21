@@ -3,23 +3,23 @@ import path from 'path';
 import { readFile } from 'fs/promises';
 import courses from "./../../config/courses.json"
 
+const getDirectories = async (source: string) => {
+    const files = await readdir(source, { withFileTypes: true });
+    return files.filter(dirent => dirent.isDirectory()).filter(dir => !dir.name.includes('test')).map(dirent => dirent.name);
+};
+
 export async function load() {
-    const testFolder = './src/courses';
-
-    const getDirectories = async (source: string) => {
-        const files = await readdir(source, { withFileTypes: true });
-        return files.filter(dirent => dirent.isDirectory()).filter(dir => !dir.name.includes('test')).map(dirent => dirent.name);
-    };
-
-    const folderList = await getDirectories(testFolder);
-
+    const testFolder = './../courses';
     let verifiedFolderList: Array<{ path: string; language: string }> = [];
+    
+    if (fs.existsSync(testFolder)) {
+        const folderList = await getDirectories(testFolder);
 
-    for (let folder of folderList) {
-        let folderPath = path.join(testFolder, folder);
+        for (let folder of folderList) {
+            let folderPath = path.join(testFolder, folder);
 
-        try {
-            const courseDataPath = path.join(folderPath, 'courseData.json');
+            try {
+                const courseDataPath = path.join(folderPath, 'courseData.json');
             const challengesPath = path.join(folderPath, 'challenges');
 
             const courseDataFileExists = await fileExists(courseDataPath);
@@ -42,9 +42,10 @@ export async function load() {
                 language: courseLanguage.languageName.toLowerCase(),
             });
 
-        } catch (err) {
-            console.error(`Error during folder reading: ${err}`);
-            continue;
+            } catch (err) {
+                console.error(`Error during folder reading: ${err}`);
+                continue;
+            }
         }
     }
 
