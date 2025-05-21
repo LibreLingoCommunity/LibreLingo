@@ -47,24 +47,23 @@ type RawGistFileType = {
 
 const fetchGistFiles = async (gistId: string) => {
 	// get the data from a Github gist served through a CORS proxy
-	const baseURL2 = "https://api.github.com/gists"
-
-		const headers = {
-			'Accept': 'application/vnd.github+json',
-			'Authorization': 'token ' + PUBLIC_GITHUB_PAT,
-			'X-GitHub-Api-Version': '2022-11-28'
-		};
+	const headers = {
+		'Accept': 'application/vnd.github+json',
+		'Authorization': 'token ' + PUBLIC_GITHUB_PAT,
+		'X-GitHub-Api-Version': '2022-11-28'
+	};
 
 	try {
 		const rawResponse = await fetch(`${baseURL}/${gistId}`, { method: 'GET', headers: headers });
 		const response = await rawResponse.json();
 		
+		console.log("Making GIST call: " + response);
 		const gistFiles = Object.fromEntries(
 			Object
 				.entries(response.files)
 				.map(
 					([filename, value]: [string, RawGistFileType]) => [
-
+						console.log("Processing file: " + filename),
 						filename.replace('librelingo___', '').replace('___', '/'),
 						filename.endsWith('.json') ? JSON.parse(value?.content) : value?.content
 					]
