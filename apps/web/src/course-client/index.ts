@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-fetch';
 import parseMarkdown from '../utils/parseMarkdown';
 import { baseURL } from './../../config/gists.json';
-import { PUBLIC_GITHUB_PAT } from '$env/static/private';
+import { PUBLIC_GITHUB_PAT } from '$env/static/public';
 
 export type SkillDataType = {
 	id: string;
