@@ -5,7 +5,7 @@
   <br/>
   <em>a community-owned language-learning platform</em>
   <br/><br/>
-  <a href="https://libre-lingo-2p0ek621e-giorginogregs-projects.vercel.app"><img src="https://img.shields.io/badge/Try_now-librelingo.app-darkcyan" /></a>
+  <a href="https://libre-lingo-web-giorginogregs-projects.vercel.app"><img src="https://img.shields.io/badge/Try_now-librelingo.app-darkcyan" /></a>
   <a href="https://librelingocommunity.github.io/LibreLingo/"><img src="https://img.shields.io/badge/Documentation-librelingocommunity.github.io/LibreLingo-darkcyan" /></a>
   <a href="https://github.com/orgs/LibreLingo/projects/1/views/1"><img src="https://img.shields.io/badge/Roadmap-github.com-darkcyan" /></a>
 </p>
