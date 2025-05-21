@@ -118,6 +118,10 @@ Here there is an article of [why the original author has built LibreLingo](https
 
 LibreLingo offers an official [web app](https://librelingo.app/), which is very lightweight and written in Javascript using Svelte framework and pouchDB by the way, to try out LibreLingo courses interactively right in your browser, no installation required!
 
+## Setup Instructions
+
+Clone the file .env.example inside the /apps/web folder, and rename it to .env. Then, fill the values inside the .env file with your own values.
+
 #### Features
 
 - :bow_and_arrow: practice using interactive exercises
