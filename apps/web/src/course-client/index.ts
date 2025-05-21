@@ -43,6 +43,8 @@ const formatCourseData = (rawCourseData, { courseName }) => {
 
 type RawGistFileType = {
 	content: string;
+	truncated: boolean;
+	raw_url: string;
 };
 
 const fetchGistFiles = async (gistId: string) => {
@@ -56,21 +58,40 @@ const fetchGistFiles = async (gistId: string) => {
 	try {
 		const rawResponse = await fetch(`${baseURL}/${gistId}`, { method: 'GET', headers: headers });
 		const response = await rawResponse.json();
-		
-		console.log("Making GIST call: " + response);
-		const gistFiles = Object.fromEntries(
-			Object
-				.entries(response.files)
-				.map(
-					([filename, value]: [string, RawGistFileType]) => [
-						console.log("Processing file: " + filename),
-						filename.replace('librelingo___', '').replace('___', '/'),
-						filename.endsWith('.json') ? JSON.parse(value?.content) : value?.content
-					]
-				)
-		);
+		let toFetchSeparatelyText = []
+		let toFetchSeparatelyJson = []
+		const gistFiles = {}  // Create a map of the files
+		Object
+			.entries(response.files)
+			.forEach(async ([filename, value]: [string, RawGistFileType]) => {
+				const filenameProcessed = filename.replace('librelingo___', '').replace('___', '/');
+				if (value.truncated) { // We should do a call to the file directly because it is too huge so truncated.	
+					if (filename.endsWith('.json')) {
+						toFetchSeparatelyJson.push([filenameProcessed, fetch(value.raw_url).then(response => response.json())]);
+					} else {
+						toFetchSeparatelyText.push([filenameProcessed, fetch(value.raw_url).then(response => response.text())]);
+					}
+				} else {
+					gistFiles[filenameProcessed] = filename.endsWith('.json') ? JSON.parse(value?.content) : value?.content;
+				}
+			})
+			
+			await Promise.all(
+				toFetchSeparatelyText.map((value) => value[1]),
+			).then((values) => {
+				values.forEach((value, index) => {
+					gistFiles[toFetchSeparatelyText[index][0]] = value;
+				})
+			})
+			await Promise.all(
+				toFetchSeparatelyJson.map((value) => value[1])
+			).then((values) => {
+				values.forEach((value, index) => {
+					gistFiles[toFetchSeparatelyJson[index][0]] = value;
+				})
+			})
 
-		return gistFiles;
+			return gistFiles;
 	} catch (error) {
 		throw new Error(`Could not load gist with Id "${gistId}". ${error}`);
 	}
@@ -84,8 +105,8 @@ export const get_course = async ({
 	gistId?: string | null;
 }): Promise<CourseDataType> => {
 	if (gistId !== null) {
-		const files = await fetchGistFiles(gistId);
-		return formatCourseData(files['courseData.json'], { courseName });
+		let files = await fetchGistFiles(gistId);
+		return formatCourseData(files[`courseData.json`], { courseName });
 	}
 
 	// eslint-disable-next-line @typescript-eslint/no-var-requires
