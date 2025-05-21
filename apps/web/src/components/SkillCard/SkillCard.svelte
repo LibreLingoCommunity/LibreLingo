@@ -23,6 +23,7 @@
 	let started: boolean = false;
 	let stale: boolean = false;
 	let progress: boolean = false;
+	let challengeHref = practiceHref + (gistId ? `?gistId=${gistId}` : '');
 	let introductionPageHref = introduction ? `${practiceHref}/introduction` + (gistId ? `?gistId=${gistId}` : '') : null;
 	let backgroundColor = 'white';
 	let foregroundColor = 'black';
@@ -83,7 +84,7 @@
 	</div>
 	<footer slot="footer">
 		<div class="card-footer-item">
-			<Buttons practiceHref={introductionPageHref || practiceHref} {started} {completed} />
+			<Buttons practiceHref={introductionPageHref || challengeHref} {started} {completed} />
 		</div>
 	</footer>
 </Card>

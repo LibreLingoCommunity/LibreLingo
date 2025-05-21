@@ -121,7 +121,9 @@
 
 	$: skipAllChallenges = async () => {
 		if (solvedChallenges.length == 0) {
-			window.location.replace(courseURL);
+			let gistIdParam = new URL(window.location.href).searchParams.get('gistId');
+			
+			window.location.replace(courseURL + (gistIdParam ? `?gistId=${gistIdParam}` : ''));
 			return;
 		}
 		stats.skipped++;
