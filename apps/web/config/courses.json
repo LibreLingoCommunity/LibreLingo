@@ -247,7 +247,7 @@
       "yamlFolder": "LibreLingo-RU-from-EN",
       "jsonFolder": "russian-from-english"
     },
-    "gistId": "2fdea7b3778884390811facfb609f0f6",
+    "gistId": "5ab0c47fc937373ec99f66e70b224cb0",
     "deploy": true,
     "devtoolsEnabled": false,
     "inProduction": true,
@@ -255,5 +255,21 @@
     "source": "English",
     "target": "Russian",
     "description": "Russian Course for English speakers"
+  },
+  {
+    "url": "https://github.com/LibreLingoCommunity/LibreLingo-UKR-from-EN",
+    "repositoryURL": "https://github.com/LibreLingoCommunity/LibreLingo-UKR-from-EN",
+    "paths": {
+      "yamlFolder": "LibreLingo-UKR-from-EN",
+      "jsonFolder": "ukrainian-from-english"
+    },
+    "gistId": "9631643d528f73fc493be827c4d2a7c2",
+    "deploy": true,
+    "devtoolsEnabled": false,
+    "inProduction": true,
+    "name": "ukrainian-from-english",
+    "source": "English",
+    "target": "Ukrainian",
+    "description": "Ukrainian Course for English speakers"
   }
 ]
