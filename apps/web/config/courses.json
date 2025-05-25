@@ -357,7 +357,7 @@
     "repositoryURL": "https://github.com/LibreLingoCommunity/LibreLingo-PL-from-EN",
     "paths": {
       "yamlFolder": "LibreLingo-PL-from-EN",
-      "jsonFolder": "interslavic-from-english"
+      "jsonFolder": "polish-from-english"
     },
     "gistId": "908ad18962a2a67edb8340d2d2948c63",
     "deploy": true,
