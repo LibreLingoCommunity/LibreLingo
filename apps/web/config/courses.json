@@ -353,6 +353,38 @@
     "description": "Rusin Course for English speakers"
   },
   {
+    "url": "https://github.com/LibreLingoCommunity/LibreLingo-PL-from-EN",
+    "repositoryURL": "https://github.com/LibreLingoCommunity/LibreLingo-PL-from-EN",
+    "paths": {
+      "yamlFolder": "LibreLingo-PL-from-EN",
+      "jsonFolder": "interslavic-from-english"
+    },
+    "gistId": "908ad18962a2a67edb8340d2d2948c63",
+    "deploy": true,
+    "devtoolsEnabled": false,
+    "inProduction": true,
+    "name": "polish-from-english",
+    "source": "English",
+    "target": "Polish",
+    "description": "Polish Course for English speakers"
+  },
+  {
+    "url": "https://github.com/LibreLingoCommunity/LibreLingo-OCU-from-EN",
+    "repositoryURL": "https://github.com/LibreLingoCommunity/LibreLingo-OCU-from-EN",
+    "paths": {
+      "yamlFolder": "LibreLingo-OCU-from-EN",
+      "jsonFolder": "old-church-slavonic-from-english"
+    },
+    "gistId": "95e8a56c28ff9997e6dce6ad22f07a21",
+    "deploy": true,
+    "devtoolsEnabled": false,
+    "inProduction": true,
+    "name": "old-church-slavonic-from-english",
+    "source": "English",
+    "target": "Old-Church-Slavonic",
+    "description": "Old-Church-Slavonic Course for English speakers"
+  },
+  {
     "url": "https://github.com/LibreLingoCommunity/LibreLingo-ISV-from-EN",
     "repositoryURL": "https://github.com/LibreLingoCommunity/LibreLingo-ISV-from-EN",
     "paths": {
@@ -469,47 +501,15 @@
     "repositoryURL": "https://github.com/LibreLingoCommunity/LibreLingo-BE-from-EN",
     "paths": {
       "yamlFolder": "LibreLingo-BE-from-EN",
-      "jsonFolder": "lower-sorbian-from-english"
+      "jsonFolder": "belarusian-from-english"
     },
-    "gistId": "81f567de71505400033d9649d3a7b876",
+    "gistId": "dbd96d6c2eff0a3a5a3c80f9900d82c5",
     "deploy": true,
     "devtoolsEnabled": false,
     "inProduction": true,
-    "name": "lower-sorbian-from-english",
+    "name": "belarusian-from-english",
     "source": "English",
-    "target": "Lower-Sorbian",
-    "description": "Lower-Sorbian Course for English speakers"
-  },
-   {
-    "url": "https://github.com/LibreLingoCommunity/LibreLingo-CS-from-EN",
-    "repositoryURL": "https://github.com/LibreLingoCommunity/LibreLingo-CS-from-EN",
-    "paths": {
-      "yamlFolder": "LibreLingo-CS-from-EN",
-      "jsonFolder": "czech-from-english"
-    },
-    "gistId": "7385a7ad41d7345df350d17e4ef8498d",
-    "deploy": true,
-    "devtoolsEnabled": false,
-    "inProduction": true,
-    "name": "czech-from-english",
-    "source": "English",
-    "target": "Czech",
-    "description": "Czech Course for English speakers"
-  },
-  {
-    "url": "https://github.com/LibreLingoCommunity/LibreLingo-CSB-from-EN",
-    "repositoryURL": "https://github.com/LibreLingoCommunity/LibreLingo-CSB-from-EN",
-    "paths": {
-      "yamlFolder": "LibreLingo-CSB-from-EN",
-      "jsonFolder": "kashubian-from-english"
-    },
-    "gistId": "6df66b9ed4f601930b4a726e04ef7379",
-    "deploy": true,
-    "devtoolsEnabled": false,
-    "inProduction": true,
-    "name": "kashubian-from-english",
-    "source": "English",
-    "target": "Kashubian",
-    "description": "Kashubian Course for English speakers"
+    "target": "Belarusian",
+    "description": "Belarusian Course for English speakers"
   }
 ]
