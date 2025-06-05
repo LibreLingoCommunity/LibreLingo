@@ -184,7 +184,7 @@ def _convert_character(raw_character) -> Character:
     Converts a YAML character into a Character() object
 
     >>> _convert_character(
-    ...     {'Character': "Г", 'Tranliteration': ["H"], 'IPA': ["/ɦ/"]}
+    ...     {'Character': "Г", 'Transliteration': ["H"], 'IPA': ["/ɦ/"]}
     ... )
     Character(character='Г', transliteration=['H'], ipa_pronounciation=['/ɦ/'])
     """
@@ -200,8 +200,8 @@ def _convert_characters(raw_characters: List) -> List[Character]:
     Convert each YAML character definition into Character() objects
 
     >>> _convert_characters(
-    ...     {'Character': "Г", 'Tranliteration': ["H"], 'IPA': ["/ɦ/"]},
-    ...     {'Character': "Д", 'Tranliteration': ["D"], 'IPA': ["/d/", "/dʲ/", "/ɟː/", "/d͡z/", "/d͡zʲ/", "/d͡ʒ/"]},
+    ...     {'Character': "Г", 'Transliteration': ["H"], 'IPA': ["/ɦ/"]},
+    ...     {'Character': "Д", 'Transliteration': ["D"], 'IPA': ["/d/", "/dʲ/", "/ɟː/", "/d͡z/", "/d͡zʲ/", "/d͡ʒ/"]},
     ... )
     [Character(character='Г', 
             transliteration=['H'], 
