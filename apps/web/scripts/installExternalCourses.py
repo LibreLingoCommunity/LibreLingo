@@ -11,8 +11,9 @@ def main():
         config = json.load(fh)
 
     for course in config:
+        print(course)
         if course["deploy"]:
-            cmd = f"""yarn installCourse "{course['url']}" {course["paths"]["jsonFolder"]}"""
+            cmd = f"""yarn installCourse "{course["url"]}" {course["paths"]["jsonFolder"]}"""
             print(cmd)
             exit_code = os.system(cmd)
             if exit_code != 0:
