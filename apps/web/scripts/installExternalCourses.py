@@ -4,15 +4,14 @@ import os
 
 
 def main():
-    if len(sys.argv) != 2:
-        sys.exit(f"Usage: {sys.argv[0]} PATH_TO_CONFIG_FILE")
-    config_filename = sys.argv[1]
+    config_filename = "config/courses.json"
     with open(config_filename) as fh:
         config = json.load(fh)
 
     for course in config:
+        print(course)
         if course["deploy"]:
-            cmd = f"""yarn installCourse "{course['url']}" {course["paths"]["jsonFolder"]}"""
+            cmd = f"""yarn installCourse "{course["url"]}" {course["paths"]["jsonFolder"]}"""
             print(cmd)
             exit_code = os.system(cmd)
             if exit_code != 0:
