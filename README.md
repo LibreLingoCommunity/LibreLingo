@@ -120,7 +120,10 @@ LibreLingo offers an official [web app](https://librelingo.app/), which is very 
 
 ## Setup Instructions
 
-Clone the file .env.example inside the /apps/web folder, and rename it to .env. Then, fill the values inside the .env file with your own values.
+- Clone the file .env.example inside the /apps/web folder, and rename it to .env. Then, fill the values inside the .env file with your own values.
+
+- rename the `vars.env.example` inside the `LibreLingo/config` directory to  `vars.env` to initialise variables used in scripts.
+
 
 #### Features
 
