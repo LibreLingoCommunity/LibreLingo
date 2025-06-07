@@ -4,9 +4,7 @@ import os
 
 
 def main():
-    if len(sys.argv) != 2:
-        sys.exit(f"Usage: {sys.argv[0]} PATH_TO_CONFIG_FILE")
-    config_filename = sys.argv[1]
+    config_filename = "config/courses.json"
     with open(config_filename) as fh:
         config = json.load(fh)
 
