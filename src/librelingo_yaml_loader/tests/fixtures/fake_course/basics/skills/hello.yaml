@@ -6,6 +6,17 @@ Skill:
     - woman1
     - man1
 
+New Characters:
+  - Character: à
+    Transliteration: 
+      - a
+
+  - Character: ç
+    Transliteration: 
+      - c
+    IPA:
+      - /s/
+
 New words:
   - Word: l'homme
     Translation: the man
